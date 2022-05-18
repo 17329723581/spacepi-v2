@@ -1,6 +1,42 @@
-/* @font-face {
-    font-family: 'AlibabaPuHuiTi-2-35-Thin';
-    src: url('./AlibabaPuHuiTi-2-35-Thin.ttf');
+@font-face {
+    font-family: 'Fenton-Black';
+    src: url('./Fenton-Black.otf');
     font-weight: normal;
     font-style: normal;
-} */
+}
+@font-face {
+    font-family: 'Fenton-Bold';
+    src: url('./Fenton-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fenton-Light';
+    src: url('./Fenton-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fenton-Medium';
+    src: url('./Fenton-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fenton-Regular';
+    src: url('./Fenton-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fenton-Thin';
+    src: url('./Fenton-Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EDIX';
+    src: url('./EDIX.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

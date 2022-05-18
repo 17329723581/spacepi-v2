@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "@/views/home";
+import partners from "@/views/partners";
 
 
 
@@ -17,6 +18,11 @@ const routes = [
     path: "/",
     name: "主页",
     component: home,
+  },
+  {
+    path: "/partners",
+    name: "友情合作商",
+    component: partners,
   }
 ];
 

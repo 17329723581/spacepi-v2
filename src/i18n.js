@@ -4,11 +4,11 @@ import Vue18n from 'vue-i18n'
 Vue.use(Vue18n);
 
 const i18n = new Vue18n({
-    locale: sessionStorage.getItem("locale") ||"en",
+    locale: sessionStorage.getItem("locale") ||"en_US",
     silentTranslationWarn: true,
     messages: {
-        'en': require('@/locale/en').default,// 英文
-        'zhHans': require('@/locale/zhHans').default,//中文
+        'en_US': require('@/locale/en').default,// 英文
+        'zh_CN': require('@/locale/zhHans').default,//中文简体
     }
 })
 

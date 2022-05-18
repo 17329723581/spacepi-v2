@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-
 import router from './router'
 import store from './store'
 import BigNumber from 'bignumber.js'
@@ -17,6 +16,8 @@ Vue.use(VueClipboard)
 
 // 多语言
 import i18n from './i18n'
+
+import '@/css/rotation.css'
 
 import '@/font/index.css'
 import vuetify from './plugins/vuetify'

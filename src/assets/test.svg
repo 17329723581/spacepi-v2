@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="95.914" viewBox="0 0 123 95.914">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_136" data-name="矩形 136" width="85.846" height="70.196" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="矩形_113" data-name="矩形 113" width="80.323" height="70.196" fill="none"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 84 74">
+      <image width="84" height="74" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABKCAYAAAAlt3MqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAxbSURBVHhe7ZxbbFRVFIZbC5TeoBcoLdCCVAQsRTQEq2gUUYw38EJigvHJN000MfHB8MKL8cHExAd9MTwRjSSi4j0YRFTCxSoKIkItCiKFXii0pbXc6v+NezfTzrQz58w+nTPFlfyZQa095z/r8q+11yG7v78/639zZ4ERevTDp7O7Tx7INn8MjeXkFmTllc3pn/PIhkBu3Dmh+99Ykt3VejBXXwuEicI1/PMQ2SWhV+ipqFtzsebxjU4JcE7ozvV5efqYLtQIlcIEISyeys32CCeEJqFl2freC/p0Zk4JbXh1Tk7f+eYKfV0q3CHMEsYJVwS3T8678VBzhH+Ew8IO4eei8rr2Rc/s5fqcmFNC5Z2F+lgkPCDUC4R+u9AtXBbSaTzYyUKp0CF8LWwVDstLIdmJOSNUZHLBM4R7hfuEKQKe8LPQKqSb0PEC13ezQOT8IXwq7MibVN168wuHnXipE0IPv706u61xK0WIi31cwEv/FvCA74U2wVlY+TQeODn9duFuoUjYJXwgHHLlpU4IlXfy9ClE9wsPCVz8N8IXwpH8kpqeCYVT05pDe88cy1Z+n6SvdcKDwhKBdASh28flFrfd8lJzylGUMqH7Xl94TU9HU7G+Wu+cJxwUCKeG3ILKjiUvHk13uEds98vl4y5f7Jqmr8sE8ny1QARB6sGymhXd85/6JCVCUtaIIpPCM1NYLMwWyJc/CuTPzrCQidWva0GDnhF+FfYLSKj5AilqWnvTNiItJUuJUFOI8M65wg0Cf4bIQ0JbcVX9RX2GylSA+vTRLPwioEXJpQuFOXz/8bV5KXHi+4cPbliOrkPEVwnkJbyU4sOF/iX01j69Pa15M56Zat4lQOYBoVO4VoDUyt7O40Scb/NN6Nm/duONSCM8k7BBNOOdR4QOVU3CK5RmIofUROgfFdDP3AeRNnnPK5Xciy/zRagJCy6CnIl3lgstAsXopComYRVaM5FD/jwuEFHnBCINL515qe9s3rHPnvPVLvsiVGFBf061rBWuE/BG8ibe2elCfgRtFXVruEY6pt8Ewp+CtEAg2sqa973ry0s9E7r/zaX8DHqO4QeE8p0nTT46qaTvdNgQlDFlUiQh5q2XkgJwEir+bMkr6oNn80xoV8sBRnK0buhOkjnh8pOAh55z1cKNhplIQkbhDIDciociAStMw+LJPBFqkjWFiKcI+IWEDP16c+XitaGTSYmsqLwOLz0moJ2tjLpRuF4o9Cqjkv6PmzY/lU2y1le6CwoRxJ4SeLJcUE9QU/AgzYzukE6/C4T+WQEJSDqbZupF0pY0oacOvIdMYvRF4kYEU8mRHXjoGSX50MqkRFY0tZa8j0rhfhoFIpHQp05M8iKjkiLUiPh8gdzJkyMsbCE6oeTe6/ooYTRt0bMNXPt54U8BL4VcRn1E4nRF5kQiVN8TWlKESsSTK6cKeCeFiE4DzUmYnMsEmZTIpsxdSYQxfSLiANzYpqVEEZqUlyYkVO7Of2NlEk8MQU93AaGnMkUmJbJ5T27BSylQtM3WSxlJcs/UjXwTqSNaQkLl7vS2DGbpIqx38gshtTuTZFIiM+0yRYkGBS/FqPZ46hQTqSPaiISaaRLVHDLRZkzl+UWMvlrLalZknExKZPklNRRbThuQUdSJMoF7Z847mYNIfQ5rwxLauOkJ3JvwpqLfJOD+p4V9wjEVop5Uh7FhtJue/8VOo+x5GAeMpDs4qOo730xjM6wNS2jLoY9wb4YedgpD4cE7+UVjohANZ0YC0opSJ0htpD0KMl5ayuRfn3EtLqEm+RLePBnCnSEyywEZ1a/7NSRgzvgiplGQSb2g+lNHKFCzRurz4xJqki+DAshkRMf/3IrezrFUiIaz8tqH8VIG5tw3RQrDQ4nYUlNfYiyG0KhZJ2M5fhhBj+CNzDrV+45p77Rm2mg7M41EpkCnaJ1sIsfn+hxkMYSa3pV1Gn6QnhYZgdszOOhyubYSdhsyM8VT0alIR/JpWVvj1hgvHUSo6VlZV8E7+SH+PWHO/6zF9LxXjUXNTPFOvJRIJXppvyE2Zho18IffNj7ENMn268w6ScIUoh8EvLPb9LxXlRk1w8yXPIpkZH5qZdSMoYd6A4SaM2n6deacPAGSMjqM3Nke5kO3oK24qp7IZFRJQwMfpEXEfkyBihAaVYgQ8eROugO8k9zZbM6yr1ozh3os6doCZft8uOJwL88WqAihclsYhkQ7A6Tw4OJsqI2pft2vyUsJfdvnM2XDS5FR1JvJKlCRljSy2ySXJXcS5o8KdwpUtneEL+Wd7WOJULMpiCOBhNOjIYbjoc9ZNnuMfyD7XPhYOKq0eCHioTJcmifAsINP2CbZjrvY1+n1l4bWGEWKTJwHWUh6o6X2AryRoo0ehSP4Ir/CWaRgWw+lIJET7hJgnx6edcT3hSNiHoGb0cbiwom9b0WfOjDjZNDhxWFsrYFcOOKkF+/cpUhuI5IjhNK7q920+oo1v1sF2i7W/HYKpzO9yptVRo41bhOWCxALmdyXFzmI8/EgKEw43TaBcKdo/VeUhlQxpAEVHgk1UMWSmVaH1TgPEpl4J2Ic/cjQGGIgBY1N85Is8Mo9Ajv6DQLDogEVNGjhVqHPFIVfyp78SoEugbXur4TjegoZKZ9MSuO+SGesg1MfIINlW1YbyYFeDK/m6Lk9Z3xRt9k7jdggQs1LW7SeHPSvEfBQ5p9sI+9VG+ZkbXo0DY0tWcj4ka1l7oncSSvNPTGVRwr5UTFXkFJDVzYHEYpFFah4+/K8gsJxa8aY7od8R0VfJawQmMYTdeQ+51FnZdOARR2n8hTJL9HT6pJEZyphsjjDHuoAwpz2MZBhTwyhUceprNfQZlHt7alndd/5Zl9baaNtUatDjCCZtHMPnIlxT5HVoSCGPTGEYkYiWS+102p7nFrqZTUlXRa1OkQ7zXXjnfZMLLDVobiEYrkFlVZGRQYkAr1+xEt58vGm1WGxIatDeCedEfeAdwa6OjQsoeZ1GHp6nijai3xDcudpx51Wh8WGrA7R1VDFuQd0ZKAntsMSislL7WoKg1W7O4kw5iKLeOlLn6EyUzSRSYQ611oikDNZCv67qLwuUC09IiHGS5lW46VoNgoUApnh6kzz0ldojH7dFE20JmQSUQhwyKQWdAd9JpbQw8wrKPY4laROqBP2eGmxdF5oQt+8aGALEeFO6NvFtlZz6BaoJSR0yCsoJHU2KpAits+Pe5yaDlO/DoEUIAhlEGJXao6rRRyVHdakcqCRURQowoYLxBO4aBCmAsV1sHrJghuhjyMg/7rzS2aPSsucdFGR1CCZc5wa6TIE5oFIkrjHqWkySGO5i/6cggqpFKj8no4/R+X6kv4lRmqQ4PFScil/Jo8yQ/W83B+EKazt6STXxydtJy1ztd/3jryap6dmlsTsm7zMTHn65FIO9iaZl8LSZuW1D/OQo9e6SVV2pWjKaBRQTwSYwzpkFBUfbcp3Qp7FiGrzUljajH0kszXHhgcLGn8IPHRkHtFUoIceaAH17FHlC1bhpeRS+/YcTx0vJZ+WpbvPr1/XgpdSQLk2Hjr51GrnSj30QLWzZ0LnPrHJyig7jWKCQ5sHoZE+P9lXUIIyl+8deTVfOc9MatjxQUKRqxD/NleVmklP2szle0dezRehZiuNaZTdakb0o/+o+Ex4knoFJUhz9d6RV/NFKBa1lUZIoU3tXzVByzc1mVdQgjRX7x15Nd+EYub41MooembO9ilQDCVS/gtRUjXT4dl9JLwU8/TekVdL6YaNjKIzscv91kshNeW/EMWFmQ7PDpejB+U89EL2YvXpzFL2IPPyFwMTFiQoUrw9wjE0+bQs3dMopSYeOg+aa+MaSQNoUmTUjPambU47vJhjZD+GDFHlZCDBigsbfHxHWLOZhmcw9Ql80jOC4YUIfFaMVgsUJiQVq0bfKTWQFpyYE0Ixc/5NQYJQLhwV8K3AhgbVliKWLoNQrg8i2Yohh7LjuVnYLkVwxhSxlM0ZoWZDA4HPX8TKygu6FCLJr363M1waqYdZKeEOuazhbBEa5KFEkBNzRihmvJQLvkeAWEKfrgWkM+Qx66UQi35mc4SFL7ZHqANOzCmhTJvUK3MoRugzMGGiT9JPN5mYrea0zUQNZ2SNlYvXdrn8u1KcEorJS9F2zCEZQNM94RFOpUkKxs0SLQxPUCZd8k6nud05oZhIpa2DSD7DQqY1bviS9OklI6kcWlbWv2A2skQDtr5TAAAAAElFTkSuQmCC"/>
+    </pattern>
+    <clipPath id="clip-path-6">
+      <rect id="矩形_116" data-name="矩形 116" width="50.633" height="45.34" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-2" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 54 49">
+      <image width="54" height="49" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAxCAYAAACRQFplAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASQSURBVGhD3Zg7chNBFEVtfoYEVkDAisggImBlBBCRsSZyqggA8zVzpuaort50jyRLslW+Vbd6Pj3d9/RrjVQ6v7q6OruLuje1d053Fuzkt+Kzl+/Op8NRXz+93SrwyYEVkDWo0Bh6CfJkwAKItnWMDEs7ugd3q2AFBvGZFyatVkCD/01uwt042IvXH86/XP6ezmYAgAmXrRpBBv+djm1ncDcG1thqaYFatg9BrdKfwUDRem0N7qhgC9UxcALcD+d1+iHBAGJQoGxHuKODLVQnA+OESWcfxxIKkF+DgbIdt+QARp9RBwPbYatViAdhr+WzqFYLoJ+TObZqq+24F1jjrWYYVzqBhBIggR5OLdfpl0oot59gl9Mx17m/H9g1XgRWIqGAEciWvoxBqASqYFYLMNr9wDpAhkkQ7OoLJVCCPCrnjk9IbWiPDwc2ATnpEgxuAemEoAXMc+4jqkNQITxugWnvr8AI0NXzV+/PA8qwhiBQmpD6opxXcz/7JBzzMB8BMaDV3kuvqVuxABIqbYDaetw6xwLkgmS1rAovBJ0Vw/nywPZZe90z8ZJqpQhSV71Wx7A9533GNQMrnNsNC1Mrhulvq1dqgnW2n1AJlFC5+mnHaF1nDgMKYxU8H6sx2H7pGZCagRUoXKEehwVLIJ/LhbHNPtwnHBUBhDfcj8m+7WrVBGl5TUzQExMbhOBZLaEAzkoxnqE9xhUIEZZqAADM98HfppbzBMsqpVdAvg0VE7XE5NpQGACdYQ2svYZrP0QooGqlrJZbcZtK4ZmcqKdWUJzX7FOd/e1HCMISOqGoUlaKe/TrgbWurYkJl1Qfbln1gHKOrJRbMO32ow9QOb7zCWXbVE5alQNhJmJCJ80VzUkqnHIMqwWIFcuXBePneMgsPc/UA/OBCsTEBsO5uoZpTZRQAAhCW6Ho1ww7KOdY9akvDjQDi060Ceb2MQgW0EACGsBjXBfGMVqLU8U17Xh5baZtK2aYJTicAROSYywcrX21Af2samWm6qaaYFPVsKEMlGDpBKwVsK1uhUsgsm0C66pXsU1wAlYnWAVQNbzfc9WC4czSW5Q1dcFQgcMAJmSaa1kpA6AWSH7ZVwuW+cyiR7VeHGgRDPHgBsC01zdB+VPM36C6gvms87fc1CH+83BlDfpkMr8nDct9JgK4txjcz/Ew5z7j9s8dsvZfYoqHd1aporZKthrZKgHcklbOxbFqLmCOl7uhq2uBFeWkmsm1FdEZTEC3YEJZMeSYOcfV0wu6trUXWFQN0SaMWy1fMLmN6OOzAqYrlF7N+fnjG5+faS+wkJNhoQDwc0Hrd15eo0+touI8gXTO1dWhwZiYoEIJ4w9dnWBZQcNzrPOec2zU3mDxVjKQ1SJ8gqUrpKDVCS6gi7ioY1RMMIIlXEIkSF5r9RMuq7b6Y7Sng4DFS4SJE07A1up7bp+EwfmMUIJt1LW+oHsqf7IiW1Qnsh+La+sxyoXaqVrooGAofpWgPG6B2QqU/dEIMngnKHRwsF1UfprlsRJsDLktFLpVMLWpyrsAqZMAO4YO8lY8Rd1RsLOz/3p2soys47ekAAAAAElFTkSuQmCC"/>
+    </pattern>
+    <clipPath id="clip-path-8">
+      <rect id="矩形_119" data-name="矩形 119" width="31.301" height="28.078" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-3" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 34 30">
+      <image width="34" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAeCAYAAABJ/8wUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPaSURBVFhHtZc/TFNRGMVb/pVayp/wR0jUQWIwITAYoyROxsRVE90ME5tuJg7GhcW4OboxGTdNNDq5OJmgMQ4SBmJkEBUtCLUtFKS1nt/lvpf3aPveK+hJTu6jvvfdc8/9vu9e45VKJdYIFp9Oxe1jKI5fnokcPJKQ2bsDzeWdfKsem8Um82M4CAxLidTQzulbi3/Mr3UQKuTNvaGm0na2Q4/dYsL8GA04R/CiuJ7uH90cv/Gu7mSBq/v0ZDIuEUzeKx4WEXNIbA9hUkyJPSLf9eRX5ts01kWgI6+nky0aCHZEZGuy4oZYFsPAt50i4gviUkuiO3f29nLNb+s6Mj9zHmtZXZfIan6JGXFF/BmBvMf7iMDFLrnbhst6rkJdR+QGk7MlQ+aHWOyruHZuuriz+2c4FIOF9IvE2BK/iVnFKGn0oaYjJKgG9hlbEZQXC91HJ6oCBCHZeey3BpzEFeLhbsK67UNNIViogY/SIg7kxK3RqVfBJbYHp24uULJUDWJ4Jmc6skuz5I8PVUJkJ72CPcUNno0bsjNKglbBukgMkpwKJG7y/f0R39y+PxYeXcIyXsYNrGQ12ebW9LbGfcG6aOKIiMKVrmLuM1Xowidk9eNLLKN5IYQAfFyYuJNpKDf2onf4guMKZA5cSVn3DVwh1iqynJcYN8Wcan/fbjg4OfmCRVE1LIx4ppxFt5xdIbIKdbiBdSQWCbZRrwE1CpsrVA9xmZx5Ut/nHhsN3q3BMpSSI6gvcFhp/CewuYIbbA+LY9EcA6aCvEJ4kRcgipvKpWJVvR8QJq4dmc+hTwjWkReoxpV0UEtuFLaJmbgiaUA5u+eWK0R7yA/8A9bxIsnEHrqZfRCoiVGuiIAsel3ccPqTK8Szh2Q2zjhNLdHIrawWPjw4wzzeI8MkrSqSI8DAuzWxwbGrjiuI4Rn1HZn55wdyJZ+Zww3vkUHlFFWR7q3NJ2T4ysOK7RvOQWVasq6J7bbrNgzbnxw3WJBpbDoQfRXpEwKsSrbG25LT6rr7ckX9ifIkhntkMOpANNXioEoIkNpaLZmDqiFX7HWCXEMIEyOi0HfioklQL2oKsce3tyXTfNIcVFG3iHK11wlEIIbcM0fGyLVnPjdA3RsagVRy2DkocssiZ36IbJubZAFgK0lOLs8IWhZXVK4srAphl2eCke1cnlkVYlhZVCFOGyf5v2jLC9btKoT+v0ZiqJwBsU8kOPkT/NEu2Hbyi+rAydWg+27NHPHCltmaiLXcyumI5E4Y+QYB5sIcdt8NdQSoM8bVlFgdwhupHIKX0wNj5fHrbwMniiTk/yMW+wsXEoYbtlfQowAAAABJRU5ErkJggg=="/>
+    </pattern>
+    <clipPath id="clip-path-10">
+      <rect id="矩形_122" data-name="矩形 122" width="26.467" height="16.111" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-4" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 29 17">
+      <image width="29" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAARCAYAAAAhUad0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAICSURBVEhLtdS9T1NRHMbx3grUCsXG1pdKxACWDk0xMURInDCEVRIHB+LEBhuJg1s3Nv8Jo4mJDi4OLiwyQAjRqJBKQHkHIdDcAG156fX73NCSKqVtvPyST85tm57nnnt/5xiWZblK1Y/XvUY6uWIcf6yovIEmK/zkTUHImaFjwyH3YSbp4bIOGisJ1sRHSGHPf6vzINo/YocVDU28emRszny8xGUDWhGAG+WUJj3ENhaPmQ/iKd1E8dDRuLea4SY60Ak/9pHF6X86Kf2+i3l8QQLbZ4ZOvoi4U+bCZS7vohst2MA6MigVqhtT6BJmsOK7Gt1rG5yw/3dqKKu8yHAbXbiPpL7GL6RRqjSpnsoOzCqPP93xfFU3Ytc/oTTPBZpH768dD3EFChzBGvSuyimLsGywtTvb8vhlQUhB6Oy7p8ba17dqnjAUGMMqPuAzHbib68D/qYJuJLCKIYgoFKxH+R0/PbWhlBOBqnyomofBhztQqFY8iylstT+bszvPicqH0q01DNcRwQ1sYhrLvmsxdaxjZYeqeRjq0YRmqNPU6lqp2TYwnu88J8oOpVv1LrX5Q9ChoE2tVa576xvV+o5W7vHqTBUTCpvAHHbuDSUcXaUqF6om2cI3fIKOro1guKfcPVlR2aEcUZpcp45OHL3H3wRmIn3vHdkif1fRA//8yuX6A5+Wu+RtOyTMAAAAAElFTkSuQmCC"/>
+    </pattern>
+    <clipPath id="clip-path-12">
+      <rect id="矩形_125" data-name="矩形 125" width="25.777" height="16.111" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-5" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 28 18">
+      <image width="28" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAASCAYAAABIB77kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH+SURBVEhLvZRPSJNhHMf3OkU33BoyJgktSEtTDBxLBU9elE4eOkonbwoeunXz1q2bJ8FLdEvQQx2C8FTggnINKQ2F2cwwpanl2pqtz/f13VD2OhHf+sKH53nH3vf7/P49RqFQcP1PVVmrqbXZEcPa/jOZEb6fjBr735ZqeK49+tmV84U6c7dGY46Hb0aIWTVLAJqhA8L7Wwlv8tmY4xEXU6rVBzegD6LQmHozrYM4qqLhIfwGN4ShC1qg/u2j1hN1vqjMjwWu9MpwF1KQhhDc1JrZW1dtHZNp2DEyr+Y4gHVYgV9wDVRT/8LDy4rcEZXSFbw+kGfZARkm4RK0QVM+my5274VVMmwdniu4a3wZtooyAXugOrZD8NWEx5HUlt00fFjRqHEGQd2qur6EeHVtYLc+1PaH/ZmyylSmMkPrEvCz7YY7oNS+g9fwBdTNZ0mH0v+yNGT+uLntXWql7yoMwG3IwgfYgBzYnv6YZPYdlJ3tvomM3jdla7g6c8/4mniqKCPQD+pWGf0ANVcl6YMy+AyL8JFSpHsebJqlsB3q5ruP1UAak1WIQRwUnWZVppX4CXpXs62rsYouL12RthFKyefjRio2Vce2AYLgBdsD2kjRaJY1Zjsef/ggcn/ZNDrVUFp+MmRsf3qhodedet7hl+kh6cwX0ylVNHReLtdfR2uyytObIugAAAAASUVORK5CYII="/>
+    </pattern>
+    <clipPath id="clip-path-14">
+      <rect id="矩形_128" data-name="矩形 128" width="12.198" height="16.571" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-6" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 13 18">
+      <image width="13" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAYAAACAa1QyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGPSURBVDhPndPPK8NxHMfx+bmNsdGmpCFs87uIIjko+Qcc5eTon3Bzc3N0cuXgoNyUUkg70FK01Jb8OphtNWPM8/X19dGaC+969P7WvD/v9+eHimKx6PhrlBUdr7ZWFvIphz80V4ws7Py6YknR4Yq7hlSHSuQaAgP54eXTskL9aEV0LaJvD9rRg5bMY6yWXBamKJdOfBd1YxRheBm3ilwSpsiOaviggkG0sT9XfHuxgm8Tpqja6dPsOWSgsdQxhOa78y0tZsIU+cOzH6QskrhFI/qgPdbFNmZMN1PUPb+pTi+4wSXUMYheBFLJI52sFSV7mlrJFUhPuMI1NKb21wnP2fqY9fclRXa84h5xqFsruuDjCqyTNEU6Wi7XzaeOXR3yNhe8dv7pZD+dej47MIJx9KMJKnyG9qvD+iqiQG11PxFMYhpDcCIBjZriWb2TzXg6TtFKWjkNneIZTqCiLO/wpxOhFTTCBQ6wh107R/HgC068ka0wr5xD0Ii6eeXvi9TKBQoKA0v75rX/45/Q4fgEsm99ucZ/c44AAAAASUVORK5CYII="/>
+    </pattern>
+    <clipPath id="clip-path-16">
+      <rect id="矩形_131" data-name="矩形 131" width="38.896" height="41.657" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-7" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 42 44">
+      <image width="42" height="44" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAsCAYAAAATmipGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASYSURBVFhHxZhNbExRGIY7irbaqSqtVlulVUWVEL8hERYWKixYELGylFjY2dmIhURCWFphIyRsCOJv4TdF2iqttv77p62WamtaNd5ncmeM6TD3ds7MvMmTO9PO3PvOd873ne8cl9frTQrV+6sHXN/b61yjngHrL5GVnJKelJFf6S3ecnLsDQ3oL6O1p1e4+rvqJ+tlmsVE/m5TI2JQDK07PMRrowoYtUxiLkcUizzB+wkikrgJ4f8o3ooemf2pqzEFjN4/nEb0skW5WCJmi3ThEv8T/+e7v0SzeCBeunMqvi7ZX21sGgRHiwcCkegVnwTReRMBPtMliP4CsUjkWlPImIIjimkelimIJA+KFE3E92aIVWKh+Cxui6cTU7K+rD7UPqrXUStgFD07Xj5h6NsHHmxnXvrFj+HHLRebxExRIzDbpLlKgkWtv4yOVxqNSbqQgBvEWjEk7omHotNEYjmJ3D9VuHIfRjrFC8G8dYsKMVekN1/YbWcK/VdGjBZXnfJqPjLE70St+CKoGotFXufLy0Q8Khkxiqyk+SpaBGUKzROlIqP+zMaoomrMKErLnD2sC1Og0bpOF5SsvL6Pj6KKqlGjyw82UvS/C2rra8FSWiKIqpuqouu4ZNQoyipag7luQVRZNChdvqiq9KXoOi4ZN1qx7w71jsRi3X8lvglKF/N16uOj+cm6OpZxoyivcieJxTLcJChXUwRRLfjp6UtrPL/dcWLFxGjpjrOUqx962SYaRL8gqvNFdnfTDSfto08xMYqCyhVJBUS1UpQJ9/MTix09O2ZGkRLLX67qBR3WLIHZgsHeFkeJFVOjVmKx7r8XRJUoU65IrCyrB7almBpFVkPiL1etYqogsQpFqt3EirlRlDzJTVTpAyhXbFnoA0is6XYTKy5G85ftYshpVBh+pgENOlueOSKj4ezWiFGNi1G20CpXRJWhp1z1iQLBFMjtabkVsQ+Ii1EUVK7orOiwWKEYflvdVdyMInVXHl06BFGlbLHXIqozI3VXcTVqdVesUkSV2srqRalivmZWHyv5Zx8QV6NIfQDdFTtVti0YZsVi21LkGWhPbbm0N+wUiLvRoD6AxKJcUQ2KBEtrdkfdxbDlKu5GUZhtC2cInAlQX6eES6yEGEUh2xZ/VEmsnHCJlTCjIdsWosqQM/xsscdsWxJmFIVsW0iwXEFUx2xbEmo0aNtCH8BugCizAIzprhJqFIV0V+wIpgkSiyU2UK4SbtSSv7vCLNOBucoikNXVcN3n0cghGeKXqwZyU4jYDYWIz9OnciJYJTjtvi+uibeK+rARo7Rp6oBo3XgYB2TMLSdm+az/YI3TQMrTXcHR5Semh6ljRzKUjp3TZoo2ppHdm2OUpZQ9FT+WLfZNUWMdsf8yZdQ/bOsF22LEXCOL7QijNCSMRI+oFk9EG8Oua/RzlOVOKwmZukwsFRyrszyy5bBr1C8qALtVIto6o2zzYPmeKz6DpiKKOYaN0zvWcY5xaDycGuXz9KwDalw86gkC3zdi9NGR3OTRkX4aC4aOmzPsGHYszUkvc9J6+0cYNUXDuW2+H24eb9Jv2HoaONqm1H0AAAAASUVORK5CYII="/>
+    </pattern>
+    <clipPath id="clip-path-18">
+      <rect id="矩形_134" data-name="矩形 134" width="12.428" height="28.078" fill="none"/>
+    </clipPath>
+    <pattern id="pattern-8" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 14 30">
+      <image width="14" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAeCAYAAAAcni9KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIJSURBVDhPnZU/L2xRFMVn/JsZxrgFQkEnConikZC8XusDiEqpkyh0GnQqPoKOQqtRSbxEJO+JQoTiNSQUwxhjDMb6HWdOznXvJbGSlS3jrln7rL3PnXS9Xk/9BCHhwXKuiZorDNZ/LZx9+Y1OKFGzSkZsEWstmaA6sXT1xv/iYBwsEObFHjF4qRbb+DAJvhDg1il2Uw9XevmyWPjCV/HJVpyD11qJ1mPhhL+XKwgexXuRsxXEvD17BKFWFcizyp1YEjljl5g525pOq4YQEtoUcS2KVZGW87fnexHXz+GkOntGaiq067tm/22Oh1wjwtH5IwZLSLRM66RcKN2ctqo6RISge2iKoB4sSTYQ2/+s9bvnY4XDM7u4ckbftctfilghsOPBkbMSDmd1rolCC9wIisByYlauJuHvhKDxDKPiCOZWJAovdmaJn2CYJS5lsaIrZ25MovD6ZJuHzSjEF5GgKrqnyUI77KzIGJgfAZXkxlkNYoV22LjBxv46NxARHq8P8xluxE+7ZumDgUnadYgIK/f/cTNXSmT1zMKPzO1/vGMsQkINF4cOseHGDB+0DCE34ITcOQ2X+HFDbBbd3tEInNDeuXYRN1LFrZz0pvNb5W8cqezoXaaj38X/Gb4Q0BZh3Irl8cVLFj0WvpAAGPSNWPSHHQve5A3+3RhLH672mbf7d/zhj04q9Q4ANtAa0fljMwAAAABJRU5ErkJggg=="/>
+    </pattern>
+    <clipPath id="clip-path-20">
+      <rect id="矩形_140" data-name="矩形 140" width="100.511" height="6.597" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="组_1045" data-name="组 1045" transform="translate(0.351)">
+    <g id="矩形_137" data-name="矩形 137" transform="translate(-0.351 76.914)" fill="rgba(44,29,81,0.5)" stroke="#fdd333" stroke-width="0.2">
+      <rect width="123" height="19" stroke="none"/>
+      <rect x="0.1" y="0.1" width="122.8" height="18.8" fill="none"/>
+    </g>
+    <g id="组_923" data-name="组 923" transform="translate(17.765)">
+      <g id="组_922" data-name="组 922" transform="translate(0)" clip-path="url(#clip-path)">
+        <g id="组_921" data-name="组 921">
+          <g id="组_920" data-name="组 920" clip-path="url(#clip-path)">
+            <g id="组_884" data-name="组 884" opacity="0.15">
+              <g id="组_883" data-name="组 883">
+                <g id="组_882" data-name="组 882" clip-path="url(#clip-path-3)">
+                  <g id="组_881" data-name="组 881" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+                    <g id="组_880" data-name="组 880">
+                      <g id="组_879" data-name="组 879" clip-path="url(#clip-path-3)">
+                        <g id="组_878" data-name="组 878">
+                          <g id="组_877" data-name="组 877" clip-path="url(#clip-path-3)">
+                            <rect id="矩形_110" data-name="矩形 110" width="80.323" height="70.196" fill="url(#pattern)"/>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path id="路径_288" data-name="路径 288" d="M58.869,67.3H21.764L3.211,35.169,21.764,3.034H58.869L77.421,35.169l-2.048,3.547H60.253L53.146,51.027l7.56,13.095Zm-36-1.918H57.762l.729-1.263-7.56-13.095L59.146,36.8H74.265l.942-1.629L57.762,4.952H22.871L5.426,35.169Z" transform="translate(-0.132 -0.125)" fill="#f8bf25"/>
+                </g>
+              </g>
+            </g>
+            <g id="组_889" data-name="组 889" transform="translate(7.595 12.428)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_888" data-name="组 888">
+                <g id="组_887" data-name="组 887" clip-path="url(#clip-path-6)">
+                  <g id="组_886" data-name="组 886">
+                    <g id="组_885" data-name="组 885" clip-path="url(#clip-path-6)">
+                      <rect id="矩形_114" data-name="矩形 114" width="50.633" height="45.34" fill="url(#pattern-2)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_289" data-name="路径 289" d="M44.862,47.886l4.851-22.874c.43-2.013-.727-2.8-2.046-2.31L19.149,33.693c-1.948.759-1.914,1.849-.33,2.343l7.295,2.278L43.047,27.651c.792-.528,1.518-.23.925.3l-13.7,12.377-.528,7.527a1.855,1.855,0,0,0,1.485-.727l3.563-3.433,7.394,5.446c1.355.759,2.311.363,2.676-1.254Z" transform="translate(-0.725 -0.926)" fill="none" stroke="#0092e5" stroke-miterlimit="10" stroke-width="1"/>
+            <g id="组_894" data-name="组 894" transform="translate(51.554 36.824)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_893" data-name="组 893">
+                <g id="组_892" data-name="组 892" clip-path="url(#clip-path-8)">
+                  <g id="组_891" data-name="组 891">
+                    <g id="组_890" data-name="组 890" clip-path="url(#clip-path-8)">
+                      <rect id="矩形_117" data-name="矩形 117" width="31.301" height="28.078" fill="url(#pattern-3)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_290" data-name="路径 290" d="M75.9,63.595H63.223L56.882,52.612l6.341-10.983H75.9l6.342,10.983Zm-12.543-.24H75.767l6.2-10.743-6.2-10.743H63.362l-6.2,10.743Z" transform="translate(-2.334 -1.708)" fill="#f8bf25"/>
+            <path id="路径_291" data-name="路径 291" d="M78.676,53.072v.01a8.953,8.953,0,0,1-17.9,0v-.01Z" transform="translate(-2.494 -2.178)" fill="#fff" fill-rule="evenodd"/>
+            <path id="路径_292" data-name="路径 292" d="M78.564,52.693a8.845,8.845,0,1,0-17.691,0Z" transform="translate(-2.498 -1.799)" fill="#d13427" fill-rule="evenodd"/>
+            <g id="组_899" data-name="组 899" transform="translate(12.888 0.23)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_898" data-name="组 898">
+                <g id="组_897" data-name="组 897" clip-path="url(#clip-path-10)">
+                  <g id="组_896" data-name="组 896">
+                    <g id="组_895" data-name="组 895" clip-path="url(#clip-path-10)">
+                      <rect id="矩形_120" data-name="矩形 120" width="26.467" height="16.111" fill="url(#pattern-4)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_293" data-name="路径 293" d="M23.279,4.723H35.161l1.907-1.438H22.45L16.517,13.559l1.807-.254Z" transform="translate(-0.678 -0.135)" fill="#f8bf25"/>
+            <g id="组_904" data-name="组 904" transform="translate(12.888 53.855)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_903" data-name="组 903">
+                <g id="组_902" data-name="组 902" clip-path="url(#clip-path-12)">
+                  <g id="组_901" data-name="组 901">
+                    <g id="组_900" data-name="组 900" clip-path="url(#clip-path-12)">
+                      <rect id="矩形_123" data-name="矩形 123" width="25.777" height="16.111" fill="url(#pattern-5)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_294" data-name="路径 294" d="M23.282,67.931l-4.843-8.388-1.845-.319,5.858,10.146H36.276l-1.014-1.438Z" transform="translate(-0.681 -2.43)" fill="#f8bf25"/>
+            <g id="组_909" data-name="组 909" transform="translate(51.094 53.395)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_908" data-name="组 908">
+                <g id="组_907" data-name="组 907" clip-path="url(#clip-path-14)">
+                  <g id="组_906" data-name="组 906">
+                    <g id="组_905" data-name="组 905" clip-path="url(#clip-path-14)">
+                      <rect id="矩形_126" data-name="矩形 126" width="12.198" height="16.571" fill="url(#pattern-6)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_295" data-name="路径 295" d="M62.612,66.413l-4.359-7.552-.4,2.18,3.1,5.372-.868,1.5H57.243l-.83,1.438h4.5Z" transform="translate(-2.315 -2.416)" fill="#f8bf25"/>
+            <g id="组_914" data-name="组 914" transform="translate(41.197 0.23)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_913" data-name="组 913">
+                <g id="组_912" data-name="组 912" clip-path="url(#clip-path-16)">
+                  <g id="组_911" data-name="组 911">
+                    <g id="组_910" data-name="组 910" clip-path="url(#clip-path-16)">
+                      <rect id="矩形_129" data-name="矩形 129" width="38.896" height="41.657" fill="url(#pattern-7)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_296" data-name="路径 296" d="M76.99,38.488l1.91-3.308L60.486,3.285H47.9L45.99,4.723H59.657L77.239,35.179l-1.079,1.87H61.04l-1.2,2.078H61.5l.368-.64Z" transform="translate(-1.887 -0.135)" fill="#f8bf25"/>
+            <path id="路径_297" data-name="路径 297" d="M58.426,66.5H22.289l-.035-.06L4.221,35.2l.035-.059L22.289,3.91H58.426l.035.059L76.494,35.2,74.93,37.913H59.81l-7.592,13.15,7.56,13.095Zm-36-.24H58.287l1.213-2.1L51.941,51.063l7.731-13.39H74.791L76.217,35.2,58.287,4.15H22.428L4.5,35.2Z" transform="translate(-0.173 -0.16)" fill="#f8bf25"/>
+            <g id="组_919" data-name="组 919" transform="translate(73.418 36.824)" opacity="0.96" style="mix-blend-mode: screen;isolation: isolate">
+              <g id="组_918" data-name="组 918">
+                <g id="组_917" data-name="组 917" clip-path="url(#clip-path-18)">
+                  <g id="组_916" data-name="组 916">
+                    <g id="组_915" data-name="组 915" clip-path="url(#clip-path-18)">
+                      <rect id="矩形_132" data-name="矩形 132" width="12.428" height="28.078" fill="url(#pattern-8)"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <path id="路径_298" data-name="路径 298" d="M79.76,41.628h-.049v.4l6.113,10.588L79.711,63.2v.4h.049L86.1,52.611Z" transform="translate(-3.271 -1.708)" fill="#f8bf25"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="组_926" data-name="组 926" transform="translate(10.433 82.471)">
+      <rect id="矩形_138" data-name="矩形 138" width="2.445" height="6.553" transform="translate(0 0.021)" fill="#fff"/>
+      <path id="路径_299" data-name="路径 299" d="M7.852.022v2.7L3.036.022V6.574H5.241v-2.7l4.816,2.7V.022Z" transform="translate(-0.125 -0.001)" fill="#fff"/>
+      <g id="组_925" data-name="组 925" transform="translate(0)">
+        <g id="组_924" data-name="组 924" clip-path="url(#clip-path-20)">
+          <path id="路径_300" data-name="路径 300" d="M18.183,3.3a3.123,3.123,0,0,1-2.944,3.276H10.847V.022h4.392v0A3.122,3.122,0,0,1,18.183,3.3m-2.445,0a1.041,1.041,0,0,0-.98-1.091H13.292V4.39h1.465a1.041,1.041,0,0,0,.98-1.091" transform="translate(-0.445 -0.001)" fill="#fff"/>
+          <path id="路径_301" data-name="路径 301" d="M26.319,3.3a3.5,3.5,0,0,1-3.668,3.3,3.5,3.5,0,0,1-3.668-3.3A3.5,3.5,0,0,1,22.651,0a3.5,3.5,0,0,1,3.668,3.3m-2.446,0a1.229,1.229,0,0,0-2.444,0,1.229,1.229,0,0,0,2.444,0" transform="translate(-0.779 0)" fill="#fff"/>
+          <path id="路径_302" data-name="路径 302" d="M29.324,6.574h-2.2V.022l4.817,2.7V.022h2.2V6.574l-4.816-2.7Z" transform="translate(-1.113 -0.001)" fill="#fff"/>
+          <path id="路径_303" data-name="路径 303" d="M37.376,4.389h3.668V6.574H34.931V.021h6.113V2.207H39.822V3.3H37.871l1.951-1.091H37.376Z" transform="translate(-1.433 -0.001)" fill="#fff"/>
+          <path id="路径_304" data-name="路径 304" d="M48.518,4.593c0,1.107-1.5,2-3.362,2-.131,0-.26-.007-.386-.015l-.114-.011c-.09-.008-.179-.017-.266-.03l-.12-.018c-.087-.014-.173-.031-.257-.049l-.1-.021c-.106-.025-.212-.053-.314-.084l-.019-.006a3.935,3.935,0,0,1-.633-.261l-.03-.016c-.086-.046-.168-.095-.246-.146l-.027-.017a1.662,1.662,0,0,1-.853-1.33A1.194,1.194,0,0,1,41.81,4.4h2.774v.195c0,.187.256.339.572.339s.572-.152.572-.339a.214.214,0,0,0-.026-.1.194.194,0,0,0-.013-.022.314.314,0,0,0-.055-.065.477.477,0,0,0-.13-.087c-.046-.022-1.8-.514-1.809-.515a3.765,3.765,0,0,1-1.064-.482L42.6,3.307A1.746,1.746,0,0,1,41.81,2.2a1.212,1.212,0,0,1-.016-.195A1.508,1.508,0,0,1,42.368.884a3.156,3.156,0,0,1,.907-.541,4.582,4.582,0,0,1,.572-.184,5.157,5.157,0,0,1,.632-.117A5.759,5.759,0,0,1,45.156,0c.131,0,.26.006.386.014.038,0,.077.006.115.01.088.009.177.018.264.03.04,0,.08.012.12.018.087.014.174.03.258.049l.095.021c.107.025.212.054.313.084l.021.006A3.9,3.9,0,0,1,47.361.5a.188.188,0,0,1,.031.016c.086.046.168.094.245.145a.27.27,0,0,1,.028.017A2.656,2.656,0,0,1,47.9.85a1.53,1.53,0,0,1,.619,1.156A1.213,1.213,0,0,1,48.5,2.2H45.728V2.005c0-.189-.256-.341-.572-.341s-.572.152-.572.341a.207.207,0,0,0,.026.094c0,.009.01.015.013.024a.341.341,0,0,0,.055.064.5.5,0,0,0,.13.088c.047.02,1.806.513,1.81.515a3.737,3.737,0,0,1,1.063.481l.029.019a1.636,1.636,0,0,1,.808,1.3" transform="translate(-1.715 0)" fill="#fff"/>
+          <rect id="矩形_139" data-name="矩形 139" width="2.445" height="6.553" transform="translate(47.271 0.021)" fill="#fff"/>
+          <path id="路径_305" data-name="路径 305" d="M56,4.374l-.757,1.352h1.514v.848l-1.514-.848-.465.831H52.331L56,.006l3.668,6.552H57.221Z" transform="translate(-2.148 0)" fill="#fff"/>
+          <path id="路径_306" data-name="路径 306" d="M71.954,3.3v1.78A4.229,4.229,0,0,1,68.6,6.6c-2.2,0-3.984-1.477-3.984-3.3S66.4,0,68.6,0a4.229,4.229,0,0,1,3.351,1.517L69.719,2.706A1.41,1.41,0,0,0,68.6,2.2a1.23,1.23,0,0,0-1.328,1.1A1.23,1.23,0,0,0,68.6,4.4a1.41,1.41,0,0,0,1.115-.506V3.3Z" transform="translate(-2.652 0)" fill="#fff"/>
+          <path id="路径_307" data-name="路径 307" d="M79.094,4.8l1,1.779H77.645l-.592-1.059H75.2V6.575H72.754V.023h4.279A2.914,2.914,0,0,1,80.09,2.769a2.626,2.626,0,0,1-1,2.026M75.2,3.3h1.834a.582.582,0,0,0,.611-.549.582.582,0,0,0-.611-.55H75.2Z" transform="translate(-2.986 -0.001)" fill="#fff"/>
+          <path id="路径_308" data-name="路径 308" d="M88.226,3.3a3.689,3.689,0,0,1-7.336,0,3.689,3.689,0,0,1,7.336,0m-2.446,0a1.229,1.229,0,0,0-2.444,0,1.229,1.229,0,0,0,2.444,0" transform="translate(-3.32 0)" fill="#fff"/>
+          <path id="路径_309" data-name="路径 309" d="M96.362.023V3.3a3.688,3.688,0,0,1-7.335,0V.023h2.445V3.3a1.229,1.229,0,0,0,2.443,0h0V.023Z" transform="translate(-3.653 -0.001)" fill="#fff"/>
+          <path id="路径_310" data-name="路径 310" d="M104.5,2.769a2.915,2.915,0,0,1-3.057,2.747H99.607V6.575H97.162V.022h4.279A2.915,2.915,0,0,1,104.5,2.769M99.607,3.3h1.834a.582.582,0,0,0,.611-.549.583.583,0,0,0-.611-.55H99.607Z" transform="translate(-3.987 -0.001)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

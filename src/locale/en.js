@@ -1,243 +1,220 @@
 const locale = {
-	// 顶部导航TAB栏
-	"topMneBar":{
-		"title":"PIMOON",
-		"home":"Home",
-		"presale":"Presale",
-		"airdrop":"Airdrop"
+	// 导航栏
+	home: "Home",
+	url_buy_twitter:'Twitter',
+	url_buy_telegram:'Telegram',
+	index_SpacePi_Bscscan_t:'SpacePi Bscscan',
+	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	// 电报标题
+	telegraph:"TELEGRAPH",
+	// spacepiwep
+	spacepiwep:{
+		title:"SPACEPIWEP",
+		o:"On board",
+		bnt:"AUDIT REPORT",
+		text:"Based on this point of view, SpacePi has become an investment tool for purchasing virtual assets or services in its ecosystem, and it will burst out with new vitality and unprecedented value with the application of SpacePi. Here are some key points of the SpacePi ecosystem.",
+		trend_bnt_title:"SpacePi Trend",
+		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
 	},
-	// 提示警告状态通用
-	"alerts":{
-		"connect_wallet_success":"Connect Wallet success",
-		"disconnect_success":"Disconnect Success",
-		"bind_failed":"Bind failed ! This address already exists",
-		"bind_success":"Bind Success",
-		"unbind":"Unbind",
-		"warning_balance_min":"Please enter the minimum amount of Binance 0.1BNB",
-		"warning_balance_max":"Please enter the Binance amount from 0.1BNB to 10BNB",
-		"warning_balance_insufficient":"Insufficient balance",
-		"exchange_success":"Exchange success",
-		"exchange_failed":"Exchange failed",
-		"copy_success":"Copy success",
-		"receive_airdrop_success":"Receive airdrop success",
-		"receive_airdrop_error":"Receive airdrop failed"
+	// partners轮播内容
+	partners_carousel_text:"SpacePi will always be a faith fan of Pi Network!Everything SpacePi do now is to prove that the persistence of Pi Fans is worth it!",
+
+	// 选择语言
+	selectLang: "Choose language",
+
+	// 首页
+	happy_gd:'More Friendly Partners',
+	happy_text:'In order to make SpacePi achieve greater innovations, we decided to upgrade the contract to the most secure mechanism, adopting the same level as SHIBA Token. The upgraded contract will give up all permissions and locked. Contract address:',
+	happy_text1:"SpacePi will always be a faith fan of Pi Network!",
+	happy_text2:"Everything SpacePi do now is to prove that the persistence of Pi Fans is worth it!",
+	doge: "WHAT IS SPACEPI?",
+	only:"The world's only comprehensive service provider type multiple cross-chain protocol token",
+	introduce:"SpacePi will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!",
+	text: [
+		"SpacePi will create an unprecedented top-level digital ecosystem, providing a simple and efficient metaverse digital immersion experience as the core. Endows the token circulation value, allows more people to participate in the ecological construction of SpacePi, creates a borderless entertainment world, links users in every corner of the world, and establishes a trustless and highly decentralized metaverse ecology for global users.",
+		"SpacePi includes two major blockchain categories, NFT and Metaverse. SpacePi is building a decentralized online virtual reality game platform that integrates characters, props and life storylines into virtual social interactions. Players can play in the virtual world. to buy weapons, armor, props and gems. Participate in different collections to develop virtual, life, action and other games.",
+		"All the benefits of SpacePi will be presented in the form of the native token SpacePi. The virtual and reality of the SpacePi metaverse are highly interconnected, and the closed-loop economy attached to the open-source platform has become the final form of the Internet."
+	],
+	tetxbu: 'Whitepaper',
+	tetxbu_url:'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
+	contractAddress: "",
+	down: ['Buy SpacePi'],
+	index_Liquidity_title:'Liquidity Locked',
+	index_Liquidity:'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
+	index_Goplus_title:'Goplus Audit',
+	index_Goplus:'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	index_SpacePi_title:'SpacePi Price',
+	index_SpacePi:[{
+		title:'Dextools Trend',
+	},{
+		title:'Poocoin Trend',
+	},{
+		title:'Avedex Trend',
+	},{
+		title:'Msgsender',
+	}],
+	car: [{
+		title: 'WHAT IS SPACEPI?',
+		content: 'SpacePi will create an unprecedented top-level digital ecosystem, providing a simple and efficient metaverse digital immersion experience as the core.'
+	}, {
+		title: 'SPACEPI WORLD',
+		content: 'Endows the token circulation value, allows more people to participate in the ecological construction of SpacePi, creates a borderless entertainment world, links users in every corner of the world, and establishes a trustless and highly decentralized metaverse ecology for global users.'
+	}],
+	station: {
+		enter: 'Powerful SpacePi Ecosystem',
+		title: 'IN EFFECT WE ARE BUILDING A DIGITAL WORLD LIKE NEVER BEFORE',
+		text: [
+			'The digital economy has become a legitimate asset type worthy of investors consideration, which has exploded exponentially in the short term.',
+			'Based on this point of view, SpacePi has become an investment tool for purchasing virtual assets or services in its ecosystem, and it will burst out with new vitality and unprecedented value with the application of SpacePi. Here are some key points of the SpacePi ecosystem.'
+		],
+		c: [{
+			title: 'SpacePi Token',
+			text: 'A new type of utility token supported by multiple public chains, serving as a foundation in the SpacePi ecosystem, serving various applications, with powerful application scenarios'
+		}, {
+			title: 'Introduction to SpacePi',
+			text: 'The SpacePi ecosystem is based on WEB3.0 holographic Internet NFT and other technical components, and has become the most powerful technical supporter for space users in the virtual space of the Metaverse.'
+		}, {
+			title: 'SpacePi NFTs',
+			text: 'Non-homogeneous and transferable digital assets with unique characteristics can become an art collection or a game prop in the SpacePi ecosystem.'
+		}, {
+			title: 'SpacePi DAO',
+			text: 'The SpacePi token will be used for voting in the DAO in the SpacePi ecosystem to ensure that the project is self-sustaining and has no controller.'
+		}, {
+			title: 'SpacePi Metaverse',
+			text: 'A Gamified 3D Metaverse Virtual Space in the SpacePi Ecosystem'
+		}, {
+			title: 'NFT market',
+			text: 'The SpacePi Marketplace enables participants to manage and trade SpacePi NFTs, which are priced in SpacePi as the currency of circulation'
+		}]
 	},
-	// 币
-	"currency":{
-		"bnb":"BNB",
-		"pimoon":"Pimoon",
-		"spacePi":"SpacePi",
+	car1: [{
+		text: 'Pi Network',
+		title: 'SpacePi',
+		trx: '10 BNB',
+		usd: '3750 USD',
+	}, {
+		text: 'Metauniverse',
+		title: 'SpacePi Game',
+		trx: '6.6 BNB',
+		usd: '2390 USD',
+	}, {
+		text: 'Elon Musk',
+		title: 'Astronaut',
+		trx: '19 BNB',
+		usd: '7030 USD',
+	}],
+	bsc_token:'0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	hoce_token:'0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	tron_token:'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
+	url_array:[{
+		title:'SpacePi (bsc)',
+		url:'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	},{
+		title:'SpacePi (heco)',
+		url:'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	},{
+		title:'SpacePi (tron)',
+		url:'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
+	}],
+
+	// 路线图
+	ROADMAP: "ROADMAP",
+	ROADMAPtext: "This is the plan that made the SpacePi ecosystem from birth to greatness.",
+	Phase1: "THE FIRST STAGE",
+	Phase2: "THE SECOND STAGE",
+	r_title1: "ONE",
+	r_title2: "TWO",
+	rt1_text1: "Launch the official website and deploy smart contracts",
+	rt1_text2: "Start social media operations such as Telegram and Twitter",
+	rt1_text3: "Open the first round of airdrops for community members",
+	rt1_text4: "3000 Telegram members",
+	rt1_text5: "Open liquidity dividend",
+	rt1_text6: "Listed on CoinMarketCap",
+	rt1_text7: "Listed on CoinGecko",
+	rt1_text8: "Third-party agency audit",
+	rt1_text9: "Initiate mass marketing",
+	rt1_text10: "The second round of community airdrops",
+	rt2_text1: "Cooperation with third-party wallets",
+	rt2_text2: "Start an AMA with the WSB community",
+	rt2_text3: "200K+ Telegram members",
+	rt2_text4: "1000K+ token holders",
+	rt2_text5: "Start the development of SpacePiSwap",
+	rt2_text6: "Start the development of SpacePiNFT",
+	rt2_text7: "Start PiDAO",
+	rt2_text8: "Launched the cross-chain aggregation transaction protocol SpacePiSwap",
+	rt2_text9: "List the top CEXs in the market",
+
+	//社区通证
+	Tokenomics: {
+		text: 'COMMUNITY ALWAYS COMES FIRST',
+		title: 'FAIR TOKEN ECOLOGY',
+		content: 'In order to build our democratic carrier outside the earth, SpacePi is based on a fair token ecological release, no private token, no development tax.',
+		array: [{
+			title: 'None',
+			text: 'Development tax'
+		}, {
+			title: 'None',
+			text: 'Token burning'
+		}, {
+			title: '1000k+',
+			text: 'Holder'
+		}]
 	},
-	// 公共
-	"public":{
-		"connect_wallet":"connect",
-		"disconnect":"Disconnect",
-		"max":"MAX",
-		"the_latest":"The latest",
-		"my_presale":"My presale",
-		"bdoge":"Bdoge",
-		"bind":"Bind",
-		"cancel":"Cancel",
-		"exchange":"exchange",
-		"balance":"Balance",
-		"purchase":"Purchase",
-		"copy":"copy",
-		"rceive":"Rceive",
-		"not_available":"Not available"
+	answers:{
+		//顶部标题
+		text:'SPACEPI IS THE ONLY COMPREHENSIVE SERVICE PROVIDER TYPE MULTIPLE CROSS-CHAIN PROTOCOL TOKEN IN THE WORLD',
+		//底部展开展示内容
+		array:[{
+			title:'1.What is the metaverse described by SpacePi?',
+			text:'Games are the primary form of the metaverse. From the product form, the game is the prototype of the metaverse. As a virtual world constructed by people based on the simulation, extension and imaginative imagination of reality, games are similar in product form to the Metaverse. If you are familiar with the book or the movie Ready Player One, this is a great example of the metaverse.',
+		},{
+			title:'2.Does the Metaverse Matter?',
+			text:'Based on the integration of Web3.0, holographic Internet technology, blockchain and NFT, the values presented by the concept of the Metaverse are in line with the core values of the Internet. SpacePi believes that the metaverse may be the ultimate form of the Internet. Therefore, we took the game as the starting point and created SpacePi, a virtual life blockchain game based on NFT+ metaverse, which makes the link between reality and virtuality more efficient and enriches the circulation of value. The importance of these digital platforms has become apparent during the recent global pandemic.',
+		},{
+			title:'3.What is the SpacePi Ecosystem?',
+			text:'As a blockchain game supported by the concept of NFT + Metaverse, SpacePi includes several core sections in terms of platform ecological construction. NFT game system Metaverse game ecology SpacePi Exchange',
+		},{
+			title:'4.What can we do in the SpacePi metaverse?',
+			text:'SpacePi Token, referred to as SpacePi, combines the two major blockchain categories of NFT and Metaverse, aiming to create a decentralized online virtual reality game platform that integrates characters, props and life storylines into virtual social interaction. Weapons, armor, props and gems can be purchased in the virtual world. Participate in different collections to develop virtual, life, action and other games. As such, SpacePi is the first and only project across the metaverse and NFT domains',
+		},{
+			title:'5.How to earn money in the SpacePi Metaverse?',
+			text:'SpacePi can also support third-party developers to program, debug and release decentralized game applications and hybrid architecture game applications for the blockchain environment. At the same time, SpacePi integrates blockchain-based distributed user account system, wallet and NFT digital asset circulation, which can realize off-chain permanent storage and cross-chain use of in-app game assets NFT.',
+		},{
+			title:'6.Developer of SpacePi?',
+			text:'The SpacePi Metaverse is co-developed by independent developers around the world, with an almost unparalleled experience and ability to direct, manage, and enhance crypto-related projects. Together, they form a strong team with a group of like-minded supporters who are confident and passionate about the vision of the SpacePi metaverse, a new adventure into the metaverse world.',
+		},{
+			title:'7.How can I provide more help?',
+			text:'Due to complete decentralization, the SpacePi metaverse will require a much larger community to reach our goals, you are welcome to join SpacePi',
+		}],
 	},
-	// 主页
-	"home":{
-		"title":"PIMOON:",
-		"text":"THEFIRST MOONLANING OF HECO CHAIN",
-		"explain":"A cryptocurrency with huge, genuine usage via our real-world ecosystem.",
-		"pimoon_btm":{
-		"whitepaper":{
-			"title":"Whitepaper",
-			"url":"https://www.baidu.com"
-		},
-		"certik":{
-			"title":"CERTIK",
-			"url":"https://www.baidu.com"
-		}
-		},
-		"pimoon_car":{
-		"fund":{
-			"title":"Fund Security",
-			"text":"The flow pool permission has been discarded, and your assets will be in your own hands"
-		},
-		"community":{
-			"title":"Community Autonomy",
-			"text":"Pimoon is initiated by a group of PI enthusiasts without any project party"
-		},
-		"general":{
-			"title":"General Trend",
-			"text":"Defi is innovative, and its future development prospects and opportunities are unstoppable"
-		}
-		},
-		"propaganda":{
-		"ip":{
-			"title":"Pimoon coin made by smart contract is released in HECO chain",
-			"text":"In order to pay homage to and publicize Pi coin, Pimoon, launched by foreign Pi enthusiasts, has completely realized the decentralization of projects and the autonomy of communities. Pi coin shareholders have taken action to build consensus."
-		},
-		"rocket":{
-			"title":"Pimoon combustion dividend mechanism",
-			"text":"Pimoon issued 10000 trillion, 82% of which have been destroyed, 255 trillion in the mobile pool,. Pimoon adopts the deflationary mechanism of destruction + dividend. Therefore, Pimoon will become very precious over time, thus realizing the value of Pimoon."
-		}
-		},
-		"completed":{
-		"title":"Pimoon Completed",
-		"text":"Pimoon has achieved the following goals through the joint efforts of the foundation and everyone in the community.",
-		"text1":"1  -  Effective currency holding address: 100000",
-		"text2":"2  -  Online fire currency mdex exchange",
-		"text3":"3  -  Launched white paper",
-		"text4":"4  -  Online Official Website",
-		"text5":"5  -  Logged in to XF hot",
-		"text6":"6  -  Signed in to mytoken",
-		"text7":"7  -  Signed in FeiXiaoHao",
-		"text8":"8  -  Has passed three major audits: certifik audit",
-		"text9":"9  -  The Million Shareholder moon landing plan has been launched",
-		"text10":"10  -  Fire coin insiders join the community",
-		"text11":"11  -  Money security insiders join the community",
-		"text12":"12  -  United States musk community",
-		"text13":"13  -  Dozens of gold medal lecturers of Business School",
-		"text14":"14  -  Tencent course at 8:30 every night",
-		"text15":"15  -  There are more than 500 people with 100 billion super consensus",
-		"text16":"16  -  Reach in-depth cooperation with internationally renowned blockchain communities and launch the world's unique game application before the end of September",
-		"text17":"17  -  The second game was launched in the fourth quarter, similar to the glory of the king",
-		"text18":"18  -  In the fourth quarter, with the dispatch of the main network, 10000 times of revenue was realized",
-		"text19":"19  -  In the fourth quarter, it logged into the three major international exchanges to achieve 100000 times of revenue",
-		"text20":"20  -  The global mercy foundation is about to be launched",
-		"button":"More"
-		},
-		"Pricing_Plans":{
-		"title":"Pricing Plans",
-		"text":"Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.",
-		"q1":{
-			"title":"2022 Q1",
-			"text":"Pimoonswap decentralized exchange launched."
-		},
-		"q2":{
-			"title":"2022 Q2",
-			"text":"Pimoon payment and trading system launched Pimoon digital wallet landing."
-		},
-		"q3":{
-			"title":"2022 Q3",
-			"text":"White paper online official online submission for audit."
-		},
-		"q4":{
-			"title":"2022 Q4",
-			"text":"Main network on PI Realize 10000 times of income Log in to the three exchanges."
-		},
-		"q5":{
-			"title":"2021 Q3~Q4",
-			"text":"Pimoon NFT mining Pimoon Social ecology landing."
-		},
-		"q6":{
-			"title":"2021~",
-			"text":"Build the world's largest community in the field of defi and usher in more institutional cooperation."
-		}
-		},
-		"join":{
-		"title":"THEFIRST MOONLANING OF HECO CHAIN",
-		"text":"A cryptocurrency with huge, genuine usage via our real-world ecosystem.",
-		"bnt":"Join the Pimon",
-		"bnt_url":"https://www.baidu.com"
-		}
+	//社区
+	Community:{
+		title:'JOIN THE SPACEPI GLOBAL COMMUNITY',
+		text:"SpacePi will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!",
+		buttext:'JOIN US',
+		buttext_url:'https://t.me/SpacePi_com',
 	},
-	// 版权
-	"copyright":"COPYRIGHT © 2019.COMPANY PIMOON ALL RIGHTS RESERVED.",
-	// 底部友情链接
-	"links":{
-		"weibo":{
-		"title":"Sina Weibo",
-		"url":"https://www.baidu.com"
-		},
-		"telegram":{
-		"title":"Telegram",
-		"url":"https://www.baidu.com"
-		},
-		"qq":{
-		"title":"Tencent QQ",
-		"url":"https://www.baidu.com"
-		},
-		"twitter":{
-		"title":"Twitter",
-		"url":"https://www.baidu.com"
-		}
-	},
-	// 预售
-	"presale":{
-		"start":{
-			"soft_top":{
-				"title":"Soft top",
-				"text":"2000 BNB"
-			},
-			"hard_top":{
-				"title":"Hard top",
-				"text":"1,000 BNB"
-			},
-			"countdown":"Presale countdown",
-			"text":"Bdoge will be the only one in the blockchain field that breaks technical barriers and integrates multiple cross-chain protocol tokens of integrated service provider types. The future belongs to all blockchain digital asset players. Let us work together to witness this great moment!",
-			"title":"PRESALE",
-			"bind_invitee_address":"Bind invitee address"
-		},
-		"end":{
-			"text":"The presale has ended, you can now claim your Bdoge for the presale",
-			"tetx1":"Current block height",
-			"title":"DogePi Presale",
-			"title1":"erfect end!"
-			},
-			"type":{
-			"title":"Type",
-			"text":"Public"
-			},
-			"min":{
-			"title":"Min",
-			"text":"0.1 BNB"
-		},
-		"max":{
-		"title":"Max",
-		"text":"10 BNB"
-		},
-		"ratio_title":"Exchange ratio",
-		"amount_title":"Your exchange amount",
-		"rules":{
-		"title":"Presale rules",
-		"text1":"1. The presale Bdoge has a maximum purchase limit of 10 BNB per address, and the BNB after the presale will be added to the PancakeSwap liquidity pool.",
-		"text2":"2. After the presale is over, you can manually collect the presale Bdoge.",
-		"text3":"3. The presale Bdoge will be unlocked manually 48 hours after the launch of PancakeSwap."
-		},
-		"explain":"Bdoge will be distributed after the presale ends"
-	},
-	// 空投
-	"airdrop":{
-		"text":"Bdoge is an open source blockchain project initiated by the core developers of the original Pi Network decentralized community. This is the world’s first token that automatically farms, automatically adds liquidity pools, and automatically destroys. To motivate early community supporters, we have officially launched a new round of airdrops!",
-		"title1":"DogePi Airdrop",
-		"title2":"Don’t miss Bdoge",
-		"quantity_title":"Airdrop quantity",
-		"pimoon_airdrop":"Pimoon Airdrop",
-		"my_invitation":"My Invitation",
-		"invitation_reward":"Invitation reward",
-		"airdrop_explain":"Airdropped Bdoge will be collected manually after the event ends.",
-		"link_text":"Earn up to 10% commission every time a new friend joins the presale:",
-		"link_explain":"You can share links to Twitter, Facebook and other communities."
-	},
-	// 推广
-	"promo":{
-		"presale_friends_number":"Presale friends number",
-		"total_invitation_amount":"Total Invitation amount (BNB)",
-		"reward_amount":"Reward amount (BNB)",
-		"invite_members":{
-		"title":"invite members",
-		"head1":"Serial number",
-		"head2":"address"
-		},
-		"invite_rules":{
-		"title":"Invitation Rules",
-		"text1":"1. The presale and airdrop invitations for this event can take effect at the same time",
-		"text2":"2. Invitation allows more people to participate in the construction of the Bdoge ecosystem, while expanding the marketing team",
-		"text3":"3. Each address can invite up to 99 users"
-		}
-	}
+
+	// 底部
+	footer1: "If you have any question, please contact us",
+	footer2: "Copyright © 2021-2022 SpacePi. All Rights Reserved",
+	footer_twitter_url:'https://twitter.com/SpacePi_Com',
+	footer_telegram_url:'https://t.me/SpacePi_com',
+	footer_discord_url:'https://t.me/SpacePi_com',
+	footer_reddit_url:'https://t.me/SpacePi_com',
+	footer_github_url:'https://github.com/SpacePiCom',
+	footer_medium_url:'https://medium.com/@spacepi',
+	footer_copy_url:'https://t.me/SpacePi_com',
+
+	copySuccess:"copySuccess",
+
+
+	//友情合作商页面
+	partners_title1:'SPACEPi WILL ALWAYS',
+	partners_title2:'BE A FAITH FAN OF PI NETWORK!',
+	partners_text:'Everything SpacePi do now is to prove that the persistence of Pi Fans is worth it! Welcome more platforms and institutions to cooperate with SpacePi, official contact email: pi@space-pi.com',
+	partners_email_title:'OFFICIAL CONTACT EMAIL:',
+	partners_email:'pi@space-pi.com',
 };
+
 export default locale;
