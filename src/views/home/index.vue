@@ -1,7 +1,13 @@
 <template>
   <div>
-    <!-- 动画 -->
-    <animation class="animation"></animation>
+    <!-- 动画电脑端 -->
+    <div class="pc" >
+      <animation class="animation"></animation>
+    </div>
+    <!-- 动画移动端 -->
+    <div class="mo">
+      <animationm class="animation" ></animationm>
+    </div>
     <!-- spacePi容器 -->
     <spacePi></spacePi>
     <!-- spacePi图片主体 -->
@@ -183,18 +189,28 @@
             <!-- spacepiwep图片 -->
             <div class="spacepiwep-img">
               <div class="spacepiwep-img-subject">
-                <v-img src="https://picsum.photos/350/165?random"></v-img>
+                <v-img src="@/assets/spacepiwep-img.png"></v-img>
               </div>
-              <div class="spacepiwep-img-s">
+              <!-- <div class="spacepiwep-img-s">
                 <v-img class="spacepiwep-img-s" src="https://picsum.photos/350/165?random"></v-img>
-              </div>
+              </div> -->
 
             </div>
             <!-- spacepiwep按钮 -->
-            <a>
-              <div class="spacepiwep-bnt" @click="spacepiTo($t('spacepiwep.trend_bnt_url'))">
-                {{ $t("spacepiwep.trend_bnt_title") }}</div>
+            <a class="cta spacepiwep-bnt" href="">
+              <span>{{ $t("spacepiwep.trend_bnt_title") }}</span>
+              <span>
+                <svg width="25px" height="43px" viewBox="0 0 66 43" version="1.1">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span>
             </a>
+            
+            
           </div>
         </div>
         <div class="spacepiwep-right">
@@ -215,18 +231,24 @@
               </div>
               <div class="audit-report-o">
                 <!-- audit-report圆角 -->
-                <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img>
+                <!-- <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img> -->
+
+                <div class="audit-fillet" id="spot"></div>
                 <!-- audit-report标题 -->
                 <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
               </div>
               <!-- audit-report按钮 -->
-              <div class="audit-report-bnt" @click="spacepiTo($t('spacepiwep.trend_bnt_url'))">
+              <a class="bnttest" href="">
                 <div class="audit-report-view">
                   <v-img  src="@/assets/view.png"></v-img>
                 </div>
-                <!-- audit-report标题 -->
-                <span class="audit-report-title">{{ $t("spacepiwep").bnt }}</span>
-              </div>
+                <span class="bnttest-title">
+                  {{ $t("spacepiwep").bnt }}
+                  </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="bnttest-svg" viewBox="0 0 254 60">
+                      <path id="路径_2379" data-name="路径 2379" d="M243.407,60H0V0H254V50.05Z" fill="#fdd333"/>
+                  </svg>
+            </a>
             </div>
             <!-- spacepiwep内容 -->
             <div class="spacepiwep-content">
@@ -256,7 +278,7 @@
             <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
           </div>
           <!-- audit-report按钮 -->
-          <div class="audit-report-bnt" @click="spacepiTo($t('spacepiwep.trend_bnt_url'))">
+          <div class="audit-report-bnt">
             <div>
               <v-img width="29" height="21" src="@/assets/view.png"></v-img>
             </div>
@@ -271,15 +293,15 @@
         <!-- spacepiwep图片 -->
         <div class="spacepiwep-img">
           <div class="spacepiwep-img-subject">
-            <v-img src="https://picsum.photos/350/165?random"></v-img>
+            <v-img src="@/assets/spacepiwep-img.png"></v-img>
           </div>
-          <div class="spacepiwep-img-s">
+          <!-- <div class="spacepiwep-img-s">
             <v-img class="spacepiwep-img-s" src="https://picsum.photos/350/165?random"></v-img>
-          </div>
+          </div> -->
         </div>
         <!-- spacepiwep按钮 -->
         <a>
-          <div class="spacepiwep-bnt" @click="spacepiTo($t('spacepiwep.trend_bnt_url'))">
+          <div class="spacepiwep-bnt">
             {{ $t("spacepiwep.trend_bnt_title") }} </div>
         </a>
       </v-container>
@@ -293,91 +315,47 @@
         </div>
         <!-- partners轮播 -->
         <div class="partners-carousel">
-          <!-- 轮播图 -->
-          <div class="carousel-chart" @mouseover="carouselStartStatus(true)" @mouseleave="carouselStartStatus(false)">
-            <!-- <div v-for="(item, index) in responsecArray" :key="index" class="carousel-car"
-              v-show="index == carouselChartIndex">
-              <template v-for="(it, ind) in carouseChartArrar">
-                <v-img  :key="ind" :src="it.picture"  v-if="item.id == it.p_id" @click="spacepiTo(it.link)"></v-img>
-              </template>
-            </div> -->
-            <div class="carousel-car" v-show="0 == carouselChartIndex">
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-            </div>
-            <div class="carousel-car" v-show="1 == carouselChartIndex">
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-            </div>
-            <div class="carousel-car" v-show="2 == carouselChartIndex">
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-            </div>
-            <div class="carousel-car" v-show="3 == carouselChartIndex">
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-            </div>
-            <div class="carousel-car" v-show="4 == carouselChartIndex">
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-              <v-img  src="@/assets/test-partner-adsense.svg"></v-img>
-            </div>
-          </div>
-          <!-- 轮播左按钮 -->
-          <div class="carousel-left" @click="carousel('up')">
-            <a>
-              <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-left.png"></v-img>
-            </a>
-          </div>
-          <div class="carousel-right" @click="carousel('down')">
-            <a>
-              <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-right.png"></v-img>
-            </a>
-          </div>
+          <v-carousel  show-arrows-on-hover hide-delimiters v-model="carouselChartIndex"  class="partners-height" height="auto">
+            <!-- 轮播图 -->
+            <v-carousel-item active-class="partners-active-class" v-for="(item, index) in responsecArray" :key="index" class="partners-height" v-if="index<5">
+              <div class="carousel-chart" @mouseover="carouselStartStatus(true)" @mouseleave="carouselStartStatus(false)">
+                <div  class="carousel-car"
+                  v-show="index == carouselChartIndex">
+                  <template v-for="(it, ind) in carouseChartArrar">
+                      <v-img v-if="item.id == it.p_id" :key="ind" :src="it.picture"  @click="spacepiTo(it.link)" style="cursor: pointer;" class="v-img"></v-img>
+                  </template>
+                </div>
+              </div>
+            </v-carousel-item>
+            <!-- 轮播左按钮 -->
+            <template v-slot:prev="{ on, attrs }">
+              <div class="carousel-left" v-bind="attrs" v-on="on" @click="carousel('up')">
+                <a>
+                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-left.png"></v-img>
+                </a>
+              </div>
+            </template>
+            <!-- 轮播右按钮 -->
+            <template v-slot:next="{ on, attrs }">
+              <div class="carousel-right" v-bind="attrs" v-on="on" @click="carousel('down')">
+                <a>
+                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-right.png"></v-img>
+                </a>
+              </div>
+            </template>
+          </v-carousel>
           <!-- 轮播进度条 -->
           <div class="carousel-progress">
-            <a v-for="(item, index) in progressArray" :key="index">
+            <a v-for="(item, index) in progressArray" :key="index" v-if="index<5">
               <v-progress-linear background-color="rgba(253, 211, 51, 0.6)" color="#FDD333" :value="item"
                 @click="carouselProgressClick(index)"></v-progress-linear>
             </a>
           </div>
         </div>
         <!-- partners更多按钮 -->
-        <div class="partners-bnt" @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
+        <a>
+          <div class="partners-bnt" @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
+        </a>
       </v-container>
     </div>
     <!-- roadmap容器 -->
@@ -536,28 +514,27 @@
         <div class="tokenomics-title-subject">
           <div class="line"></div>
           <!-- tokenomics标题 -->
-          <span class="tokenomics-title">Fair Tokenomics</span>
+          <span class="tokenomics-title">{{$t("Tokenomics").title}}</span>
         </div>
         <!-- tokenomics副标题 -->
-        <div class="tokenomics--Vice-title">COMMUNITY ALWAYS COMES FIRST</div>
+        <div class="tokenomics--Vice-title">{{$t("Tokenomics").text}}</div>
         <!-- tokenomics内容 -->
         <div class="tokenomics-left-content">
-          To build our vehicle for a democracy beyond Earth, we based STARL on fair tokenomics and launch, with no
-          presale, no dev tokens, no dev tax and 20.8B tokens burned.
+          {{$t("Tokenomics").content}}
         </div>
         <!-- tokenomics内容 -->
         <div class="tokenomics-content">
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">None</span>
-            <span class="tokenomics-grid-content">Development tax</span>
+            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[0].title}}</span>
+            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[0].text}}</span>
           </div>
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">None</span>
-            <span class="tokenomics-grid-content">Tokens burned</span>
+            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[1].title}}</span>
+            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[1].text}}</span>
           </div>
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">1000k+</span>
-            <span class="tokenomics-grid-content">Holders</span>
+            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[2].title}}</span>
+            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[2].text}}</span>
           </div>
         </div>
       </v-container>
@@ -714,12 +691,17 @@
 import axios from "axios";
 import { mapState, mapMutations } from "vuex";
 import spacePi from "@/views/home/components/spacePi.vue";
-// 引入动画组件
+// 引入动画电脑端组件
 import animation from "@/components/animation.vue";
+// 引入动画移动端组件
+import animationm from "@/components/animationm.vue";
 // 引入电报组件
 import telegraph from "@/components/telegraph.vue";
 // 引入底部组件
 import foot from "@/components/foot.vue";
+
+import lottie from "lottie-web";
+import spot from '@/assets/animation/spot.json';
 
 export default {
   data() {
@@ -743,6 +725,7 @@ export default {
   components: {
     spacePi,
     animation,
+    animationm,
     telegraph,
     foot
   },
@@ -755,8 +738,21 @@ export default {
       this.partners();
     },1)
     setTimeout(() => {
-      this.carouselStartInterval();
-    }, 1)
+      //this.carouselStartInterval();
+    }, 1000)
+
+
+
+
+    let spotparams = {
+    container: document.getElementById("spot"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        animationData: spot
+    };
+    let anim;
+    anim = lottie.loadAnimation(spotparams);
   },
   methods: {
     // spacepi跳转
@@ -846,6 +842,12 @@ export default {
 <style scoped lang="scss">
 @import "@/scss/adaptation.scss";
 $width:1200;
+.pc{
+  display: block;
+}
+.mo{
+  display: none;
+}
 
 .spacepi_bg {
   background-image: url("../../assets/spacepi_bg.png");
@@ -1507,6 +1509,7 @@ $width:1200;
   height: 900px;
   max-width: 1500px;
   position: relative;
+  filter: drop-shadow(10px 10px 30px rgba(0, 212, 255, 0.1));
 
   // spacepiwep容器
   .spacepiwep-container {
@@ -1525,12 +1528,11 @@ $width:1200;
       grid-gap: 30px;
       align-items: center;
       justify-items: center;
-      height: auto;
+      height: 500px;
 
       // spacepiwep图片
       .spacepiwep-img {
-        width: 510px;
-        height: 280px;
+        
         position: relative;
         z-index: 1;
 
@@ -1554,7 +1556,6 @@ $width:1200;
       .spacepiwep-bnt {
         width: 254px;
         height: 60px;
-        background-image: url("../../assets/bnt.png");
         background-size: 100% 100%;
         display: flex;
         justify-content: center;
@@ -1563,29 +1564,8 @@ $width:1200;
         font-family: Fenton-Regular, Fenton;
         font-weight: 400;
         color: #FFFFFF;
-        
       }
-      .spacepiwep-bnt:hover {
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 98%, 0% 50%);
-        background: #fdd333;
-        @-webkit-keyframes spacepiwep-bnt {
-            0% {
-              opacity:0;
-            }
-
-            50% {
-              opacity:0.5;
-            }
-
-            100% {
-              opacity:1;
-            }
-          }
-          -webkit-animation-name: spacepiwep-bnt;
-          -webkit-animation-duration:0.2s;
-          -webkit-animation-iteration-count:1;
-          -webkit-animation-delay:0;
-      }
+      
     }
   }
 
@@ -1648,8 +1628,8 @@ $width:1200;
 
           // audit-report圆角
           .audit-fillet {
-            width: 17px;
-            height: 17px;
+            width: 34px;
+            height: 34px;
           }
 
           // audit-report标题
@@ -1714,7 +1694,11 @@ $width:1200;
   grid-gap: 50px;
   justify-items: center;
   position: relative;
-
+  // 默认高度
+  .partners-height{
+    min-height: 210px;
+    max-height: 210px;
+  }
   // partners内容
   .partners-content {
     width: 1024px;
@@ -1724,26 +1708,36 @@ $width:1200;
     color: #FDD333;
     line-height: initial;
   }
-
   // partners轮播
   .partners-carousel {
     display: grid;
     position: relative;
     width: 1500px;
+    @media screen and (max-width:1500px){
+      width: auto;
+    }
     justify-items: center;
     align-items: center;
     color: #FDD333;
     grid-gap: 50px;
+    .partners-active-class{
+      display: flex;
+      justify-content: center;
+    }
 
     // 轮播图
     .carousel-chart {
-      max-width: 1200px;
       height: auto;
-
+      display: flex;
+      justify-content: center;
       .carousel-car {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 1200px;
+        .v-img:hover{
+          opacity:0.9;
+        }
       }
     }
 
@@ -2055,7 +2049,7 @@ $width:1200;
 .choice-container-subject {
   background: url("../../assets/choice-bg.png");
   background-size: 100% 100%;
-  height: 1200px;
+  height: 1000px;
   display: flex;
   align-items: center;
 }
@@ -2167,7 +2161,12 @@ $width:1200;
 // 小型号到大型号的手机
 @media screen and (max-width:600px) {
   $width: 600;
-
+  .pc{
+    display: none;
+  }
+  .mo{
+    display: block;
+  }
   // 动画
   .animation {
     width: 100%;
@@ -2614,15 +2613,13 @@ $width:1200;
     // spacepiwep图片
     .spacepiwep-img {
       width: 100%;
-      height: 200px;
       display: flex;
       justify-content: center;
       position: relative;
       align-items: center;
 
       .spacepiwep-img-subject {
-        width: 320px;
-        height: 200px;
+        width: vw(500,600);
         z-index: 1;
       }
 
@@ -2652,24 +2649,64 @@ $width:1200;
 
   // partners容器
   .partners-container {
-    display: none;
+    margin-top: 50px;
     grid-gap: 20px;
+    // 默认高度
+    .partners-height{
+      min-height: 585px;
+      max-height: 585px;
+      @media screen and (min-width:280px){
+        min-height: 440px;
+        max-height: 440px;
+      }
+      @media screen and (min-width:360px){
+        min-height: 555px;
+        max-height: 555px;
+      }
+      @media screen and (min-width:375px){
+        min-height: 585px;
+        max-height: 585px;
+      }
+      @media screen and (min-width:390px){
+        min-height: 600px;
+        max-height: 600px;
+      }
+      @media screen and (min-width:393px){
+        min-height: 610px;
+        max-height: 610px;
+      }
+      @media screen and (min-width:412px){
+        min-height: 635px;
+        max-height: 635px;
+      }
+      @media screen and (min-width:414px){
+        min-height: 640px;
+        max-height: 640px;
+      }
+      @media screen and (min-width:540px){
+        min-height: 825px;
+        max-height: 825px;
+      }
+    }
 
     // partners内容
     .partners-content {
-      width: auto;
+      width: 100%;
       font-size: 18px;
       text-align: center;
     }
 
     // partners轮播
     .partners-carousel {
-      width: auto;
+      width: fit-content;
       grid-gap: 20px;
 
       // 轮播图
       .carousel-chart {
+        width: fit-content;
         .carousel-car {
+          width: fit-content;
+          width: 100%;
           grid-template-columns: 1fr 1fr;
         }
       }
@@ -2739,13 +2776,13 @@ $width:1200;
 
     // one主体
     .one-subject {
-      height: auto;
+      height: 525px;
       .one-img {
         width: vw(560,600);
       }
 
       .one-content {
-        margin-top: -250px;
+        margin-top: vw(-450,600);
         margin-left: 10px;
 
         .one-title {
@@ -2753,24 +2790,28 @@ $width:1200;
         }
 
         .one-text {
-          width: 281px;
+          width: auto;
           font-size: 14px;
+          grid-gap: 10px;
+        }
+        .one-white{
+          width: 281px;
         }
       }
     }
 
     // two主体
     .two-subject {
-      margin-top: 100px;
+      height: 600px;
+      margin-top: 0;
       justify-items: left;
-      height: auto;
       .one-img {
         width: vw(560,600);
         margin-top: -500px;
       }
 
       .one-content {
-        margin-top: 0px;
+        margin-top: vw(200,600);
         margin-left: 10px;
 
         .one-title {
@@ -2778,8 +2819,12 @@ $width:1200;
         }
 
         .one-text {
-          width: 281px;
+          width: auto;
           font-size: 14px;
+          grid-gap: 10px;
+        }
+        .one-white{
+          width: 281px;
         }
       }
     }
@@ -2948,7 +2993,12 @@ $width:1200;
 // 小型号到中型号的平板
 @media screen and (min-width:600px) and (max-width:960px) {
   $width: 960;
-
+  .pc{
+    display: none;
+  }
+  .mo{
+    display: block;
+  }
   // spacePi图片主体
   .spacepi-img-subject {
     height: vw(500, $width);
@@ -3369,6 +3419,11 @@ $width:1200;
 
   // partners容器
   .partners-container {
+    // 默认高度
+    .partners-height{
+      min-height: 960px;
+      max-height: 960px;
+    }
 
     // partners内容
     .partners-content {
@@ -3386,19 +3441,14 @@ $width:1200;
         }
       }
 
-      // 轮播左按钮
-      .carousel-left {
-        display: none;
-        width: vw(48, $width);
-        height: vw(97, $width);
-      }
-
-      // 轮播右按钮
-      .carousel-right {
-        display: none;
-        width: vw(48, $width);
-        height: vw(97, $width);
-      }
+    // 轮播左按钮
+    .carousel-left {
+      display: none;
+    }
+    // 轮播右按钮
+    .carousel-right {
+      display: none;
+    }
 
       // 轮播进度条
       .carousel-progress {
@@ -3643,11 +3693,11 @@ $width:1200;
 
         // spacepiwep图片
         .spacepiwep-img {
-          width: vw(510, $width);
+          //width: vw(510, $width);
           height: vw(280, $width);
 
           .spacepiwep-img-subject {
-            width: vw(470, $width);
+            //width: vw(470, $width);
             height: vw(256, $width);
           }
 
@@ -3740,26 +3790,29 @@ $width:1200;
 
   // partners容器
   .partners-container {
-
+    // 默认高度
+    .partners-height{
+      min-height: 642px;
+      max-height: 642px;
+    }
     // partners轮播
     .partners-carousel {
       width: auto;
-
-      // 轮播左按钮
-      .carousel-left {
-        display: none;
-      }
-
-      // 轮播右按钮
-      .carousel-right {
-        display: none;
-      }
       .carousel-chart{
         .carousel-car{
           grid-template-columns: 1fr 1fr 1fr;
         }
       }
+          // 轮播左按钮
+    .carousel-left {
+      display: none;
     }
+    // 轮播右按钮
+    .carousel-right {
+      display: none;
+    }
+    }
+
   }
 
   // tokenomics容器
@@ -3920,14 +3973,14 @@ $width:1200;
     .partners-carousel {
       //width: vw(1800, $width);
       @media screen and (max-width:1500px){
-        // 轮播左按钮
-        .carousel-left{
-          display: none;
-        }
-        // 轮播右按钮
-        .carousel-right{
-          display: none;
-        }
+          // 轮播左按钮
+          .carousel-left {
+            display: none;
+          }
+          // 轮播右按钮
+          .carousel-right {
+            display: none;
+          }
       }
     }
   }

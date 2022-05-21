@@ -5,19 +5,21 @@ const locale = {
 	url_buy_telegram:'Telegram',
 	index_SpacePi_Bscscan_t:'SpacePi Bscscan',
 	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	// 电报标题
-	telegraph:"TELEGRAPH",
+	// 电报
+	telegraph:"TELEGRAPH",// 电报标题
+	telegraph_more:"More Telegrams",
+
 	// spacepiwep
 	spacepiwep:{
-		title:"SPACEPIWEP",
+		title:"SPISWAP",
 		o:"On board",
-		bnt:"AUDIT REPORT",
+		bnt:"Audit Report",
 		text:"Based on this point of view, SpacePi has become an investment tool for purchasing virtual assets or services in its ecosystem, and it will burst out with new vitality and unprecedented value with the application of SpacePi. Here are some key points of the SpacePi ecosystem.",
 		trend_bnt_title:"SpacePi Trend",
 		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
 	},
 	// partners轮播内容
-	partners_carousel_text:"SpacePi will always be a faith fan of Pi Network!Everything SpacePi do now is to prove that the persistence of Pi Fans is worth it!",
+	partners_carousel_text:"SPACEPI WILL ALWAYS BE A FAITH FAN OF PI NETWORK!EVERYTHING SPACEPI DO NOW IS TO PROVE THAT THE PERSISTENCE OF PI FANS IS WORTH IT!",
 
 	// 选择语言
 	selectLang: "Choose language",

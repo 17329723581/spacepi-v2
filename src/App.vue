@@ -2,6 +2,11 @@
   <v-app>
     <!-- 警告状态提示框 -->
     <alert :status="alert.status" :text="alert.text" :type="alert.type"></alert>
+    <div class="returntop">
+      <a>
+        
+      </a>
+    </div>
     <!-- 顶部导航 -->
     <v-app-bar :elevation="topNavigationShrinkStatus?24:0"  app color="rgba(255, 255, 255, 1)" :class="['top-navigation',topNavigationShrinkStatus?'':'top-navigation-open','bg']" height="none"
     :style="topNavigationShrinkStatus?'background: #1E0A4D':'background:linear-gradient(to bottom, rgba(0,0,0, 1), rgba(255,255,255, 0))'">
@@ -79,7 +84,7 @@
         </div>
         <!-- Tabs（选项卡） -->
         <div class="tabs">
-          <a>
+          <a @click="mobileOutside('/')">
             {{$t("home")}}
           </a>
           <div v-for="(item, index) in menu" :key="index">
@@ -142,6 +147,34 @@ export default {
         name: "En",
       },
       {
+        key: "tr_TR",
+        name: "Türk",
+      },
+      {
+          key: "ko_KR",
+          name: "한국어",
+      },
+      {
+          key: "ja_JP",
+          name: "日本",
+      },
+      {
+          key: "in",
+          name: "Indonesia",
+      },
+      {
+          key: "th",
+          name: "ไทย",
+      },
+      {
+          key: "ar",
+          name: "عربي",
+      },
+      {
+          key: "zh_TW",
+          name: "繁體中文",
+      },
+      {
         key: "zh_CN",
         name: "简体中文",
       },
@@ -189,6 +222,15 @@ export default {
     },
     poenUrl(e){
       window.open(e);
+    },
+    // 模拟手机内部点击
+    mobileOutside(e){
+      if(e!=this.$route.path){
+        this.$router.push(e)
+        this.tabsStatus = false;
+      }else{
+        this.tabsStatus = false;
+      }
     }
   }
 };
@@ -196,6 +238,10 @@ export default {
 <style scoped lang="scss">
 @import "@/scss/adaptation.scss";
 $width:1200;
+// 返回顶部
+.returntop{
+  position: flex;
+}
 // 顶部导航展开
 .top-navigation-open{
   height: 150px;
@@ -363,7 +409,7 @@ $width:1200;
     .tabs{
       margin-top: 50px;
       display: grid;
-      grid-gap: 10px;
+      grid-gap: 30px;
       align-items: center;
       font-family: Fenton-Light;
       font-weight: 400;

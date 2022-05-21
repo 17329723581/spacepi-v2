@@ -53,9 +53,10 @@
                     </div>
                     <!-- friendship合作商广告位 -->
                     <div class="friendship-partner-adsense">
-                        <!-- <template v-for="i in data">
+                        <template v-for="i in data">
                             <v-img :src="i.picture"   v-if="item.id == i.p_id" @click="to(i.link)"></v-img>
-                        </template> -->
+                        </template>
+                        <!-- <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
@@ -65,8 +66,7 @@
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
                         <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
+                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img> -->
                     </div>
                 </div>
             </v-container>

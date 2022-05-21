@@ -71,7 +71,7 @@
                 <span>{{address}}</span>
             </div>
             <!-- 复制 -->
-            <div class="copy" v-clipboard:copy="address" v-clipboard:success="onCopy">
+            <div class="copy" v-clipboard:copy="address" v-clipboard:success="onCopy" style="cursor: pointer;">
                 <svg class="copy-svg" viewBox="0 0 311.683 83.001">
                     <path d="M-1678.317,115h-271.2L-1990,32h296.9l14.782,16.417V115h0Z" transform="translate(1990 -32)"
                         fill="#fdd333" />
@@ -79,6 +79,12 @@
                 <div class="copy-img">
                     <v-img class="v-img" src="@/assets/copy.png"></v-img>
                 </div>
+
+                <!-- <div class="copy-svg"></div>
+                <div class="copy-img">
+                    <v-img class="v-img x" src="@/assets/copy.png"></v-img>
+                    <v-img class="v-img y" src="@/assets/copy-w.png"></v-img>
+                </div> -->
             </div>
         </div>
         <!-- spacepi地址移动端 -->
@@ -187,6 +193,7 @@ $width:1200;
         font-size: rem(50, $width);
         color: #ffffff;
         font-family: EDIX;
+        text-shadow: 1px 1px 1px #000000;
 
         span {
             color: #FDD333;
@@ -288,6 +295,7 @@ $width:1200;
 
         // 复制
         .copy {
+            transition: 1s;
             width: 25%;
             height: 75px;
             border-radius: 0;
@@ -309,6 +317,16 @@ $width:1200;
                     width: 60px;
                 }
             }
+            .x{
+                display: block;
+            }
+            .y{
+                display: none;
+            }
+        }
+        .copy:hover{
+            transition: 0.5s;
+            opacity: 0.8;
         }
     }
     // spacepi地址移动端

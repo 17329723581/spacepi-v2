@@ -46,19 +46,21 @@
         </div>
         <!-- join按钮主体 -->
         <div class="join-bnt-subject">
-            <div class="join-bnt" @click="Jump($t('Community').buttext_url)">{{$t('Community.buttext')}}</div>
+            <a>
+                <div class="join-bnt" @click="Jump($t('Community').buttext_url)">{{$t('Community.buttext')}}</div>
+            </a>
         </div>
         <!-- join链接主体 -->
         <div class="join-link-subject">
             <!-- join链接副主体 -->
             <div class="join-link-vice-subject">
-                <!-- <a class="join-a" v-for="(item,index) in url"  :key="index" @click="Jump(item.link)">
+                <a class="join-a" v-for="(item,index) in url"  :key="index" @click="Jump(item.link)">
                     <div class="join-img">
                         <v-img class="join-img-w" :src="item.picture"></v-img>
-                        <v-img class="join-img-h" :src="item.picture"></v-img>
+                        <v-img class="join-img-h" :src="item.picture1"></v-img>
                     </div>
-                </a> -->
-                <a class="join-a">
+                </a>
+                <!-- <a class="join-a">
                     <div class="join-img">
                         <v-img class="join-img-w" src="@/assets/footlink/game.png"></v-img>
                         <v-img class="join-img-h" src="@/assets/footlink/game-h.png"></v-img>
@@ -99,7 +101,7 @@
                         <v-img class="join-img-w" src="@/assets/footlink/twitter.png"></v-img>
                         <v-img class="join-img-h" src="@/assets/footlink/twitter-h.png"></v-img>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
         <!-- foot-line -->
@@ -268,6 +270,7 @@
                 justify-content: center;
                 align-items: center;
             }
+            .join-bnt:hover{}
         }
         // join链接主体
         .join-link-subject{

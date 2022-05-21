@@ -9,71 +9,32 @@
         </div>
         <!-- telegraph宫格 -->
         <div class="telegraph-grid">
-            <!-- <div class="telegraph-grid-subject" v-for="(item,index) in telegraph" :key="index">
+            <div class="telegraph-grid-subject p" v-for="(item,index) in telegraph" :key="index">
                 <a @click="to(item.link)">
-                    <v-img class="p" :src="item.picture" ></v-img>
-                    <v-img class="m" :src="item.m_picture" @click="to(item.link)"></v-img>
+                    <v-img :src="item.picture" ></v-img>
                 </a>
-            </div> -->
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/1.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
             </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/2.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/3.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/4.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/5.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/6.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/7.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/8.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/9.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/10.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/11.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/12.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/13.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/14.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
-            </div>
-            <div class="telegraph-grid-subject">
-                <v-img class="p" src="@/assets/test-telegraph-d/15.svg" ></v-img>
-                <v-img class="m" src="@/assets/test-telegraph.svg"></v-img>
+            <template v-for="(item,index) in telegraph" v-if="telegraphStatus==false">
+                <div class="telegraph-grid-subject m" v-if="index<6">
+                    <a @click="to(item.link)">
+                        <v-img :src="item.m_picture" @click="to(item.link)"></v-img>
+                    </a>
+                </div>
+            </template>
+            <template v-for="(item,index) in telegraph" v-if="telegraphStatus==true">
+                <div class="telegraph-grid-subject m">
+                    <a @click="to(item.link)">
+                        <v-img :src="item.m_picture" @click="to(item.link)"></v-img>
+                    </a>
+                </div>
+            </template>
+            <div v-if="telegraphStatus==false" class="m">
+                <v-btn @click="telegraphStatus=true" class="more-m" style="background: rgba(22, 15, 38, 0);">
+                    <span>{{$t('telegraph_more')}}</span>
+                    <div class="more-telegrams-add">
+                        <v-img src="@/assets/more-telegrams-add.png"></v-img>
+                    </div>
+                </v-btn>
             </div>
         </div>
     </v-container>
@@ -85,6 +46,7 @@
 		data() {
 			return {
 				telegraph:[],
+                telegraphStatus:false,
 			};
 		},
 		props: {},
@@ -162,6 +124,24 @@
         .telegraph-grid-subject{
             width: 200px;
         }
+    }
+}
+.more-m{
+    width: 100%;
+    height: 40px;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid rgba(253, 211, 51, 0.8);
+    font-size: 16px;
+    font-family: Fenton-Regular, Fenton;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    span{
+        color: #FDD333;
+    }
+    .more-telegrams-add{
+        margin-left: 15px;
+        width: 8px;
     }
 }
 // 小型号到大型号的手机

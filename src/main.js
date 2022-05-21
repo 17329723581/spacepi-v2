@@ -19,6 +19,9 @@ import i18n from './i18n'
 
 import '@/css/rotation.css'
 
+// spacepiwep按钮展开动画特效样式
+import '@/css/spacepiwepButtonExpandAnimation.css'
+
 import '@/font/index.css'
 import vuetify from './plugins/vuetify'
 
