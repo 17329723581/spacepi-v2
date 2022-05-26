@@ -2,31 +2,31 @@
     <!-- spacePi容器 -->
     <v-container class="spacepi-container">
         <!-- spacepi标题 -->
-        <div class="spacepi-title">SPACE<span>PI</span></div>
+        <div class="spacepi-title wow spacepi-animation fade-in-up-animation">SPACE<span>PI</span></div>
         <!-- spacepi副标题 -->
-        <span class="spacepi-vice-title">
+        <span class="spacepi-vice-title fade-in-up-animation">
             {{$t('only')}}
         </span>
         <!-- spacepi内容 -->
-        <span class="spacepi-content">
+        <span class="spacepi-content wow spacepi-animation fade-in-up-animation">
             {{$t('introduce')}}
         </span>
         <!-- spacepi按钮 -->
-        <div class="spacepi-button">
+        <div class="spacepi-button ">
             <!-- spacepi菜单 -->
             <v-menu transition="slide-y-transition" open-on-hover offset-y v-for="(item, index) in spacepiBuntton"
                 :key="index">
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn @click="item.staus != 1 ? spacepiTo(item.link) : ''" v-bind="attrs" v-on="on"
-                        v-if="index == 0" class="left">
+                        v-if="index == 0" class="left wow spacepi-animation fade-in-up-animation">
                         {{ item[locale] }}
                     </v-btn>
                     <v-btn @click="item.staus != 1 ? spacepiTo(item.link) : ''" v-bind="attrs" v-on="on"
-                        v-if="index != spacepiBuntton.length - 1 && index != 0">
+                        v-if="index != spacepiBuntton.length - 1 && index != 0" class="wow spacepi-animation fade-in-up-animation">
                         {{ item[locale] }}
                     </v-btn>
                     <v-btn @click="item.staus != 1 ? spacepiTo(item.link) : ''" v-bind="attrs" v-on="on"
-                        v-if="index == spacepiBuntton.length - 1" class="right">
+                        v-if="index == spacepiBuntton.length - 1" class="right wow spacepi-animation fade-in-up-animation">
                         {{ item[locale] }}
                     </v-btn>
                 </template>
@@ -51,11 +51,11 @@
             </v-menu>
         </div>
         <!-- spacepi说明 -->
-        <span class="spacepi-illustrate">
+        <span class="spacepi-illustrate spacepi-animation fade-in-up-animation">
             {{$t('happy_text')}}
         </span>
         <!-- spacepi地址 -->
-        <div class="spacepi-address">
+        <div class="spacepi-address spacepi-animation fade-in-up-animation">
             <!-- 地址 -->
             <div class="address">
                 <svg class="address-svg" viewBox="0 0 903.09 83">
@@ -68,7 +68,7 @@
                             stroke="none" fill="#fdd333" />
                     </g>
                 </svg>
-                <span>{{address}}</span>
+                <span >{{address}}</span>
             </div>
             <!-- 复制 -->
             <div class="copy" v-clipboard:copy="address" v-clipboard:success="onCopy" style="cursor: pointer;">
@@ -76,8 +76,8 @@
                     <path d="M-1678.317,115h-271.2L-1990,32h296.9l14.782,16.417V115h0Z" transform="translate(1990 -32)"
                         fill="#fdd333" />
                 </svg>
-                <div class="copy-img">
-                    <v-img class="v-img" src="@/assets/copy.png"></v-img>
+                <div class="copy-img" id="copy-img">
+                    <!-- <v-img class="v-img" src="@/assets/copy.png"></v-img> -->
                 </div>
 
                 <!-- <div class="copy-svg"></div>
@@ -88,13 +88,13 @@
             </div>
         </div>
         <!-- spacepi地址移动端 -->
-        <div class="spacepi-address-m">
+        <div class="spacepi-address-m spacepi-animation fade-in-up-animation">
             <!-- 地址 -->
-            <div class="address">
-                {{address}}
+            <div class="address" style="text-align: center;">
+                {{ address.substr(0,22) }}...{{ address.substr(address.length-5) }}
             </div>
             <!-- 复制 -->
-            <div class="copy-img" v-clipboard:copy="address" v-clipboard:success="onCopy">
+            <div class="copy-img" v-clipboard:copy="address" v-clipboard:success="onCopym">
                 <v-img class="v-img" src="@/assets/copy.png"></v-img>
             </div>
         </div>
@@ -103,6 +103,9 @@
 <script>
 import axios from "axios";
 import { mapState, mapMutations } from "vuex";
+
+import lottie from "lottie-web";
+import spacepiCopy from '@/assets/animation/spacepi-copy.json';
 export default {
     data() {
         return {
@@ -110,7 +113,8 @@ export default {
             // spacepi菜单
             spacepiBuntton:[],
             // spacepi菜单列表
-			spacepiBunttonList:[]
+			spacepiBunttonList:[],
+            copy:"",
         }
     },
     computed: {
@@ -118,6 +122,14 @@ export default {
 	},
     components: {},
     mounted() {
+        let copyparams = {
+            container: document.getElementById("copy-img"),
+            renderer: "svg",
+            loop: false,
+            autoplay: false,
+            animationData: spacepiCopy
+        };
+        this.copy = lottie.loadAnimation(copyparams);
         setTimeout(()=>{
             this.location();
         },1)
@@ -165,6 +177,14 @@ export default {
 			// alert(e.text);
 			//this.$message.success(this.$t("copySuccess"));
             //this.setAlert('alert',true,this.$t("alerts.copy_success"),"success");
+            //this.$store.commit("setAlert", {status:true,text:this.$t("copySuccess"),type:"success"});
+            this.copy.play();
+            setTimeout(()=>{
+                this.copy.stop();
+                this.$store.commit("setAlert", {status:false,text:"",type:""});
+            },2000)
+		},
+        onCopym(e) {
             this.$store.commit("setAlert", {status:true,text:this.$t("copySuccess"),type:"success"});
             setTimeout(()=>{
                 this.$store.commit("setAlert", {status:false,text:"",type:""});
@@ -194,7 +214,6 @@ $width:1200;
         color: #ffffff;
         font-family: EDIX;
         text-shadow: 1px 1px 1px #000000;
-
         span {
             color: #FDD333;
         }
@@ -240,11 +259,13 @@ $width:1200;
             font-weight: 400;
             border-radius: 0;
             background: #FDD333;
+            transition: 0.4s;
         }
 
         .v-btn:hover {
             background: rgba(44, 29, 81, 0.5);
             color: #FFFFFF;
+            transition: 0.4s;
         }
 
         .v-btn:active {
@@ -309,13 +330,10 @@ $width:1200;
                 position: absolute;
                 width: 100%;
                 z-index: -1;
-                height: 75px;
             }
 
             .copy-img {
-                .v-img {
-                    width: 60px;
-                }
+                width: 230px;
             }
             .x{
                 display: block;
@@ -528,7 +546,7 @@ $width:1200;
                 }
 
                 .address-svg {
-                    height: vw(80, $width);
+                    //height: vw(80, $width);
                 }
             }
 

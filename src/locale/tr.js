@@ -6,7 +6,7 @@ const locale = {
 	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 
 	// 电报
-	telegraph:"TELGRAF",// 电报标题
+	telegraph:"TELEGRAM",// 电报标题
 	telegraph_more:"Daha Fazla Telgraf",
 
 	// spacepiwep

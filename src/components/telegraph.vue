@@ -2,13 +2,13 @@
     <!-- telegraph容器 -->
     <v-container class="telegraph-container">
         <!-- telegraph标题主体 -->
-        <div class="telegram-title-subject">
+        <div class="telegram-title-subject concept-content wow spacepi-animation fade-right-in-left-animation">
             <div class="line"></div>
             <!-- telegraph标题 -->
             <span class="telegraph-title">{{$t('telegraph')}}</span>
         </div>
         <!-- telegraph宫格 -->
-        <div class="telegraph-grid">
+        <div class="telegraph-grid concept-content wow spacepi-animation fade-in-up-animation">
             <div class="telegraph-grid-subject p" v-for="(item,index) in telegraph" :key="index">
                 <a @click="to(item.link)">
                     <v-img :src="item.picture" ></v-img>

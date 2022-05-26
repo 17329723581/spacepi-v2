@@ -6,7 +6,7 @@ const locale = {
 	index_SpacePi_Bscscan_t:'SpacePi Bscscan',
 	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 	// 电报
-	telegraph:"TELEGRAPH",// 电报标题
+	telegraph:"TELEGRAM",// 电报标题
 	telegraph_more:"More Telegrams",
 
 	// spacepiwep

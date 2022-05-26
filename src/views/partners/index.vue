@@ -6,7 +6,7 @@
                 <!-- partners容器 -->
                 <v-container class="partners-container">
                     <!-- partners标题主体 -->
-                    <div class="partners-title-subject">
+                    <div class="partners-title-subject wow spacepi-animation fade-right-in-left-animation">
                         <div class="line"></div>
                         <!-- partners标题 -->
                         <span class="partners-title">
@@ -15,11 +15,11 @@
                         </span>
                     </div>
                     <!-- partners内容 -->
-                    <div class="partners-content">
+                    <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
                         {{$t('partners_text')}}
                     </div>
                     <!-- partners按钮主体 -->
-                    <div class="partners-bnt-content">
+                    <div class="partners-bnt-content wow spacepi-animation fade-in-up-animation">
                         <!-- partners按钮1 -->
                         <div class="partners-bnt1 p">{{$t('partners_email_title')}}</div>
                         <div class="partners-bnt1-s m">{{$t('partners_email_title')}}</div>
@@ -44,7 +44,7 @@
                 <!-- friendship合作商主体 -->
                 <div class="friendship-partner-subject" v-for="(item,index) in array" :key="index">
                     <!-- friendship合作商标题主体 -->
-                    <div class="friendship-partner-title-subject">
+                    <div class="friendship-partner-title-subject wow spacepi-animation fade-right-in-left-animation">
                         <div class="line"></div>
                         <!-- friendship合作商标题 -->
                         <div class="friendship-partner-title">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <!-- friendship合作商广告位 -->
-                    <div class="friendship-partner-adsense">
+                    <div class="friendship-partner-adsense wow spacepi-animation fade-in-up-animation">
                         <template v-for="i in data">
                             <v-img :src="i.picture"   v-if="item.id == i.p_id" @click="to(i.link)"></v-img>
                         </template>

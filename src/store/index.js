@@ -31,7 +31,7 @@ export default new Vuex.Store({
     deadline:1653554480000, //9999999999999
     // 邀请人地址
     inviteeAddress:"0x456463b185a447552b31516c2cb729b9c90D531B",
-    domainUrl:'https://resourcetest.space-pi.com/api/',//https://resource.space-pi.com/api/ https://resourcetest.space-pi.com/api/
+    domainUrl:'https://resource.space-pi.com/api/',//https://resource.space-pi.com/api/ https://resourcetest.space-pi.com/api/
     alert:{status:false,text:"",type:""},
   },
   mutations: {

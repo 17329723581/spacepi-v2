@@ -23,7 +23,7 @@
     <div class="what-subject">
       <div class="spacepi_bg">
         <!-- what容器 -->
-        <v-container class="what-container">
+        <v-container class="what-container wow spacepi-animation fade-right-in-left-animation">
           <!-- what标题 -->
           <div class="what-title">
             <div class="what-line"></div>
@@ -52,7 +52,7 @@
                   <v-img  src="@/assets/character.png"></v-img>
                 </div>
               </div>
-              <div class="what-right">
+              <div class="what-right wow spacepi-animation fade-right-in-left-animation">
                 <div class="right-s">
                   <!-- what标题 -->
                   <div class="what-title">
@@ -73,7 +73,7 @@
           <v-container class="what-container">
             <!-- what主体2 -->
             <div class="what-subject2">
-              <div class="what-left">
+              <div class="what-left wow spacepi-animation fade-left-in-right-animation">
                 <div class="left-s">
                   <!-- what标题 -->
                   <div class="what-title">
@@ -104,7 +104,7 @@
     <div class="spacepi_bg">
       <v-container class="concept-container">
         <!--concept标题主体  -->
-        <div class="concept-title-subject">
+        <div class="concept-title-subject wow spacepi-animation fade-right-in-left-animation">
           <!-- concept标题 -->
           <span class="concept-title">{{ $t('station').enter }}</span>
           <!-- 副标题主体 -->
@@ -121,50 +121,50 @@
             <v-img src="@/assets/concept_space_capsule.png"></v-img>
           </div>
           <!-- concept内容 -->
-          <div class="concept-content">
+          <div class="concept-content wow spacepi-animation fade-right-in-left-animation">
             <span>{{ $t("station").text[0] }}</span>
             <span>{{ $t("station").text[1] }}</span>
           </div>
         </div>
         <!-- concept卡片 -->
-        <div class="concept-car">
+        <div class="concept-car wow spacepi-animation fade-in-up-animation">
           <!-- 卡片 -->
-          <div class="car">
-            <!-- 卡片标题 -->
-            <span class="car-title">{{ $t("station").c[0].title }}</span>
-            <!-- 卡片内容 -->
-            <span class="car-content">{{ $t("station").c[0].text }}</span>
-          </div>
-          <!-- 卡片 -->
-          <div class="car">
-            <!-- 卡片标题 -->
-            <span class="car-title">{{ $t("station").c[1].title }}</span>
-            <!-- 卡片内容 -->
-            <span class="car-content">{{ $t("station").c[1].text }}</span>
-          </div>
-          <!-- 卡片 -->
-          <div class="car">
+          <div class="car concept-card concept-card-animation">
             <!-- 卡片标题 -->
             <span class="car-title">{{ $t("station").c[2].title }}</span>
             <!-- 卡片内容 -->
-            <span class="car-content">{{ $t("station").c[2].text }}</span>
+            <span class="car-content text-w">{{ $t("station").c[2].text }}</span>
           </div>
           <!-- 卡片 -->
-          <div class="car car-s">
+          <div class="car concept-card concept-card-animation">
             <!-- 卡片标题 -->
             <span class="car-title">{{ $t("station").c[3].title }}</span>
             <!-- 卡片内容 -->
             <span class="car-content">{{ $t("station").c[3].text }}</span>
           </div>
           <!-- 卡片 -->
-          <div class="car car-s">
+          <div class="car concept-card concept-card-animation">
             <!-- 卡片标题 -->
             <span class="car-title">{{ $t("station").c[5].title }}</span>
             <!-- 卡片内容 -->
             <span class="car-content">{{ $t("station").c[5].text }}</span>
           </div>
           <!-- 卡片 -->
-          <div class="car car-s">
+          <div class="car concept-card concept-card-animation">
+            <!-- 卡片标题 -->
+            <span class="car-title">{{ $t("station").c[1].title }}</span>
+            <!-- 卡片内容 -->
+            <span class="car-content">{{ $t("station").c[1].text }}</span>
+          </div>
+          <!-- 卡片 -->
+          <div class="car concept-card concept-card-animation">
+            <!-- 卡片标题 -->
+            <span class="car-title">{{ $t("station").c[0].title }}</span>
+            <!-- 卡片内容 -->
+            <span class="car-content">{{ $t("station").c[0].text }}</span>
+          </div>
+          <!-- 卡片 -->
+          <div class="car concept-card concept-card-animation">
             <!-- 卡片标题 -->
             <span class="car-title">{{ $t("station").c[4].title }}</span>
             <!-- 卡片内容 -->
@@ -187,7 +187,7 @@
         <div class="spacepiwep-container">
           <div class="spacepiwep-left">
             <!-- spacepiwep图片 -->
-            <div class="spacepiwep-img">
+            <div class="spacepiwep-img wow spacepi-animation fade-in-down-animation">
               <div class="spacepiwep-img-subject">
                 <v-img src="@/assets/spacepiwep-img.png"></v-img>
               </div>
@@ -197,7 +197,7 @@
 
             </div>
             <!-- spacepiwep按钮 -->
-            <a class="cta spacepiwep-bnt" href="">
+            <a class="cta spacepiwep-bnt wow spacepi-animation fade-in-up-animation" href="">
               <span>{{ $t("spacepiwep.trend_bnt_title") }}</span>
               <span>
                 <svg width="25px" height="43px" viewBox="0 0 66 43" version="1.1">
@@ -217,13 +217,13 @@
           <!-- spacepiwep容器主体 -->
           <div class="spacepiwep-container-subject">
             <!-- spacepiwep标题主体 -->
-            <div class="spacepiwep-title-subject">
+            <div class="spacepiwep-title-subject wow spacepi-animation fade-right-in-left-animation">
               <div class="line"></div>
               <!-- spacepiwep标题 -->
               <span class="spacepiwep-title">{{ $t("spacepiwep").title }}</span>
             </div>
             <!-- audit-report -->
-            <div class="audit-report">
+            <div class="audit-report wow spacepi-animation fade-in-up-animation">
               <div class="audit-report-logo">
                 <div class="spacepiwep-img-subject">
                   <v-img  src="@/assets/audit-report-logo.png"></v-img>
@@ -233,7 +233,7 @@
                 <!-- audit-report圆角 -->
                 <!-- <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img> -->
 
-                <div class="audit-fillet" id="spot"></div>
+                <div class="audit-fillet" id="spot-m"></div>
                 <!-- audit-report标题 -->
                 <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
               </div>
@@ -251,7 +251,7 @@
             </a>
             </div>
             <!-- spacepiwep内容 -->
-            <div class="spacepiwep-content">
+            <div class="spacepiwep-content wow spacepi-animation fade-in-up-animation">
               {{ $t("spacepiwep").text }}
             </div>
           </div>
@@ -260,12 +260,12 @@
       <!-- spacepiwep-external-container移动端 -->
       <v-container class="spacepiwep-external-container-m">
         <!-- spacepiwep标题主体 -->
-        <div class="spacepiwep-title-subject">
+        <div class="spacepiwep-title-subject wow spacepi-animation fade-right-in-left-animation">
           <div class="line"></div>
           <span>{{ $t("spacepiwep").title }}</span>
         </div>
         <!-- audit-report主体 -->
-        <div class="audit-report">
+        <div class="audit-report wow spacepi-animation fade-in-up-animation">
           <div class="audit-report-logo">
             <div class="spacepiwep-img-subject">
               <v-img  src="@/assets/audit-report-logo.png"></v-img>
@@ -273,7 +273,8 @@
           </div>
           <div class="audit-report-o">
             <!-- audit-report圆角 -->
-            <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img>
+            <!-- <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img> -->
+            <div class="audit-fillet" id="spot"></div>
             <!-- audit-report标题 -->
             <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
           </div>
@@ -287,11 +288,11 @@
           </div>
         </div>
         <!-- spacepiwep内容 -->
-        <div class="spacepiwep-content">
+        <div class="spacepiwep-content wow spacepi-animation fade-in-up-animation">
           {{ $t("spacepiwep").text }}
         </div>
         <!-- spacepiwep图片 -->
-        <div class="spacepiwep-img">
+        <div class="spacepiwep-img wow spacepi-animation fade-in-up-animation">
           <div class="spacepiwep-img-subject">
             <v-img src="@/assets/spacepiwep-img.png"></v-img>
           </div>
@@ -301,7 +302,7 @@
         </div>
         <!-- spacepiwep按钮 -->
         <a>
-          <div class="spacepiwep-bnt">
+          <div class="spacepiwep-bnt wow spacepi-animation fade-in-up-animation">
             {{ $t("spacepiwep.trend_bnt_title") }} </div>
         </a>
       </v-container>
@@ -310,7 +311,7 @@
     <div class="spacepi_bg">
       <v-container class="partners-container">
         <!-- partners内容 -->
-        <div class="partners-content">
+        <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
           {{$t('partners_carousel_text')}}
         </div>
         <!-- partners轮播 -->
@@ -354,7 +355,7 @@
         </div>
         <!-- partners更多按钮 -->
         <a>
-          <div class="partners-bnt" @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
+          <div class="partners-bnt " @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
         </a>
       </v-container>
     </div>
@@ -362,7 +363,7 @@
     <div class="roadmap_bg">
       <v-container class="roadmap-container">
         <!-- roadmap主体 -->
-        <div class="roadmap-subject">
+        <div class="roadmap-subject wow spacepi-animation fade-right-in-left-animation">
           <!-- roadmap标题主体 -->
           <div class="roadmap-title-subject">
             <div class="line"></div>
@@ -379,9 +380,14 @@
             <v-img src="@/assets/one-img.png"></v-img>
           </div>
           <!-- one内容 -->
-          <div class="one-content">
+          <div class="one-content wow spacepi-animation fade-right-in-left-animation">
             <div class="one-title">{{$t('Phase1')}}</div>
-            <div class="one-text one-white">{{$t('rt1_text1')}}</div>
+            <div class="one-text one-yellow">
+              <span>{{$t('rt1_text1')}}</span>
+              <div class="one-yes">
+                <v-img src="@/assets/roadmap-yes.png"></v-img>
+              </div>
+            </div>
             <div class="one-text one-yellow">
               <span>{{$t('rt1_text2')}}</span>
               <div class="one-yes">
@@ -394,7 +400,12 @@
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
-            <div class="one-text one-white">{{$t('rt1_text4')}}</div>
+            <div class="one-text one-yellow">
+              <span>{{$t('rt1_text4')}}</span>
+              <div class="one-yes">
+                <v-img src="@/assets/roadmap-yes.png"></v-img>
+              </div>
+            </div>
             <div class="one-text one-yellow">
               <span>{{$t('rt1_text5')}}</span>
               <div class="one-yes">
@@ -413,8 +424,18 @@
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
-            <div class="one-text one-white">{{$t('rt1_text8')}}</div>
-            <div class="one-text one-white">{{$t('rt1_text9')}}</div>
+            <div class="one-text one-yellow">
+              <span>{{$t('rt1_text8')}}</span>
+              <div class="one-yes">
+                <v-img src="@/assets/roadmap-yes.png"></v-img>
+              </div>
+            </div>
+            <div class="one-text one-yellow">
+              <span>{{$t('rt1_text9')}}</span>
+              <div class="one-yes">
+                <v-img src="@/assets/roadmap-yes.png"></v-img>
+              </div>
+            </div>
             <div class="one-text one-yellow">
               <span>{{$t('rt1_text10')}}</span>
               <div class="one-yes">
@@ -424,24 +445,23 @@
           </div>
         </div>
         <!-- two主体 -->
-        <div class="two-subject">
+        <div class="two-subject" style="z-index: 1;">
           <!-- one内容 -->
-          <div class="one-content">
-            <div class="one-title">{{$t('Phase1')}}</div>
+          <div class="one-content wow spacepi-animation fade-left-in-right-animation">
+            <div class="one-title">{{$t('Phase2')}}</div>
             <div class="one-text one-white">{{$t('rt2_text1')}}</div>
-            <div class="one-text one-yellow">
+            <div class="one-text one-white">
               <span>{{$t('rt2_text2')}}</span>
-              <div class="one-yes">
-                <v-img src="@/assets/roadmap-yes.png"></v-img>
-              </div>
+            </div>
+            <div class="one-text one-white">
+              <span>{{$t('rt2_text3')}}</span>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt2_text3')}}</span>
+              <span>{{$t('rt2_text4')}}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
-            <div class="one-text one-white">{{$t('rt2_text4')}}</div>
             <div class="one-text one-yellow">
               <span>{{$t('rt2_text5')}}</span>
               <div class="one-yes">
@@ -454,11 +474,8 @@
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
-            <div class="one-text one-yellow">
+            <div class="one-text one-white">
               <span>{{$t('rt2_text7')}}</span>
-              <div class="one-yes">
-                <v-img src="@/assets/roadmap-yes.png"></v-img>
-              </div>
             </div>
             <div class="one-text one-white">{{$t('rt2_text8')}}</div>
             <div class="one-text one-white">{{$t('rt2_text9')}}</div>
@@ -476,7 +493,7 @@
         <div class="tokenomics-subject">
           <!-- tokenomics左 -->
           <div class="tokenomics-left">
-            <div class="tokenomics-left-subject">
+            <div class="tokenomics-left-subject wow spacepi-animation fade-right-in-left-animation">
               <!-- tokenomics左标题主体 -->
               <div class="tokenomics-left-title-subject">
                 <div class="line"></div>
@@ -492,7 +509,7 @@
             </div>
           </div>
           <!-- tokenomics内容 -->
-          <div class="tokenomics-content">
+          <div class="tokenomics-content wow spacepi-animation fade-in-up-animation">
             <div class="tokenomics-grid">
               <span class="tokenomics-grid-title"> {{$t('Tokenomics').array[0].title}}</span>
               <span class="tokenomics-grid-content">{{$t('Tokenomics').array[0].text}}</span>
@@ -511,19 +528,19 @@
       <!-- tokenomics容器移动端 -->
       <v-container class="tokenomics-container-m">
         <!-- tokenomics标题主体 -->
-        <div class="tokenomics-title-subject">
+        <div class="tokenomics-title-subject wow spacepi-animation fade-right-in-left-animation">
           <div class="line"></div>
           <!-- tokenomics标题 -->
           <span class="tokenomics-title">{{$t("Tokenomics").title}}</span>
         </div>
         <!-- tokenomics副标题 -->
-        <div class="tokenomics--Vice-title">{{$t("Tokenomics").text}}</div>
+        <div class="tokenomics--Vice-title wow spacepi-animation fade-right-in-left-animation">{{$t("Tokenomics").text}}</div>
         <!-- tokenomics内容 -->
-        <div class="tokenomics-left-content">
+        <div class="tokenomics-left-content wow spacepi-animation fade-out-min-in-max-animation">
           {{$t("Tokenomics").content}}
         </div>
         <!-- tokenomics内容 -->
-        <div class="tokenomics-content">
+        <div class="tokenomics-content wow spacepi-animation fade-in-up-animation">
           <div class="tokenomics-grid">
             <span class="tokenomics-grid-title">{{$t("Tokenomics").array[0].title}}</span>
             <span class="tokenomics-grid-content">{{$t("Tokenomics").array[0].text}}</span>
@@ -547,12 +564,12 @@
           <!-- choice说明 -->
           <div class="choice-explain">
             <!-- choice说明内容 -->
-            <span class="choice-explain-content">
+            <span class="choice-explain-content wow spacepi-animation fade-out-min-in-max-animation">
               {{$t('answers').text}}
             </span>
           </div>
           <!-- choice区域 -->
-          <div class="choice-region">
+          <div class="choice-region wow spacepi-animation fade-in-up-animation">
             <!-- choice左 -->
             <div class="choice-left">
               <!-- 1 -->
@@ -753,6 +770,17 @@ export default {
     };
     let anim;
     anim = lottie.loadAnimation(spotparams);
+
+
+    let spotparams_m = {
+    container: document.getElementById("spot-m"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        animationData: spot
+    };
+    let anim_m;
+    anim_m = lottie.loadAnimation(spotparams_m);
   },
   methods: {
     // spacepi跳转
@@ -998,6 +1026,7 @@ $width:1200;
     color: #FDD333;
     max-width: 1200px;
     z-index: 1;
+    
 
     // what标题
     .what-title {
@@ -1473,7 +1502,6 @@ $width:1200;
         font-size: 17px;
         font-family: Fenton-Regular;
         font-weight: 400;
-        color: #FDD333;
       }
     }
     .car-s {
@@ -1794,7 +1822,7 @@ $width:1200;
 // roadmap_bg
 .roadmap_bg{
   background-image: url("../../assets/roadmap_bg.png");
-  background-size: contain;
+  background-size: 100%;
 }
 // roadmap容器
 .roadmap-container {
@@ -2569,8 +2597,8 @@ $width:1200;
 
         // audit-report圆角
         .audit-fillet {
-          width: 17px;
-          height: 17px;
+          width: 34px;
+          height: 34px;
         }
 
         // audit-report标题
@@ -3337,8 +3365,8 @@ $width:1200;
 
         // audit-report圆角
         .audit-fillet {
-          width: 20px;
-          height: 20px;
+          width: 34px;
+          height: 34px;
         }
 
         // audit-report标题
@@ -3757,8 +3785,8 @@ $width:1200;
 
             // audit-report圆角
             .audit-fillet {
-              width: vw(17, $width);
-              height: vw(17, $width);
+              width: 34px;
+              height: 34px;
             }
 
             // audit-report标题

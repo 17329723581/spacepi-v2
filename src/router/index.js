@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "@/views/home";
 import partners from "@/views/partners";
-
-
+import lock from "@/views/lock";
+import task from "@/views/task";
 
 
 Vue.use(VueRouter);
@@ -23,6 +23,16 @@ const routes = [
     path: "/partners",
     name: "友情合作商",
     component: partners,
+  },
+  {
+    path: "/lock",
+    name: "锁仓",
+    component: lock,
+  },
+  {
+    path: "/task",
+    name: "任务",
+    component: task,
   }
 ];
 
