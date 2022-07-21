@@ -15,8 +15,8 @@ const locale = {
 		o:"On board",
 		bnt:"Audit Report",
 		text:"Based on this point of view, SpacePi has become an investment tool for purchasing virtual assets or services in its ecosystem, and it will burst out with new vitality and unprecedented value with the application of SpacePi. Here are some key points of the SpacePi ecosystem.",
-		trend_bnt_title:"SpacePi Trend",
-		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
+		trend_bnt_title:"SPISWAP",
+		trend_bnt_url:"https://spi-swap.com/swap",
 	},
 	// partners轮播内容
 	partners_carousel_text:"SPACEPI WILL ALWAYS BE A FAITH FAN OF PI NETWORK!EVERYTHING SPACEPI DO NOW IS TO PROVE THAT THE PERSISTENCE OF PI FANS IS WORTH IT!",

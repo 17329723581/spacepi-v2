@@ -19,6 +19,61 @@
         </v-container>
       </div>
     </div>
+
+
+    <!--  partners容器  -->
+    <div class="spacepi_bg">
+      <v-container class="partners-container">
+        <!-- partners内容 -->
+        <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
+          {{$t('partners_carousel_text')}}
+        </div>
+        <!-- partners轮播 -->
+        <div class="partners-carousel">
+          <v-carousel  show-arrows-on-hover hide-delimiters v-model="carouselChartIndex"  class="partners-height" height="auto">
+            <!-- 轮播图 -->
+            <v-carousel-item active-class="partners-active-class" v-for="(item, index) in responsecArray" :key="index" class="partners-height" v-if="index<5">
+              <div class="carousel-chart" @mouseover="carouselStartStatus(true)" @mouseleave="carouselStartStatus(false)">
+                <div  class="carousel-car"
+                  v-show="index == carouselChartIndex">
+                  <template v-for="(it, ind) in carouseChartArrar">
+                      <v-img v-if="item.id == it.p_id" :key="ind" :src="it.picture"  @click="spacepiTo(it.link)" style="cursor: pointer;" class="v-img"></v-img>
+                  </template>
+                </div>
+              </div>
+            </v-carousel-item>
+            <!-- 轮播左按钮 -->
+            <template v-slot:prev="{ on, attrs }">
+              <div class="carousel-left" v-bind="attrs" v-on="on" @click="carousel('up')">
+                <a>
+                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-left.png"></v-img>
+                </a>
+              </div>
+            </template>
+            <!-- 轮播右按钮 -->
+            <template v-slot:next="{ on, attrs }">
+              <div class="carousel-right" v-bind="attrs" v-on="on" @click="carousel('down')">
+                <a>
+                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-right.png"></v-img>
+                </a>
+              </div>
+            </template>
+          </v-carousel>
+          <!-- 轮播进度条 -->
+          <div class="carousel-progress">
+            <a v-for="(item, index) in progressArray" :key="index" v-if="index<5">
+              <v-progress-linear background-color="rgba(253, 211, 51, 0.6)" color="#FDD333" :value="item"
+                @click="carouselProgressClick(index)"></v-progress-linear>
+            </a>
+          </div>
+        </div>
+        <!-- partners更多按钮 -->
+        <a>
+          <div class="partners-bnt " @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
+        </a>
+      </v-container>
+    </div>
+
     <!-- what主体 -->
     <div class="what-subject">
       <div class="spacepi_bg">
@@ -173,6 +228,12 @@
         </div>
       </v-container>
     </div>
+    <!-- nftCarousel外部容器 -->
+    <div class="spacepi_bg">
+      <v-container class="nftCarousel_container">
+        <nftCarousel></nftCarousel>
+      </v-container>
+    </div>
     <!-- telegraph主体 -->
     <div class="spacepi_bg">
       <div class="telegraph-subject">
@@ -196,8 +257,55 @@
               </div> -->
 
             </div>
+            
+            
+            
+          </div>
+
+          <div class="spacepiwep-right">
+            <!-- spacepiwep容器主体 -->
+            <div class="spacepiwep-container-subject">
+              <!-- spacepiwep标题主体 -->
+              <div class="spacepiwep-title-subject wow spacepi-animation fade-right-in-left-animation">
+                <div class="line"></div>
+                <!-- spacepiwep标题 -->
+                <span class="spacepiwep-title">{{ $t("spacepiwep").title }}</span>
+              </div>
+              <!-- audit-report -->
+              <!-- <div class="audit-report wow spacepi-animation fade-in-up-animation">
+                <div class="audit-report-logo">
+                  <div class="spacepiwep-img-subject">
+                    <v-img  src="@/assets/audit-report-logo.png"></v-img>
+                  </div>
+                </div>
+
+                <div class="audit-report-o">
+                  
+
+                  <div class="audit-fillet" id="spot-m"></div>
+                  
+                  <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
+                </div>
+                
+                <a class="bnttest" href="">
+                  <div class="audit-report-view">
+                    <v-img  src="@/assets/view.png"></v-img>
+                  </div>
+                  <span class="bnttest-title">
+                    {{ $t("spacepiwep").bnt }}
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bnttest-svg" viewBox="0 0 254 60">
+                        <path id="路径_2379" data-name="路径 2379" d="M243.407,60H0V0H254V50.05Z" fill="#fdd333"/>
+                    </svg>
+              </a>
+              </div> -->
+              <!-- spacepiwep内容 -->
+              <div class="spacepiwep-content wow spacepi-animation fade-in-up-animation">
+                {{ $t("spacepiwep").text }}
+              </div>
+            </div>
             <!-- spacepiwep按钮 -->
-            <a class="cta spacepiwep-bnt wow spacepi-animation fade-in-up-animation" href="">
+            <a class="cta spacepiwep-bnt wow spacepi-animation fade-in-up-animation" :href="$t('spacepiwep').trend_bnt_url" target="_blank">
               <span>{{ $t("spacepiwep.trend_bnt_title") }}</span>
               <span>
                 <svg width="25px" height="43px" viewBox="0 0 66 43" version="1.1">
@@ -209,51 +317,6 @@
                 </svg>
               </span>
             </a>
-            
-            
-          </div>
-        </div>
-        <div class="spacepiwep-right">
-          <!-- spacepiwep容器主体 -->
-          <div class="spacepiwep-container-subject">
-            <!-- spacepiwep标题主体 -->
-            <div class="spacepiwep-title-subject wow spacepi-animation fade-right-in-left-animation">
-              <div class="line"></div>
-              <!-- spacepiwep标题 -->
-              <span class="spacepiwep-title">{{ $t("spacepiwep").title }}</span>
-            </div>
-            <!-- audit-report -->
-            <div class="audit-report wow spacepi-animation fade-in-up-animation">
-              <div class="audit-report-logo">
-                <div class="spacepiwep-img-subject">
-                  <v-img  src="@/assets/audit-report-logo.png"></v-img>
-                </div>
-              </div>
-              <div class="audit-report-o">
-                <!-- audit-report圆角 -->
-                <!-- <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img> -->
-
-                <div class="audit-fillet" id="spot-m"></div>
-                <!-- audit-report标题 -->
-                <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
-              </div>
-              <!-- audit-report按钮 -->
-              <a class="bnttest" href="">
-                <div class="audit-report-view">
-                  <v-img  src="@/assets/view.png"></v-img>
-                </div>
-                <span class="bnttest-title">
-                  {{ $t("spacepiwep").bnt }}
-                  </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="bnttest-svg" viewBox="0 0 254 60">
-                      <path id="路径_2379" data-name="路径 2379" d="M243.407,60H0V0H254V50.05Z" fill="#fdd333"/>
-                  </svg>
-            </a>
-            </div>
-            <!-- spacepiwep内容 -->
-            <div class="spacepiwep-content wow spacepi-animation fade-in-up-animation">
-              {{ $t("spacepiwep").text }}
-            </div>
           </div>
         </div>
       </v-container>
@@ -265,29 +328,23 @@
           <span>{{ $t("spacepiwep").title }}</span>
         </div>
         <!-- audit-report主体 -->
-        <div class="audit-report wow spacepi-animation fade-in-up-animation">
+        <!-- <div class="audit-report wow spacepi-animation fade-in-up-animation">
           <div class="audit-report-logo">
             <div class="spacepiwep-img-subject">
               <v-img  src="@/assets/audit-report-logo.png"></v-img>
             </div>
           </div>
           <div class="audit-report-o">
-            <!-- audit-report圆角 -->
-            <!-- <v-img class="audit-fillet" src="@/assets/fillet.png"></v-img> -->
             <div class="audit-fillet" id="spot"></div>
-            <!-- audit-report标题 -->
             <span class="audit-fillet-title">{{ $t("spacepiwep").o }}</span>
           </div>
-          <!-- audit-report按钮 -->
           <div class="audit-report-bnt">
             <div>
               <v-img width="29" height="21" src="@/assets/view.png"></v-img>
             </div>
-            <!-- audit-report标题 -->
             <span class="audit-report-title">{{ $t("spacepiwep").bnt }}</span>
           </div>
-        </div>
-        <!-- spacepiwep内容 -->
+        </div> -->
         <div class="spacepiwep-content wow spacepi-animation fade-in-up-animation">
           {{ $t("spacepiwep").text }}
         </div>
@@ -307,58 +364,8 @@
         </a>
       </v-container>
     </div>
-    <!--  partners容器  -->
-    <div class="spacepi_bg">
-      <v-container class="partners-container">
-        <!-- partners内容 -->
-        <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
-          {{$t('partners_carousel_text')}}
-        </div>
-        <!-- partners轮播 -->
-        <div class="partners-carousel">
-          <v-carousel  show-arrows-on-hover hide-delimiters v-model="carouselChartIndex"  class="partners-height" height="auto">
-            <!-- 轮播图 -->
-            <v-carousel-item active-class="partners-active-class" v-for="(item, index) in responsecArray" :key="index" class="partners-height" v-if="index<5">
-              <div class="carousel-chart" @mouseover="carouselStartStatus(true)" @mouseleave="carouselStartStatus(false)">
-                <div  class="carousel-car"
-                  v-show="index == carouselChartIndex">
-                  <template v-for="(it, ind) in carouseChartArrar">
-                      <v-img v-if="item.id == it.p_id" :key="ind" :src="it.picture"  @click="spacepiTo(it.link)" style="cursor: pointer;" class="v-img"></v-img>
-                  </template>
-                </div>
-              </div>
-            </v-carousel-item>
-            <!-- 轮播左按钮 -->
-            <template v-slot:prev="{ on, attrs }">
-              <div class="carousel-left" v-bind="attrs" v-on="on" @click="carousel('up')">
-                <a>
-                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-left.png"></v-img>
-                </a>
-              </div>
-            </template>
-            <!-- 轮播右按钮 -->
-            <template v-slot:next="{ on, attrs }">
-              <div class="carousel-right" v-bind="attrs" v-on="on" @click="carousel('down')">
-                <a>
-                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-right.png"></v-img>
-                </a>
-              </div>
-            </template>
-          </v-carousel>
-          <!-- 轮播进度条 -->
-          <div class="carousel-progress">
-            <a v-for="(item, index) in progressArray" :key="index" v-if="index<5">
-              <v-progress-linear background-color="rgba(253, 211, 51, 0.6)" color="#FDD333" :value="item"
-                @click="carouselProgressClick(index)"></v-progress-linear>
-            </a>
-          </div>
-        </div>
-        <!-- partners更多按钮 -->
-        <a>
-          <div class="partners-bnt " @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
-        </a>
-      </v-container>
-    </div>
+
+
     <!-- roadmap容器 -->
     <div class="roadmap_bg">
       <v-container class="roadmap-container">
@@ -720,6 +727,8 @@ import foot from "@/components/foot.vue";
 import lottie from "lottie-web";
 import spot from '@/assets/animation/spot.json';
 
+import nftCarousel from '@/views/nft/components/nftCarousel'
+
 export default {
   data() {
     return {
@@ -744,7 +753,8 @@ export default {
     animation,
     animationm,
     telegraph,
-    foot
+    foot,
+    nftCarousel
   },
   computed: {
     ...mapState(["domainUrl", "locale"]),
@@ -891,9 +901,8 @@ $width:1200;
 
 // spacePi图片主体
 .spacepi-img-subject {
-  margin-top: 0;
+  margin-top: 100px;
   width: 100%;
-  height: 1080px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1020,6 +1029,7 @@ $width:1200;
   background-size: 100% 100%;
   z-index: -1;
   display: grid;
+  margin-top: 100px;
 
   // what容器
   .what-container {
@@ -1518,15 +1528,14 @@ $width:1200;
 
 // telegraph主体
 .telegraph-subject {
-  background: url("../../assets/telegraph_bg.png") no-repeat;
-  ;
+  // background: url("../../assets/telegraph_bg.png") no-repeat;
   height: auto;
   background-size: 100% 100%;
 
   // telegraph容器
   .telegraph-container {
     max-width: 1500px;
-    padding-top: 500px;
+    padding-top: 0;
     display: grid;
     grid-gap: 100px;
   }
@@ -1537,12 +1546,12 @@ $width:1200;
   height: 900px;
   max-width: 1500px;
   position: relative;
-  filter: drop-shadow(10px 10px 30px rgba(0, 212, 255, 0.1));
+  filter: drop-shadow(10px 10px 30px rgba(64, 0, 255, 0.314));
 
   // spacepiwep容器
   .spacepiwep-container {
     height: 611px;
-    margin-top: 100px;
+    margin-top: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -1560,28 +1569,146 @@ $width:1200;
 
       // spacepiwep图片
       .spacepiwep-img {
-        
+        filter: drop-shadow(10px 10px 30px rgba(64, 0, 255, 0.314));
+        // width: 25vw;
         position: relative;
         z-index: 1;
 
         .spacepiwep-img-subject {
           z-index: 1;
-          width: 470px;
-          height: 256px;
+          width:600px;
+          @media screen and (max-width:1400px){
+            width:500px;
+          }
+          @media screen and (max-width:1200px){
+            width:480px;
+          }
+          @media screen and (max-width:1000px){
+            width:400px;
+          }
         }
 
         .spacepiwep-img-s {
-          position: absolute;
-          top: 5px;
-          left: -7.5px;
-          z-index: -1;
-          width: 500px;
-          height: 200px;
+          // position: absolute;
+          // top: 5px;
+          // left: -7.5px;
+          // z-index: -1;
+          // width: 500px;
+          // height: 200px;
         }
       }
+    }
+    .spacepiwep-right {
+      // height: -webkit-fill-available;
+      // height: auto;
+      // position: absolute;
+      // bottom: 100px;
+      // right: 100px;
 
+      // spacepiwep容器主体
+      .spacepiwep-container-subject {
+        display: grid;
+        grid-gap: 20px;
+
+        // spacepiwep标题主体
+        .spacepiwep-title-subject {
+          display: flex;
+          grid-gap: 10px;
+          align-items: center;
+
+          .line {
+            width: 6px;
+            height: 40px;
+            background: #FDD333;
+          }
+
+          // spacepiwep标题
+          .spacepiwep-title {
+            font-size: 50px;
+            font-family: Fenton-Black, Fenton;
+            font-weight: 900;
+            color: #FFFFFF;
+          }
+        }
+
+        // audit-report
+        .audit-report {
+          display: flex;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+          width: 551px;
+          height: 89px;
+          background: rgba(75, 35, 175, 0.5);
+          border: 1px solid #FDD333;
+          align-items: center;
+          justify-content: center;
+
+          .audit-report-logo {
+            width: 120px;
+          }
+
+          .audit-report-o {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+            align-items: center;
+            white-space: nowrap;
+            width: min-content;
+
+            // audit-report圆角
+            .audit-fillet {
+              width: 34px;
+              height: 34px;
+            }
+
+            // audit-report标题
+            .audit-fillet-title {
+              font-size: 18px;
+              font-family: Fenton-Regular;
+              font-weight: 400;
+              color: #FFFFFF;
+            }
+          }
+
+          // audit-report按钮
+          .audit-report-bnt {
+            width: 204px;
+            height: 52px;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 98%, 0% 50%);
+            background: rgba(253, 211, 51, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: Fenton-Bold, Fenton;
+            font-weight: bold;
+            color: #FFFFFF;
+            height: 52px;
+            // audit-report标题
+            .audit-report-title {
+              margin-left: 10px;
+            }
+            .audit-report-view{
+              width: 29px;
+              height: 21px;
+            }
+          }
+          .audit-report-bnt:hover{
+            opacity:0.9;
+          }
+        }
+
+        // spacepiwep内容
+        .spacepiwep-content {
+          font-size: 18px;
+          font-family: Fenton-Regular, Fenton;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
       // spacepiwep按钮
       .spacepiwep-bnt {
+        margin-top: 40px;
         width: 254px;
         height: 60px;
         background-size: 100% 100%;
@@ -1593,126 +1720,29 @@ $width:1200;
         font-weight: 400;
         color: #FFFFFF;
       }
-      
     }
+
+
   }
 
-  .spacepiwep-right {
-    height: -webkit-fill-available;
-    height: auto;
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
 
-    // spacepiwep容器主体
-    .spacepiwep-container-subject {
-      display: grid;
-      grid-gap: 50px;
-
-      // spacepiwep标题主体
-      .spacepiwep-title-subject {
-        display: flex;
-        grid-gap: 20px;
-        align-items: center;
-
-        .line {
-          width: 6px;
-          height: 44px;
-          background: #FDD333;
-        }
-
-        // spacepiwep标题
-        .spacepiwep-title {
-          font-size: 60px;
-          font-family: Fenton-Black, Fenton;
-          font-weight: 900;
-          color: #FFFFFF;
-        }
-      }
-
-      // audit-report
-      .audit-report {
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-        width: 551px;
-        height: 89px;
-        background: rgba(75, 35, 175, 0.5);
-        border: 1px solid #FDD333;
-        align-items: center;
-        justify-content: center;
-
-        .audit-report-logo {
-          width: 120px;
-        }
-
-        .audit-report-o {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 5px;
-          align-items: center;
-          white-space: nowrap;
-          width: min-content;
-
-          // audit-report圆角
-          .audit-fillet {
-            width: 34px;
-            height: 34px;
-          }
-
-          // audit-report标题
-          .audit-fillet-title {
-            font-size: 18px;
-            font-family: Fenton-Regular;
-            font-weight: 400;
-            color: #FFFFFF;
-          }
-        }
-
-        // audit-report按钮
-        .audit-report-bnt {
-          width: 204px;
-          height: 52px;
-          clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 0 98%, 0% 50%);
-          background: rgba(253, 211, 51, 1);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-          font-family: Fenton-Bold, Fenton;
-          font-weight: bold;
-          color: #FFFFFF;
-          height: 52px;
-          // audit-report标题
-          .audit-report-title {
-            margin-left: 10px;
-          }
-          .audit-report-view{
-            width: 29px;
-            height: 21px;
-          }
-        }
-        .audit-report-bnt:hover{
-          opacity:0.9;
-        }
-      }
-
-      // spacepiwep内容
-      .spacepiwep-content {
-        width: 576px;
-        font-size: 20px;
-        font-family: Fenton-Regular, Fenton;
-        font-weight: 400;
-        color: rgba(255, 255, 255, 0.8);
-      }
-    }
-  }
 
 }
 
 // spacepiwep-external-container移动端
 .spacepiwep-external-container-m {
   display: none;
+}
+
+
+//nftCarousel外部容器
+.nftCarousel_container{
+    padding: 250px 0;
+    max-width: 1500px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 84px;
+    width: -webkit-fill-available;
 }
 
 // partners容器
@@ -2418,7 +2448,7 @@ $width:1200;
 
     // telegraph容器
     .telegraph-container {
-      padding-top: vw(200, $width);
+      padding-top: 0;
       display: grid;
       grid-gap: vw(25, $width);
     }
@@ -3015,6 +3045,11 @@ $width:1200;
     }
   }
 
+  //nftCarousel外部容器
+  .nftCarousel_container{
+    padding: 50px 0;
+  }
+
 
 }
 
@@ -3191,7 +3226,7 @@ $width:1200;
 
     // telegraph容器
     .telegraph-container {
-      padding-top: 350px;
+      padding-top: 0;
       display: grid;
       grid-gap: vw(50, $width);
     }
@@ -3664,6 +3699,11 @@ $width:1200;
     }
   }
 
+    //nftCarousel外部容器
+  .nftCarousel_container{
+    padding: 150px 0;
+  }
+
 }
 
 
@@ -3702,7 +3742,7 @@ $width:1200;
 
     // telegraph容器
     .telegraph-container {
-      padding-top: vw(250, $width);
+      padding-top: 0;
       display: grid;
     }
   }
@@ -3981,7 +4021,7 @@ $width:1200;
 
     // telegraph容器
     .telegraph-container {
-      padding-top: vw(400, $width);
+      padding-top: 0;
       display: grid;
     }
   }

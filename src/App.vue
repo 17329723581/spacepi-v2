@@ -54,7 +54,12 @@
         <div v-for="(item, index) in menu" :key="index">
           <a @click="poenUrl(item.link)">
             <div class="tabs-line"></div>
-            {{ item[locale] }}
+            <div class="tabs-s">
+              <span>
+                {{ item[locale] }}
+              </span>
+              <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status==1"></v-img>
+            </div>
           </a>
         </div>
       </div>
@@ -88,7 +93,7 @@
         <!-- <v-icon color="#FDD333" >mdi-menu</v-icon> -->
       </div>
     </v-app-bar>
-    <v-main style="z-index:1">
+    <v-main style="z-index:1;">
       <!-- spacepi音乐 -->
       <a @click="spacepiMusicClick">
         <div id="spacepiMusic" class="spacepiMusic"></div>
@@ -121,7 +126,12 @@
           <div v-for="(item, index) in menu" :key="index">
             <a @click="poenUrl(item.link)">
               <div class="tabs-line"></div>
-              {{ item[locale] }}
+              <div class="tabs-s">
+                <span>
+                  {{ item[locale] }}
+                </span>
+                <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status==1"></v-img>
+              </div>
             </a>
           </div>
         </div>
@@ -218,6 +228,13 @@ export default {
     mp3: bgmp3,
     musicDialog: false,
   }),
+  watch:{
+    tabsStatus(e){
+      if(e==true){
+        
+      }
+    }
+  },
   computed: {
     ...mapState(["locale", "domainUrl", 'alert']),
   },
@@ -399,7 +416,7 @@ $width:1200;
   .tabs {
     height: 88px;
     display: flex;
-    grid-gap: 20px;
+    grid-gap: 40px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -415,7 +432,15 @@ $width:1200;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
-
+      .tabs-s{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .tabs-img{
+          width: 15px;
+          height: 15px;
+        }
+      }
       .tabs-line {}
     }
 
@@ -548,7 +573,7 @@ $width:1200;
   .tabs-subject {
     width: 100%;
     background: #1E0A4D;
-    height: vw(750, 600);
+    height: 500px;
     position: relative;
 
     .tabs {
@@ -562,12 +587,49 @@ $width:1200;
       white-space: nowrap;
       padding-left: 50px;
       padding-right: 50px;
-
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 350px;
+      z-index: 999;
       a {
         color: rgba(253, 211, 51, 1);
+        .tabs-s{
+          display: inline-flex;
+          gap: 10px;
+          align-items: center;
+          .tabs-img{
+            width: 10px;
+            height: 10px;
+          }
+        }
+        
       }
+
+      //Firefox
+      scrollbar-width:5px;
+      // scrollbar-color: auto; /* 使用浏览器默认的滚动条样式 */
+      // scrollbar-color: dark; /* 使用浏览器默认的深色或者黑色滚动效果 */
+      // scrollbar-color: light; /* 使用浏览器默认的浅色滚动效果  */
+      scrollbar-color: #FDD333 rgba(197, 90, 246, 0.44); /* 第一个颜色为滚动条的颜色， 第二个颜色为滚动条轨道的颜色  */
+    }
+    // .tabs::-webkit-scrollbar{
+    // }
+    //自动移滚动条样式
+    ::-webkit-scrollbar{
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb{
+      border-radius: 1em;
+      background-color: #FDD333;
+    }
+    ::-webkit-scrollbar-track{
+      border-radius: 1em;
+      background-color: rgba(197, 90, 246, 0.44);
     }
 
+    ::-webkit-scrollbar:vertical {
+      width: 5px;
+    }
     .locale {
       position: absolute;
       bottom: 50px;

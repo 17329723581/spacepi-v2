@@ -13,8 +13,8 @@ const locale = {
 		o:"On board",
 		bnt:"审计报告",
 		text:"基于此观点，SpacePi 已成为其生态系统内购买虚拟资产或服务的投资工具，将随着 SpacePi 的应用而迸发出新的活力和前所未有的价值。 以下是 SpacePi 生态系统的一些关键点。",
-		trend_bnt_title:"SpacePi 趋势",
-		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
+		trend_bnt_title:"SPISWAP",
+		trend_bnt_url:"https://spi-swap.com/swap",
 	},
 	// partners轮播内容
 	partners_carousel_text:"SpacePi永远是Pi Network的忠实粉丝！SpacePi现在所做的一切都是为了证明Pi Fans的坚持是值得的！",

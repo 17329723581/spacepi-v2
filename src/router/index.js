@@ -4,6 +4,7 @@ import home from "@/views/home";
 import partners from "@/views/partners";
 import lock from "@/views/lock";
 import task from "@/views/task";
+import nft from "@/views/nft";
 
 
 Vue.use(VueRouter);
@@ -33,6 +34,11 @@ const routes = [
     path: "/task",
     name: "任务",
     component: task,
+  },
+  {
+    path: "/nft",
+    name: "NFT",
+    component: nft,
   }
 ];
 

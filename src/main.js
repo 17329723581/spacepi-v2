@@ -45,6 +45,5 @@ new Vue({
   store,
   i18n,
   vuetify,
-  
   render: h => h(App)
 }).$mount('#app')
