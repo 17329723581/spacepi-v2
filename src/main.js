@@ -1,3 +1,4 @@
+import '@/font/index.css'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -27,7 +28,6 @@ import '@/css/conceptAnimation.css'
 import '@/css/fontAnimation.css'
 
 
-import '@/font/index.css'
 import vuetify from './plugins/vuetify'
 
 import audio from 'audio'
@@ -35,7 +35,7 @@ import audio from 'audio'
 Vue.prototype.$BigNumber = BigNumber
 Vue.config.productionTip = false
 
-if(window.plus){
+if (window.plus) {
   plus.navigator.setStatusBarBackground('#0344fb');
 }
 

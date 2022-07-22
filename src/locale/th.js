@@ -1,58 +1,58 @@
 const locale = {
 	// 导航栏
 	home: "หน้าแรก",
-	url_buy_twitter:'ทวิตเตอร์',
-	url_buy_telegram:'โทรเลข',
-	index_SpacePi_Bscscan_t:'SpacePi Bscscan',
-	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	url_buy_twitter: 'ทวิตเตอร์',
+	url_buy_telegram: 'โทรเลข',
+	index_SpacePi_Bscscan_t: 'SpacePi Bscscan',
+	index_SpacePi_Bscscan: 'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 	// 电报
-	telegraph:"โทรเลข",// 电报标题
-	telegraph_more:"โทรเลขเพิ่มเติม",
+	telegraph: "โทรเลข",// 电报标题
+	telegraph_more: "โทรเลขเพิ่มเติม",
 
 	// spacepiwep
-	spacepiwep:{
-		title:"SPISWAP",
-		o:"บนกระดาน",
-		bnt:"รายงานการตรวจสอบ",
-		text:"จากมุมมองนี้ SpacePi ได้กลายเป็นเครื่องมือการลงทุนสำหรับการซื้อสินทรัพย์หรือบริการเสมือนในระบบนิเวศ และจะระเบิดพลังใหม่และคุณค่าที่ไม่เคยมีมาก่อนด้วยแอปพลิเคชัน SpacePi นี่คือประเด็นสำคัญบางประการของระบบนิเวศ SpacePi",
-		trend_bnt_title:"SpacePi Trend",
-		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
+	spacepiwep: {
+		title: "SPISWAP",
+		o: "บนกระดาน",
+		bnt: "รายงานการตรวจสอบ",
+		text: "จากมุมมองนี้ SpacePi ได้กลายเป็นเครื่องมือการลงทุนสำหรับการซื้อสินทรัพย์หรือบริการเสมือนในระบบนิเวศ และจะระเบิดพลังใหม่และคุณค่าที่ไม่เคยมีมาก่อนด้วยแอปพลิเคชัน SpacePi นี่คือประเด็นสำคัญบางประการของระบบนิเวศ SpacePi",
+		trend_bnt_title: "SpacePi Trend",
+		trend_bnt_url: "https://www.baidu.com/?tn=44004473_35_oem_dg",
 	},
 	// partners轮播内容
-	partners_carousel_text:"SPACEPI WILL ALWAYS BE A FAITH FAN OF PI NETWORK!EVERYTHING SPACEPI DO NOW IS TO PROVE THAT THE PERSISTENCE OF PI FANS IS WORTH IT!",
+	partners_carousel_text: "SPACEPI WILL ALWAYS BE A FAITH FAN OF PI NETWORK!EVERYTHING SPACEPI DO NOW IS TO PROVE THAT THE PERSISTENCE OF PI FANS IS WORTH IT!",
 	// 选择语言
 	selectLang: "เลือกภาษา",
 
 	// 首页
-	happy_gd:'พันธมิตรที่เป็นมิตรมากขึ้น',
-	happy_text:'เพื่อให้ SpacePi บรรลุนวัตกรรมที่มากขึ้น เราจึงตัดสินใจอัปเกรดสัญญาเป็นกลไกที่ปลอดภัยที่สุดโดยใช้ระดับเดียวกับ SHIBA Token สัญญาที่อัปเกรดจะยกเลิกการอนุญาตทั้งหมดและถูกล็อค ที่อยู่ของสัญญา:',
-	happy_text1:"SpacePi จะเป็นแฟนตัวยงของ Pi Network เสมอ!",
-	happy_text2:"ทุกสิ่งที่ SpacePi ทำในตอนนี้คือการพิสูจน์ว่าการคงอยู่ของ Pi Fans นั้นคุ้มค่า!",
+	happy_gd: 'พันธมิตรที่เป็นมิตรมากขึ้น',
+	happy_text: 'เพื่อให้ SpacePi บรรลุนวัตกรรมที่มากขึ้น เราจึงตัดสินใจอัปเกรดสัญญาเป็นกลไกที่ปลอดภัยที่สุดโดยใช้ระดับเดียวกับ SHIBA Token สัญญาที่อัปเกรดจะยกเลิกการอนุญาตทั้งหมดและถูกล็อค ที่อยู่ของสัญญา:',
+	happy_text1: "SpacePi จะเป็นแฟนตัวยงของ Pi Network เสมอ!",
+	happy_text2: "ทุกสิ่งที่ SpacePi ทำในตอนนี้คือการพิสูจน์ว่าการคงอยู่ของ Pi Fans นั้นคุ้มค่า!",
 	doge: "SpacePi คืออะไร?",
-	only:"ผู้ให้บริการที่ครอบคลุมเพียงรายเดียวในโลกที่พิมพ์โทเค็นโปรโตคอลข้ามสายหลายตัว",
-	introduce:"SpacePi จะเป็นหนึ่งเดียวในด้านบล็อกเชนที่ทำลายอุปสรรคทางเทคนิคและรวมโทเค็นโปรโตคอลข้ามเครือข่ายหลายประเภทของผู้ให้บริการแบบบูรณาการ อนาคตเป็นของผู้เล่นสินทรัพย์ดิจิทัลบล็อคเชนทั้งหมด ให้เราทำงานร่วมกันเพื่อเป็นสักขีพยานในช่วงเวลาที่ยอดเยี่ยมนี้!",
+	only: "ผู้ให้บริการที่ครอบคลุมเพียงรายเดียวในโลกที่พิมพ์โทเค็นโปรโตคอลข้ามสายหลายตัว",
+	introduce: "SpacePi จะเป็นหนึ่งเดียวในด้านบล็อกเชนที่ทำลายอุปสรรคทางเทคนิคและรวมโทเค็นโปรโตคอลข้ามเครือข่ายหลายประเภทของผู้ให้บริการแบบบูรณาการ อนาคตเป็นของผู้เล่นสินทรัพย์ดิจิทัลบล็อคเชนทั้งหมด ให้เราทำงานร่วมกันเพื่อเป็นสักขีพยานในช่วงเวลาที่ยอดเยี่ยมนี้!",
 	text: [
 		"SpacePi จะสร้างระบบนิเวศดิจิทัลระดับบนสุดที่ไม่เคยมีมาก่อน โดยมอบประสบการณ์การดื่มด่ำดิจิทัล metaverse ที่ง่ายและมีประสิทธิภาพเป็นแกนหลัก มอบมูลค่าการหมุนเวียนโทเค็น ช่วยให้ผู้คนจำนวนมากขึ้นมีส่วนร่วมในการก่อสร้างเชิงนิเวศของ SpacePi สร้างโลกแห่งความบันเทิงไร้พรมแดน เชื่อมโยงผู้ใช้ในทุกมุมโลก และสร้างระบบนิเวศ metaverse ที่ไม่น่าเชื่อถือและมีการกระจายอำนาจสูงสำหรับผู้ใช้ทั่วโลก",
 		"SpacePi ประกอบด้วยบล็อกเชนหลักสองประเภทคือ NFT และ Metaverse SpacePi กำลังสร้างแพลตฟอร์มเกมเสมือนจริงออนไลน์ที่กระจายอำนาจซึ่งรวมเอาตัวละคร อุปกรณ์ประกอบฉาก และโครงเรื่องชีวิตเข้าไว้ในปฏิสัมพันธ์ทางสังคมเสมือนจริง ผู้เล่นสามารถเล่นได้ในโลกเสมือนจริง เพื่อซื้ออาวุธ ชุดเกราะ อุปกรณ์ประกอบฉาก และอัญมณี เข้าร่วมในคอลเลกชันต่างๆ เพื่อพัฒนาเกมเสมือนจริง ชีวิต แอ็คชั่น และเกมอื่นๆ",
 		"ประโยชน์ทั้งหมดของ SpacePi จะถูกนำเสนอในรูปแบบของโทเค็น SpacePi ดั้งเดิม ความเสมือนจริงและความเป็นจริงของ SpacePi metaverse นั้นเชื่อมโยงถึงกันอย่างมาก และเศรษฐกิจแบบวงปิดที่แนบมากับแพลตฟอร์มโอเพ่นซอร์สได้กลายเป็นรูปแบบสุดท้ายของอินเทอร์เน็ต"
 	],
 	tetxbu: 'Whitepaper',
-	tetxbu_url:'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
+	tetxbu_url: 'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
 	contractAddress: "",
 	down: ['ซื้อ SpacePi'],
-	index_Liquidity_title:'สภาพคล่องถูกล็อค',
-	index_Liquidity:'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
-	index_Goplus_title:'Goplus Audit',
-	index_Goplus:'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	index_SpacePi_title:'ราคา SpacePi',
-	index_SpacePi:[{
-		title:'Dextools Trend',
-	},{
-		title:'Poocoin Trend',
-	},{
-		title:'Avedex Trend',
-	},{
-		title:'Msgsender',
+	index_Liquidity_title: 'สภาพคล่องถูกล็อค',
+	index_Liquidity: 'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
+	index_Goplus_title: 'Goplus Audit',
+	index_Goplus: 'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	index_SpacePi_title: 'ราคา SpacePi',
+	index_SpacePi: [{
+		title: 'Dextools Trend',
+	}, {
+		title: 'Poocoin Trend',
+	}, {
+		title: 'Avedex Trend',
+	}, {
+		title: 'Msgsender',
 	}],
 	car: [{
 		title: 'SpacePi คืออะไร?',
@@ -104,18 +104,18 @@ const locale = {
 		trx: '19 BNB',
 		usd: '7030 USD',
 	}],
-	bsc_token:'0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	hoce_token:'0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
-	tron_token:'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
-	url_array:[{
-		title:'SpacePi (bsc)',
-		url:'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	},{
-		title:'SpacePi (heco)',
-		url:'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
-	},{
-		title:'SpacePi (tron)',
-		url:'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
+	bsc_token: '0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	hoce_token: '0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	tron_token: 'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
+	url_array: [{
+		title: 'SpacePi (bsc)',
+		url: 'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	}, {
+		title: 'SpacePi (heco)',
+		url: 'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	}, {
+		title: 'SpacePi (tron)',
+		url: 'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
 	}],
 
 	// 路线图
@@ -161,62 +161,62 @@ const locale = {
 			text: 'ที่ยึด'
 		}]
 	},
-	answers:{
+	answers: {
 		//顶部标题
-		text:'SpacePi เป็นโทเค็นโปรโตคอลหลายสายของผู้ให้บริการที่ครอบคลุมรายเดียวในโลก',
+		text: 'SpacePi เป็นโทเค็นโปรโตคอลหลายสายของผู้ให้บริการที่ครอบคลุมรายเดียวในโลก',
 		//底部展开展示内容
-		array:[{
-			title:'1. metaverse อธิบายโดย SpacePi คืออะไร?',
-			text:'เกมเป็นรูปแบบหลักของ metaverse จากรูปแบบผลิตภัณฑ์ เกมดังกล่าวเป็นต้นแบบของ metaverse เนื่องจากโลกเสมือนจริงที่สร้างขึ้นโดยผู้คนตามการจำลอง การขยาย และจินตนาการทางจินตนาการของความเป็นจริง เกมจึงมีรูปแบบผลิตภัณฑ์คล้ายกับ Metaverse หากคุณคุ้นเคยกับหนังสือหรือภาพยนตร์ Ready Player One นี่เป็นตัวอย่างที่ดีของ metaverse',
-		},{
-			title:'2. Metaverse มีความสำคัญหรือไม่?',
-			text:'จากการรวม Web3.0 เทคโนโลยีอินเทอร์เน็ตโฮโลแกรม blockchain และ NFT ค่าที่นำเสนอโดยแนวคิดของ Metaverse นั้นสอดคล้องกับค่านิยมหลักของอินเทอร์เน็ต SpacePi เชื่อว่า metaverse อาจเป็นที่สุด อินเทอร์เน็ต ดังนั้น เราจึงนำเกมเป็นจุดเริ่มต้นและสร้าง SpacePi เกมบล็อกเชนชีวิตเสมือนจริงที่อิงจาก NFT+ metaverse ซึ่งทำให้การเชื่อมโยงระหว่างความเป็นจริงกับเสมือนจริงมีประสิทธิภาพมากขึ้นและทำให้การหมุนเวียนของมูลค่าสมบูรณ์ยิ่งขึ้น ความสำคัญของสิ่งเหล่านี้ แพลตฟอร์มดิจิทัลได้กลายเป็นที่ประจักษ์ในช่วงการระบาดใหญ่ทั่วโลกเมื่อเร็ว ๆ นี้',
-		},{
-			title:'3. ระบบนิเวศ SpacePi คืออะไร?',
-			text:'ในฐานะเกมบล็อคเชนที่รองรับแนวคิดของ NFT + Metaverse SpacePi มีส่วนหลักหลายส่วนในแง่ของการสร้างระบบนิเวศของแพลตฟอร์ม ระบบเกม NFT ระบบนิเวศของเกม Metaverse SpacePi Exchange',
-		},{
-			title:'4. เราทำอะไรได้บ้างใน SpacePi metaverse?',
-			text:'SpacePi Token หรือที่เรียกกันว่า SpacePi เป็นการรวมกลุ่มบล็อคเชนหลักสองหมวดหมู่ของ NFT และ Metaverse โดยมีเป้าหมายเพื่อสร้างแพลตฟอร์มเกมเสมือนจริงออนไลน์ที่กระจายอำนาจซึ่งรวมเอาตัวละคร อุปกรณ์ประกอบฉาก และโครงเรื่องชีวิตเข้าไว้ในปฏิสัมพันธ์ทางสังคมเสมือนจริง อาวุธ เกราะ อุปกรณ์ประกอบฉาก และอัญมณีสามารถ ซื้อในโลกเสมือนจริง เข้าร่วมในคอลเลกชันต่าง ๆ เพื่อพัฒนาเกมเสมือนจริง ชีวิต แอ็คชั่น และเกมอื่น ๆ ดังนั้น SpacePi จึงเป็นโครงการแรกและโครงการเดียวในโดเมน metaverse และ NFT',
-		},{
-			title:'5. วิธีหาเงินใน SpacePi Metaverse?',
-			text:'SpacePi ยังสามารถสนับสนุนนักพัฒนาบุคคลที่สามในการเขียนโปรแกรม ดีบัก และเผยแพร่แอปพลิเคชันเกมแบบกระจายอำนาจและแอปพลิเคชันเกมสถาปัตยกรรมไฮบริดสำหรับสภาพแวดล้อมบล็อคเชน ในขณะเดียวกัน SpacePi ได้รวมระบบบัญชีผู้ใช้แบบกระจายบนบล็อกเชน กระเป๋าเงิน และการหมุนเวียนสินทรัพย์ดิจิทัล NFT ซึ่ง สามารถรับรู้การจัดเก็บถาวรแบบออฟไลน์และการใช้เนื้อหาเกมในแอปข้ามสาย NFT.',
-		},{
-			title:'6.ผู้พัฒนา SpacePi?',
-			text:'SpacePi Metaverse ได้รับการพัฒนาร่วมกันโดยนักพัฒนาอิสระทั่วโลกโดยมีประสบการณ์และความสามารถในการกำกับ จัดการ และปรับปรุงโครงการที่เกี่ยวข้องกับ crypto ที่แทบจะไม่มีใครเทียบได้ พวกเขาร่วมกันสร้างทีมที่แข็งแกร่งพร้อมกลุ่มผู้สนับสนุนที่มีความคิดเหมือนๆ กัน มั่นใจและหลงใหลในวิสัยทัศน์ของ SpacePi metaverse ซึ่งเป็นการผจญภัยครั้งใหม่สู่โลก metaverse',
-		},{
-			title:'7. ฉันจะให้ความช่วยเหลือเพิ่มเติมได้อย่างไร?',
-			text:'เนื่องจากการกระจายอำนาจที่สมบูรณ์ SpacePi metaverse จะต้องการชุมชนที่ใหญ่กว่ามากเพื่อบรรลุเป้าหมายของเรา คุณสามารถเข้าร่วม SpacePi ได้',
+		array: [{
+			title: '1. metaverse อธิบายโดย SpacePi คืออะไร?',
+			text: 'เกมเป็นรูปแบบหลักของ metaverse จากรูปแบบผลิตภัณฑ์ เกมดังกล่าวเป็นต้นแบบของ metaverse เนื่องจากโลกเสมือนจริงที่สร้างขึ้นโดยผู้คนตามการจำลอง การขยาย และจินตนาการทางจินตนาการของความเป็นจริง เกมจึงมีรูปแบบผลิตภัณฑ์คล้ายกับ Metaverse หากคุณคุ้นเคยกับหนังสือหรือภาพยนตร์ Ready Player One นี่เป็นตัวอย่างที่ดีของ metaverse',
+		}, {
+			title: '2. Metaverse มีความสำคัญหรือไม่?',
+			text: 'จากการรวม Web3.0 เทคโนโลยีอินเทอร์เน็ตโฮโลแกรม blockchain และ NFT ค่าที่นำเสนอโดยแนวคิดของ Metaverse นั้นสอดคล้องกับค่านิยมหลักของอินเทอร์เน็ต SpacePi เชื่อว่า metaverse อาจเป็นที่สุด อินเทอร์เน็ต ดังนั้น เราจึงนำเกมเป็นจุดเริ่มต้นและสร้าง SpacePi เกมบล็อกเชนชีวิตเสมือนจริงที่อิงจาก NFT+ metaverse ซึ่งทำให้การเชื่อมโยงระหว่างความเป็นจริงกับเสมือนจริงมีประสิทธิภาพมากขึ้นและทำให้การหมุนเวียนของมูลค่าสมบูรณ์ยิ่งขึ้น ความสำคัญของสิ่งเหล่านี้ แพลตฟอร์มดิจิทัลได้กลายเป็นที่ประจักษ์ในช่วงการระบาดใหญ่ทั่วโลกเมื่อเร็ว ๆ นี้',
+		}, {
+			title: '3. ระบบนิเวศ SpacePi คืออะไร?',
+			text: 'ในฐานะเกมบล็อคเชนที่รองรับแนวคิดของ NFT + Metaverse SpacePi มีส่วนหลักหลายส่วนในแง่ของการสร้างระบบนิเวศของแพลตฟอร์ม ระบบเกม NFT ระบบนิเวศของเกม Metaverse SpacePi Exchange',
+		}, {
+			title: '4. เราทำอะไรได้บ้างใน SpacePi metaverse?',
+			text: 'SpacePi Token หรือที่เรียกกันว่า SpacePi เป็นการรวมกลุ่มบล็อคเชนหลักสองหมวดหมู่ของ NFT และ Metaverse โดยมีเป้าหมายเพื่อสร้างแพลตฟอร์มเกมเสมือนจริงออนไลน์ที่กระจายอำนาจซึ่งรวมเอาตัวละคร อุปกรณ์ประกอบฉาก และโครงเรื่องชีวิตเข้าไว้ในปฏิสัมพันธ์ทางสังคมเสมือนจริง อาวุธ เกราะ อุปกรณ์ประกอบฉาก และอัญมณีสามารถ ซื้อในโลกเสมือนจริง เข้าร่วมในคอลเลกชันต่าง ๆ เพื่อพัฒนาเกมเสมือนจริง ชีวิต แอ็คชั่น และเกมอื่น ๆ ดังนั้น SpacePi จึงเป็นโครงการแรกและโครงการเดียวในโดเมน metaverse และ NFT',
+		}, {
+			title: '5. วิธีหาเงินใน SpacePi Metaverse?',
+			text: 'SpacePi ยังสามารถสนับสนุนนักพัฒนาบุคคลที่สามในการเขียนโปรแกรม ดีบัก และเผยแพร่แอปพลิเคชันเกมแบบกระจายอำนาจและแอปพลิเคชันเกมสถาปัตยกรรมไฮบริดสำหรับสภาพแวดล้อมบล็อคเชน ในขณะเดียวกัน SpacePi ได้รวมระบบบัญชีผู้ใช้แบบกระจายบนบล็อกเชน กระเป๋าเงิน และการหมุนเวียนสินทรัพย์ดิจิทัล NFT ซึ่ง สามารถรับรู้การจัดเก็บถาวรแบบออฟไลน์และการใช้เนื้อหาเกมในแอปข้ามสาย NFT.',
+		}, {
+			title: '6.ผู้พัฒนา SpacePi?',
+			text: 'SpacePi Metaverse ได้รับการพัฒนาร่วมกันโดยนักพัฒนาอิสระทั่วโลกโดยมีประสบการณ์และความสามารถในการกำกับ จัดการ และปรับปรุงโครงการที่เกี่ยวข้องกับ crypto ที่แทบจะไม่มีใครเทียบได้ พวกเขาร่วมกันสร้างทีมที่แข็งแกร่งพร้อมกลุ่มผู้สนับสนุนที่มีความคิดเหมือนๆ กัน มั่นใจและหลงใหลในวิสัยทัศน์ของ SpacePi metaverse ซึ่งเป็นการผจญภัยครั้งใหม่สู่โลก metaverse',
+		}, {
+			title: '7. ฉันจะให้ความช่วยเหลือเพิ่มเติมได้อย่างไร?',
+			text: 'เนื่องจากการกระจายอำนาจที่สมบูรณ์ SpacePi metaverse จะต้องการชุมชนที่ใหญ่กว่ามากเพื่อบรรลุเป้าหมายของเรา คุณสามารถเข้าร่วม SpacePi ได้',
 		}],
 	},
 	//社区
-	Community:{
-		title:'เข้าร่วมชุมชนระดับโลกของ SpacePi',
-		text:"SpacePi จะเป็นหนึ่งเดียวในด้านบล็อกเชนที่ทำลายอุปสรรคทางเทคนิคและรวมโทเค็นโปรโตคอลข้ามเครือข่ายหลายตัวของประเภทผู้ให้บริการแบบบูรณาการ อนาคตเป็นของผู้เล่นสินทรัพย์ดิจิทัล blockchain ทั้งหมด ให้เราทำงานร่วมกันเพื่อเป็นสักขีพยานในช่วงเวลาที่ยอดเยี่ยมนี้!",
-		buttext:'เข้าร่วมกับเรา',
-		buttext_url:'https://t.me/SpacePi_com',
+	Community: {
+		title: 'เข้าร่วมชุมชนระดับโลกของ SpacePi',
+		text: "SpacePi จะเป็นหนึ่งเดียวในด้านบล็อกเชนที่ทำลายอุปสรรคทางเทคนิคและรวมโทเค็นโปรโตคอลข้ามเครือข่ายหลายตัวของประเภทผู้ให้บริการแบบบูรณาการ อนาคตเป็นของผู้เล่นสินทรัพย์ดิจิทัล blockchain ทั้งหมด ให้เราทำงานร่วมกันเพื่อเป็นสักขีพยานในช่วงเวลาที่ยอดเยี่ยมนี้!",
+		buttext: 'เข้าร่วมกับเรา',
+		buttext_url: 'https://t.me/SpacePi_com',
 	},
 
 	// 底部
 	footer1: "หากคุณมีคำถามใด ๆ โปรดติดต่อเรา",
 	footer2: "ลิขสิทธิ์ © 2021-2022 SpacePi. สงวนลิขสิทธิ์",
-	footer_twitter_url:'https://twitter.com/SpacePi_Com',
-	footer_telegram_url:'https://t.me/SpacePi_com',
-	footer_discord_url:'https://t.me/SpacePi_com',
-	footer_reddit_url:'https://t.me/SpacePi_com',
-	footer_github_url:'https://github.com/SpacePiCom',
-	footer_medium_url:'https://medium.com/@spacepi',
-	footer_copy_url:'https://t.me/SpacePi_com',
+	footer_twitter_url: 'https://twitter.com/SpacePi_Com',
+	footer_telegram_url: 'https://t.me/SpacePi_com',
+	footer_discord_url: 'https://t.me/SpacePi_com',
+	footer_reddit_url: 'https://t.me/SpacePi_com',
+	footer_github_url: 'https://github.com/SpacePiCom',
+	footer_medium_url: 'https://medium.com/@spacepi',
+	footer_copy_url: 'https://t.me/SpacePi_com',
 
 
-	copySuccess:"copySuccess",
+	copySuccess: "copySuccess",
 
 
 	//友情合作商页面
-	partners_title1:'SPACEPi จะเสมอ',
-	partners_title2:'เป็นแฟนตัวยงของเครือข่าย PI!',
-	partners_text:'ทุกสิ่งที่ SpacePi ทำในตอนนี้คือการพิสูจน์ว่าการคงอยู่ของ Pi Fans นั้นคุ้มค่า! ยินดีต้อนรับแพลตฟอร์มและสถาบันอื่นๆ เพื่อร่วมมือกับ SpacePi อีเมลติดต่ออย่างเป็นทางการ: pi@space-pi.com',
-	partners_email_title:'อีเมลติดต่ออย่างเป็นทางการ:',
-	partners_email:'pi@space-pi.com',
+	partners_title1: 'SPACEPi จะเสมอ',
+	partners_title2: 'เป็นแฟนตัวยงของเครือข่าย PI!',
+	partners_text: 'ทุกสิ่งที่ SpacePi ทำในตอนนี้คือการพิสูจน์ว่าการคงอยู่ของ Pi Fans นั้นคุ้มค่า! ยินดีต้อนรับแพลตฟอร์มและสถาบันอื่นๆ เพื่อร่วมมือกับ SpacePi อีเมลติดต่ออย่างเป็นทางการ: pi@space-pi.com',
+	partners_email_title: 'อีเมลติดต่ออย่างเป็นทางการ:',
+	partners_email: 'pi@space-pi.com',
 };
 
 export default locale;

@@ -1,7 +1,7 @@
 <template>
     <div class="alert">
-        <v-alert dense :type="type"  v-if="status!=false">
-            {{text}}
+        <v-alert dense :type="type" v-if="status != false">
+            {{ text }}
         </v-alert>
     </div>
 </template>
@@ -21,7 +21,7 @@ export default {
             type: String,
             default: "warning",
         },
-        status:{
+        status: {
             type: Boolean,
             default: false,
         },
@@ -29,14 +29,14 @@ export default {
     computed: {},
     watch: {},
     components: {},
-    created() {},
-    mounted() {},
+    created() { },
+    mounted() { },
     methods: {},
 };
 </script>
 
 <style scoped lang="less">
-.alert{
+.alert {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -44,26 +44,33 @@ export default {
     position: fixed;
     top: 25px;
     z-index: 9;
-    .v-alert{
+
+    .v-alert {
         position: absolute;
         top: 12px;
-        @keyframes alert{
-            0%{
+
+        @keyframes alert {
+            0% {
                 opacity: 0;
             }
-            50%{
+
+            50% {
                 opacity: 0.5;
             }
-            100%{
+
+            100% {
                 opacity: 1;
             }
-            50%{
+
+            50% {
                 opacity: 0.5;
             }
-            0%{
+
+            0% {
                 opacity: 0;
             }
         }
+
         -webkit-animation-name: alert;
         -webkit-animation-duration: 0.3s;
         -webkit-animation-iteration-count: 1;

@@ -237,7 +237,7 @@ export default {
     computed: {
     },
     created() {
-        
+
     },
     methods: {
         // spacepi跳转
@@ -422,8 +422,9 @@ export default {
                     -webkit-box-sizing: border-box;
                     -moz-box-sizing: border-box;
                     -webkit-user-select: none;
-                    border:0;
+                    border: 0;
                 }
+
                 .task-bnt {
                     margin: 0;
                     border: 0;
@@ -446,9 +447,11 @@ export default {
                 .task-bnt:hover {
                     cursor: pointer;
                 }
+
                 .b03_skewed_slide_in {
                     overflow: hidden;
                 }
+
                 .b03_skewed_slide_in div {
                     position: absolute;
                     text-align: center;
@@ -461,8 +464,9 @@ export default {
                     justify-content: center;
                     align-items: center;
                 }
-                .b03_skewed_slide_in div:nth-child(1) {
-                }
+
+                .b03_skewed_slide_in div:nth-child(1) {}
+
                 .b03_skewed_slide_in div:nth-child(2) {
                     background-color: #FDD333;
                     width: 100%;
@@ -474,6 +478,7 @@ export default {
                     -webkit-transform: translate(-150px, 0px) skewX(0deg);
                     -moz-transform: translate(-150px, 0px) skewX(0deg);
                 }
+
                 .b03_skewed_slide_in:hover div:nth-child(2) {
                     transition: all 0.5s ease;
                     -webkit-transition: all 0.5s ease;
@@ -482,6 +487,7 @@ export default {
                     -webkit-transform: translate(0px, 0px) skewX(0deg);
                     -moz-transform: translate(0px, 0px) skewX(0deg);
                 }
+
                 .b03_skewed_slide_in:hover div:nth-child(3) {
                     left: 0px;
                     transition: left 0.30000000000000004s ease;

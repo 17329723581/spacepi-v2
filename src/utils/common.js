@@ -13,15 +13,15 @@ export const abiObject = {
     StakePoolAbi: require('../abis/StakePool.json'),
 }
 // output contract Object and address
-export function getAbi (params) {
-    let {abi,address} = params
+export function getAbi(params) {
+    let { abi, address } = params
     // const address = networks[ID].address
-    const contractObject= new web3.eth.Contract(abi,address);
-    return {contractObject,address}
+    const contractObject = new web3.eth.Contract(abi, address);
+    return { contractObject, address }
 }
 
 // format Decimals
-export const  formatDecimal = (num, decimal) =>{
+export const formatDecimal = (num, decimal) => {
     num = num.toString()
     let index = num.indexOf('.')
     if (index !== -1) {
@@ -32,12 +32,12 @@ export const  formatDecimal = (num, decimal) =>{
     return parseFloat(num).toFixed(decimal)
 }
 // format Number
-export function thousands(num){
-	let splits=[],res=[];
-	 splits = num.toString().split(".");
-	splits[0].split("").reverse().map(function(item,i){
-		if(i%3 == 0 && i!=0){ res.push(","); }
-		res.push(item);
-	});
-	return res.reverse().join("")+(splits.length>1 ? "."+splits[1] : "");
+export function thousands(num) {
+    let splits = [], res = [];
+    splits = num.toString().split(".");
+    splits[0].split("").reverse().map(function (item, i) {
+        if (i % 3 == 0 && i != 0) { res.push(","); }
+        res.push(item);
+    });
+    return res.reverse().join("") + (splits.length > 1 ? "." + splits[1] : "");
 }

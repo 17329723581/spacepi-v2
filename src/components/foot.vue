@@ -62,48 +62,6 @@
                             <v-img class="join-img-h" :src="item.picture1"></v-img>
                         </div>
                     </a>
-                    <!-- <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/game.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/game-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/git.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/git-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/instagram.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/instagram-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/mirror.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/mirror-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/reddit.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/reddit-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/telegram.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/telegram-h.png"></v-img>
-                    </div>
-                </a>
-                <a class="join-a">
-                    <div class="join-img">
-                        <v-img class="join-img-w" src="@/assets/footlink/twitter.png"></v-img>
-                        <v-img class="join-img-h" src="@/assets/footlink/twitter-h.png"></v-img>
-                    </div>
-                </a> -->
                 </div>
             </div>
             <!-- foot-line -->
@@ -449,7 +407,7 @@ export default {
 
             // join链接主体
             .join-link-subject {
-                margin-top:25px;
+                margin-top: 25px;
                 display: grid;
                 justify-content: center;
 

@@ -47,7 +47,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   //这里就是scrollBehavior：当路由切换时可以让页面滚到顶部
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {

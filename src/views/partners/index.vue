@@ -10,22 +10,22 @@
                         <div class="line"></div>
                         <!-- partners标题 -->
                         <span class="partners-title">
-                            <span>{{$t('partners_title1')}}</span>
-                            <span>{{$t('partners_title2')}}</span>
+                            <span>{{ $t('partners_title1') }}</span>
+                            <span>{{ $t('partners_title2') }}</span>
                         </span>
                     </div>
                     <!-- partners内容 -->
                     <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
-                        {{$t('partners_text')}}
+                        {{ $t('partners_text') }}
                     </div>
                     <!-- partners按钮主体 -->
                     <div class="partners-bnt-content wow spacepi-animation fade-in-up-animation">
                         <!-- partners按钮1 -->
-                        <div class="partners-bnt1 p">{{$t('partners_email_title')}}</div>
-                        <div class="partners-bnt1-s m">{{$t('partners_email_title')}}</div>
+                        <div class="partners-bnt1 p">{{ $t('partners_email_title') }}</div>
+                        <div class="partners-bnt1-s m">{{ $t('partners_email_title') }}</div>
                         <!-- partners按钮2 -->
                         <div class="partners-bnt2" v-clipboard:copy="$t('partners_email')" v-clipboard:success="onCopy">
-                            <span>{{$t('partners_email')}}</span>
+                            <span>{{ $t('partners_email') }}</span>
                             <div class="partners-copy">
                                 <v-img src="@/assets/partners-copy.png"></v-img>
                             </div>
@@ -42,31 +42,20 @@
         <div class="spacepi_bg">
             <v-container class="friendship-partner-container">
                 <!-- friendship合作商主体 -->
-                <div class="friendship-partner-subject" v-for="(item,index) in array" :key="index">
+                <div class="friendship-partner-subject" v-for="(item, index) in array" :key="index">
                     <!-- friendship合作商标题主体 -->
                     <div class="friendship-partner-title-subject wow spacepi-animation fade-right-in-left-animation">
                         <div class="line"></div>
                         <!-- friendship合作商标题 -->
                         <div class="friendship-partner-title">
-                            {{item[locale]}}
+                            {{ item[locale] }}
                         </div>
                     </div>
                     <!-- friendship合作商广告位 -->
                     <div class="friendship-partner-adsense wow spacepi-animation fade-in-up-animation">
                         <template v-for="i in data">
-                            <v-img :src="i.picture"   v-if="item.id == i.p_id" @click="to(i.link)"></v-img>
+                            <v-img :src="i.picture" v-if="item.id == i.p_id" @click="to(i.link)"></v-img>
                         </template>
-                        <!-- <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img>
-                        <v-img src="@/assets/test-partner-adsense.svg" ></v-img> -->
                     </div>
                 </div>
             </v-container>
@@ -100,7 +89,7 @@ export default {
         ]),
     },
     created() {
-        setTimeout(this.location(),1);
+        setTimeout(this.location(), 1);
     },
     methods: {
         location() {
@@ -130,15 +119,12 @@ export default {
             window.open(e)
         },
         // 复制
-		onCopy(e) {
-			// alert(e.text);
-			//this.$message.success(this.$t("copySuccess"));
-            //this.setAlert('alert',true,this.$t("alerts.copy_success"),"success");
-            this.$store.commit("setAlert", {status:true,text:this.$t("copySuccess"),type:"success"});
-            setTimeout(()=>{
-                this.$store.commit("setAlert", {status:false,text:"",type:""});
-            },2000)
-		},
+        onCopy(e) {
+            this.$store.commit("setAlert", { status: true, text: this.$t("copySuccess"), type: "success" });
+            setTimeout(() => {
+                this.$store.commit("setAlert", { status: false, text: "", type: "" });
+            }, 2000)
+        },
     },
 }
 </script>

@@ -4,7 +4,7 @@
             <!-- 轮播图 -->
             <div class="nft-carousel">
                 <v-carousel class="nft-carousel-container" hide-delimiters :show-arrows="false" cycle>
-                    <v-carousel-item v-for="(item, index) in getNftCarouselData" :key="index" >
+                    <v-carousel-item v-for="(item, index) in getNftCarouselData" :key="index">
                         <div>
                             <v-img :src="item.picture" class="nft-carousel-img" :contain="true"
                                 @click="spacepiTo(item.url)"></v-img>
@@ -19,8 +19,7 @@
                 <v-carousel class="nft-carousel-container" hide-delimiters :show-arrows="false" cycle>
                     <v-carousel-item v-for="(item, index) in getNftCarouselData" :key="index">
                         <div>
-                            <v-img :src="item.picture_m" class="nft-carousel-img"
-                                @click="spacepiTo(item.url)"></v-img>
+                            <v-img :src="item.picture_m" class="nft-carousel-img" @click="spacepiTo(item.url)"></v-img>
                         </div>
                     </v-carousel-item>
                 </v-carousel>
@@ -165,9 +164,10 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.nftCarousel{
+.nftCarousel {
     display: contents;
 }
+
 .pc {
     display: block;
 }
@@ -245,34 +245,37 @@ export default {
         display: block;
 
         .nft-carousel-s {
-            // width: 94vw;
-
-            // width: 430px;
             .nft-carousel-img {
                 width: 91.8vw !important;
-                @media screen and (min-width:360px){
+
+                @media screen and (min-width:360px) {
                     width: 93vw !important;
                 }
-                @media screen and (min-width:375px){
+
+                @media screen and (min-width:375px) {
                     width: 93vw !important;
                 }
-                @media screen and (min-width:390px){
+
+                @media screen and (min-width:390px) {
                     width: 93.9vw !important;
                 }
-                @media screen and (min-width:414px){
+
+                @media screen and (min-width:414px) {
                     width: 94vw !important;
                 }
-                @media screen and (min-width:540px){
+
+                @media screen and (min-width:540px) {
                     width: 95.5vw !important;
                 }
-                @media screen and (max-width:600px){
+
+                @media screen and (max-width:600px) {
                     width: 93vw !important;
                 }
             }
 
-            // .nft-carousel-container{
+            .nft-carousel-container {
                 height: 45vw !important;
-            // }
+            }
         }
 
     }
@@ -310,27 +313,27 @@ export default {
     .pc {
         display: none;
     }
+
     .mo {
         display: block;
 
         .nft-carousel-s {
-            // width: 94vw;
-
-            // width: 430px;
             .nft-carousel-img {
                 width: 81.5vw !important;
             }
 
-            // .nft-carousel-container{
+            .nft-carousel-container {
                 height: 40vw !important;
-            // }
+            }
         }
 
     }
+
     .nft {
         padding: 50px;
         padding-bottom: 100px;
     }
+
     //NFT顶部按钮
     .nft-top-bnt {
         width: 100%;
@@ -356,19 +359,23 @@ export default {
 
 // 小型号到中型号的平板
 @media screen and (min-width:960px) and (max-width:1264px) {
+
     //轮播图
     .nft-carousel {
         .nft-carousel-img {
             width: 80vw;
         }
+
         .nft-carousel-container {
             height: 18vw !important;
         }
     }
+
     //NFT顶部按钮
     .nft-top-bnt {
         grid-template-columns: 1fr 1fr;
         grid-gap: 25px;
+
         .v-btn {
             width: 30vw;
         }
@@ -377,11 +384,13 @@ export default {
 
 // 桌面端
 @media screen and (min-width:1264px) and (max-width:1904px) {
+
     //轮播图
     .nft-carousel {
         .nft-carousel-img {
             width: 80vw;
         }
+
         .nft-carousel-container {
             height: 18vw !important;
         }

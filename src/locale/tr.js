@@ -1,58 +1,58 @@
 const locale = {
 	// 导航栏
 	home: "ön Sayfa",
-	url_buy_twitter:'heyecan',
-	index_SpacePi_Bscscan_t:'SpacePi Tarayıcı',
-	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	url_buy_twitter: 'heyecan',
+	index_SpacePi_Bscscan_t: 'SpacePi Tarayıcı',
+	index_SpacePi_Bscscan: 'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 
 	// 电报
-	telegraph:"TELEGRAM",// 电报标题
-	telegraph_more:"Daha Fazla Telgraf",
+	telegraph: "TELEGRAM",// 电报标题
+	telegraph_more: "Daha Fazla Telgraf",
 
 	// spacepiwep
-	spacepiwep:{
-		title:"SPISWAP",
-		o:"Gemide",
-		bnt:"TEFTİŞ RAPORU",
-		text:"Bu bakış açısına dayanarak, ekosisteminde sanal varlık veya hizmet satın almak için bir yatırım aracı haline gelen SpacePi, SpacePi uygulamasıyla yeni bir canlılık ve eşi görülmemiş bir değerle patlayacak. İşte SpacePi ekosisteminin bazı önemli noktaları.",
-		trend_bnt_title:"Uzay Pi Trendi",
-		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
+	spacepiwep: {
+		title: "SPISWAP",
+		o: "Gemide",
+		bnt: "TEFTİŞ RAPORU",
+		text: "Bu bakış açısına dayanarak, ekosisteminde sanal varlık veya hizmet satın almak için bir yatırım aracı haline gelen SpacePi, SpacePi uygulamasıyla yeni bir canlılık ve eşi görülmemiş bir değerle patlayacak. İşte SpacePi ekosisteminin bazı önemli noktaları.",
+		trend_bnt_title: "Uzay Pi Trendi",
+		trend_bnt_url: "https://www.baidu.com/?tn=44004473_35_oem_dg",
 	},
 	// partners轮播内容
-	partners_carousel_text:"SPACEPI HER ZAMAN PI NETWORK'ÜN İNANÇ HAYRANI OLACAKTIR! SPACEPI'NİN ŞİMDİ YAPTIĞI HER ŞEY, PI HAYRANLARININ DİRENİŞİNİN buna DEĞER OLDUĞUNU KANITLAMAK İÇİNDİR!",
+	partners_carousel_text: "SPACEPI HER ZAMAN PI NETWORK'ÜN İNANÇ HAYRANI OLACAKTIR! SPACEPI'NİN ŞİMDİ YAPTIĞI HER ŞEY, PI HAYRANLARININ DİRENİŞİNİN buna DEĞER OLDUĞUNU KANITLAMAK İÇİNDİR!",
 	// 选择语言
 	selectLang: "Bir dil seçin",
 
 	// 首页
-	happy_gd:'Daha Dost Ortaklar',
-	happy_text:"SpacePi'nin daha büyük yeniliklere imza atması için SHIBA Token ile aynı seviyeyi benimseyerek sözleşmeyi en güvenli mekanizmaya yükseltmeye karar verdik.Yükselen sözleşme tüm izinlerden vazgeçecek ve kilitlenecektir.Sözleşme adresi:",
-	happy_text1:"SpacePi her zaman Pi Network'ün inançlı bir hayranı olacak!",
-	happy_text2:"SpacePi'nin şimdi yaptığı her şey, Pi Hayranlarının ısrarının buna değdiğini kanıtlamak!",
+	happy_gd: 'Daha Dost Ortaklar',
+	happy_text: "SpacePi'nin daha büyük yeniliklere imza atması için SHIBA Token ile aynı seviyeyi benimseyerek sözleşmeyi en güvenli mekanizmaya yükseltmeye karar verdik.Yükselen sözleşme tüm izinlerden vazgeçecek ve kilitlenecektir.Sözleşme adresi:",
+	happy_text1: "SpacePi her zaman Pi Network'ün inançlı bir hayranı olacak!",
+	happy_text2: "SpacePi'nin şimdi yaptığı her şey, Pi Hayranlarının ısrarının buna değdiğini kanıtlamak!",
 	doge: "SpacePi nedir?",
-	only:"Dünyanın tek kapsamlı hizmet sağlayıcı türü çoklu zincirler arası protokol belirteci",
-	introduce:"SpacePi, blockchain alanında teknik engelleri aşan ve kapsamlı hizmet sağlayıcı türlerinin çoklu zincirler arası protokol sertifikalarını entegre eden tek kişi olacak.Gelecek tüm blockchain dijital varlık oyuncularına ait.Bu harika ana tanık olmak için birlikte çalışalım!",
+	only: "Dünyanın tek kapsamlı hizmet sağlayıcı türü çoklu zincirler arası protokol belirteci",
+	introduce: "SpacePi, blockchain alanında teknik engelleri aşan ve kapsamlı hizmet sağlayıcı türlerinin çoklu zincirler arası protokol sertifikalarını entegre eden tek kişi olacak.Gelecek tüm blockchain dijital varlık oyuncularına ait.Bu harika ana tanık olmak için birlikte çalışalım!",
 	text: [
 		"SpacePi, çekirdek olarak basit ve verimli bir metaverse dijital daldırma deneyimi sağlayan benzeri görülmemiş bir üst düzey dijital ekosistem yaratacaktır. Token dolaşımının değerini bahşedin, daha fazla insanın SpacePi'nin ekolojik yapısına katılmasına izin verin, sınırsız bir eğlence dünyası yaratın, dünyanın her köşesindeki kullanıcıları birbirine bağlayın ve küresel kullanıcılar için güvenilir ve oldukça merkezi olmayan bir metaverse ekolojisi kurun.",
 		"SpacePi, NFT ve Metaverse'in iki ana blok zinciri kategorisini içerir.SpacePi, karakterleri, sahne donanımlarını ve yaşam hikayelerini sanal sosyal etkileşime entegre eden merkezi olmayan bir çevrimiçi sanal gerçeklik oyun platformu inşa ediyor.Oyuncular sanal dünyada oynayabilir.Silah, zırh, sahne satın almak için ve mücevherler. Sanal, yaşam, aksiyon ve diğer oyunları geliştirmek için farklı koleksiyonlara katılın.",
 		"SpacePi'nin tüm faydaları, yerel simge SpacePi biçiminde sunulacaktır. SpacePi meta veri tabanının sanal ve gerçekliği birbirine son derece bağlıdır ve açık kaynak platformuna bağlı kapalı döngü ekonomisi, İnternet'in son biçimi haline gelmiştir."
 	],
 	tetxbu: 'Beyaz kağıdı okuyun',
-	tetxbu_url:'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
+	tetxbu_url: 'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
 	contractAddress: "",
 	down: ['SpacePi satın al'],
-	index_Liquidity_title:'Likidite Kilitli',
-	index_Liquidity:'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
-	index_Goplus_title:'Goplus algılama',
-	index_Goplus:'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	index_SpacePi_title:'SpacePi Price',
-	index_SpacePi:[{
-		title:'Dextools Akım',
-	},{
-		title:'Poocoin Akım',
-	},{
-		title:'Avedex Akım',
-	},{
-		title:'Msgsender',
+	index_Liquidity_title: 'Likidite Kilitli',
+	index_Liquidity: 'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
+	index_Goplus_title: 'Goplus algılama',
+	index_Goplus: 'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	index_SpacePi_title: 'SpacePi Price',
+	index_SpacePi: [{
+		title: 'Dextools Akım',
+	}, {
+		title: 'Poocoin Akım',
+	}, {
+		title: 'Avedex Akım',
+	}, {
+		title: 'Msgsender',
 	}],
 	car: [{
 		title: 'SpacePi nedir?',
@@ -104,10 +104,10 @@ const locale = {
 		trx: '19 BNB',
 		usd: '7030 USD',
 	}],
-	bsc_token:'0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	url_array:[{
-		title:'SpacePi (bsc)',
-		url:'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	bsc_token: '0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	url_array: [{
+		title: 'SpacePi (bsc)',
+		url: 'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 	}],
 
 	//社区通证
@@ -155,61 +155,61 @@ const locale = {
 	rt2_text9: "Piyasadaki en iyi CEX'leri listeleyin",
 
 	//社区
-	Community:{
-		title:'SpacePi küresel topluluğuna katılın',
-		text:"SpacePi, blockchain alanında teknik engelleri aşan ve kapsamlı hizmet sağlayıcı türlerinin çoklu zincirler arası protokol sertifikalarını entegre eden tek kişi olacak.Gelecek tüm blockchain dijital varlık oyuncularına ait.Bu harika ana tanık olmak için birlikte çalışalım!",
-		buttext:'bize katılın',
-		buttext_url:'https://t.me/SpacePi_com',
+	Community: {
+		title: 'SpacePi küresel topluluğuna katılın',
+		text: "SpacePi, blockchain alanında teknik engelleri aşan ve kapsamlı hizmet sağlayıcı türlerinin çoklu zincirler arası protokol sertifikalarını entegre eden tek kişi olacak.Gelecek tüm blockchain dijital varlık oyuncularına ait.Bu harika ana tanık olmak için birlikte çalışalım!",
+		buttext: 'bize katılın',
+		buttext_url: 'https://t.me/SpacePi_com',
 	},
 
-	answers:{
+	answers: {
 		//顶部标题
-		text:'SpacePi, dünyadaki tek kapsamlı hizmet sağlayıcı tipi çoklu zincirler arası protokol belirtecidir.',
+		text: 'SpacePi, dünyadaki tek kapsamlı hizmet sağlayıcı tipi çoklu zincirler arası protokol belirtecidir.',
 		//底部展开展示内容
-		array:[{
-			title:'1.SpacePi tarafından açıklanan metaverse nedir?',
-			text:'Oyunlar, meta veri deposunun birincil biçimidir. Ürün formundan, oyun metaverse in prototipidir. Gerçekliğin simülasyonuna, uzantısına ve yaratıcı hayal gücüne dayalı olarak insanlar tarafından kurulan sanal bir dünya olarak oyunlar, ürün biçiminde Metaverse e benzer. Ready Player One kitabına veya filmine aşina iseniz, bu metaverse için harika bir örnektir.',
-		},{
-			title:'2.Metaverse Önemli mi?',
-			text:'Web3.0, holografik İnternet teknolojisi, blok zinciri ve NFT nin entegrasyonuna dayanan Metaverse kavramının sunduğu değerler, İnternet in temel değerleri ile uyumludur. SpacePi, meta verinin İnternet in nihai biçimi olabileceğine inanıyor. Bu nedenle, oyunu başlangıç ​​noktası olarak aldık ve gerçeklik ile sanallık arasındaki bağlantıyı daha verimli hale getiren ve değer dolaşımını zenginleştiren NFT+ metaverse tabanlı bir sanal yaşam blok zinciri oyunu olan SpacePi yi yarattık. Bu dijital platformların önemi, son küresel salgın sırasında belirgin hale geldi.',
-		},{
-			title:'3.SpacePi Ekosistemi nedir?',
-			text:'NFT + Metaverse konsepti ile desteklenen bir blok zincir oyunu olan SpacePi, platform ekolojik yapısı açısından birkaç çekirdek bölüm içermektedir.NFT oyun sistemi Metaverse oyun ekolojisi SpacePi Exchange ',
-		},{
-			title:'4.SpacePi meta veri tabanında ne yapabiliriz?',
-			text:'SpacePi olarak anılan SpacePi Token, karakterleri, sahne donanımlarını ve yaşam hikayelerini sanal sosyal etkileşime entegre eden merkezi olmayan bir çevrimiçi sanal gerçeklik oyun platformu oluşturmayı amaçlayan NFT ve Metaverse nin iki ana blok zinciri kategorisini birleştirir. sanal dünyada satın alınabilir. Sanal, yaşam, aksiyon ve diğer oyunları geliştirmek için farklı koleksiyonlara katılın. Bu nedenle SpacePi, meta veri deposu ve NFT etki alanlarındaki ilk ve tek projedir.',
-		},{
-			title:'5.SpacePi Metaverse de nasıl para kazanılır?',
-			text:'SpacePi ayrıca, blok zinciri ortamı için merkezi olmayan oyun uygulamalarını ve hibrit mimari oyun uygulamalarını programlamak, hata ayıklamak ve yayınlamak için üçüncü taraf geliştiricileri de destekleyebilir. Aynı zamanda SpacePi, zincir dışı kalıcı depolamayı ve uygulama içi oyun varlıkları NFT nin zincirler arası kullanımını gerçekleştirebilen blok zinciri tabanlı dağıtılmış kullanıcı hesabı sistemi, cüzdan ve NFT dijital varlık dolaşımını entegre eder.',
-		},{
-			title:'6.SpacePi nin geliştiricisi mi?',
-			text:'SpacePi Metaverse, kripto ile ilgili projeleri yönlendirmek, yönetmek ve geliştirmek için neredeyse benzersiz bir deneyime ve yeteneğe sahip, dünya çapındaki bağımsız geliştiriciler tarafından ortaklaşa geliştirildi. Birlikte, Metaverse dünyasına yeni bir macera olan SpacePi metaverse nin vizyonu konusunda kendine güvenen ve tutkulu olan, aynı fikirde olan bir grup destekçiyle güçlü bir ekip oluşturuyorlar.',
-		},{
-			title:'7.Nasıl daha fazla yardım sağlayabilirim?',
-			text:'Tam ademi merkeziyetçilik nedeniyle, SpacePi metaverse hedeflerimize ulaşmak için çok daha büyük bir topluluğa ihtiyaç duyacaktır, SpacePi ye katılabilirsiniz.',
+		array: [{
+			title: '1.SpacePi tarafından açıklanan metaverse nedir?',
+			text: 'Oyunlar, meta veri deposunun birincil biçimidir. Ürün formundan, oyun metaverse in prototipidir. Gerçekliğin simülasyonuna, uzantısına ve yaratıcı hayal gücüne dayalı olarak insanlar tarafından kurulan sanal bir dünya olarak oyunlar, ürün biçiminde Metaverse e benzer. Ready Player One kitabına veya filmine aşina iseniz, bu metaverse için harika bir örnektir.',
+		}, {
+			title: '2.Metaverse Önemli mi?',
+			text: 'Web3.0, holografik İnternet teknolojisi, blok zinciri ve NFT nin entegrasyonuna dayanan Metaverse kavramının sunduğu değerler, İnternet in temel değerleri ile uyumludur. SpacePi, meta verinin İnternet in nihai biçimi olabileceğine inanıyor. Bu nedenle, oyunu başlangıç ​​noktası olarak aldık ve gerçeklik ile sanallık arasındaki bağlantıyı daha verimli hale getiren ve değer dolaşımını zenginleştiren NFT+ metaverse tabanlı bir sanal yaşam blok zinciri oyunu olan SpacePi yi yarattık. Bu dijital platformların önemi, son küresel salgın sırasında belirgin hale geldi.',
+		}, {
+			title: '3.SpacePi Ekosistemi nedir?',
+			text: 'NFT + Metaverse konsepti ile desteklenen bir blok zincir oyunu olan SpacePi, platform ekolojik yapısı açısından birkaç çekirdek bölüm içermektedir.NFT oyun sistemi Metaverse oyun ekolojisi SpacePi Exchange ',
+		}, {
+			title: '4.SpacePi meta veri tabanında ne yapabiliriz?',
+			text: 'SpacePi olarak anılan SpacePi Token, karakterleri, sahne donanımlarını ve yaşam hikayelerini sanal sosyal etkileşime entegre eden merkezi olmayan bir çevrimiçi sanal gerçeklik oyun platformu oluşturmayı amaçlayan NFT ve Metaverse nin iki ana blok zinciri kategorisini birleştirir. sanal dünyada satın alınabilir. Sanal, yaşam, aksiyon ve diğer oyunları geliştirmek için farklı koleksiyonlara katılın. Bu nedenle SpacePi, meta veri deposu ve NFT etki alanlarındaki ilk ve tek projedir.',
+		}, {
+			title: '5.SpacePi Metaverse de nasıl para kazanılır?',
+			text: 'SpacePi ayrıca, blok zinciri ortamı için merkezi olmayan oyun uygulamalarını ve hibrit mimari oyun uygulamalarını programlamak, hata ayıklamak ve yayınlamak için üçüncü taraf geliştiricileri de destekleyebilir. Aynı zamanda SpacePi, zincir dışı kalıcı depolamayı ve uygulama içi oyun varlıkları NFT nin zincirler arası kullanımını gerçekleştirebilen blok zinciri tabanlı dağıtılmış kullanıcı hesabı sistemi, cüzdan ve NFT dijital varlık dolaşımını entegre eder.',
+		}, {
+			title: '6.SpacePi nin geliştiricisi mi?',
+			text: 'SpacePi Metaverse, kripto ile ilgili projeleri yönlendirmek, yönetmek ve geliştirmek için neredeyse benzersiz bir deneyime ve yeteneğe sahip, dünya çapındaki bağımsız geliştiriciler tarafından ortaklaşa geliştirildi. Birlikte, Metaverse dünyasına yeni bir macera olan SpacePi metaverse nin vizyonu konusunda kendine güvenen ve tutkulu olan, aynı fikirde olan bir grup destekçiyle güçlü bir ekip oluşturuyorlar.',
+		}, {
+			title: '7.Nasıl daha fazla yardım sağlayabilirim?',
+			text: 'Tam ademi merkeziyetçilik nedeniyle, SpacePi metaverse hedeflerimize ulaşmak için çok daha büyük bir topluluğa ihtiyaç duyacaktır, SpacePi ye katılabilirsiniz.',
 		}],
 	},
 
 	// 底部
 	footer1: "If you have any question, please contact us",
 	footer2: "Copyright © 2021-2022 SpacePi. All Rights Reserved",
-	footer_twitter_url:'https://twitter.com/SpacePi_Com',
-	footer_telegram_url:'https://t.me/SpacePi_com',
-	footer_discord_url:'https://t.me/SpacePi_com',
-	footer_reddit_url:'https://t.me/SpacePi_com',
-	footer_github_url:'https://github.com/SpacePiCom',
-	footer_medium_url:'https://medium.com/@spacepi',
-	footer_copy_url:'https://t.me/SpacePi_com',
+	footer_twitter_url: 'https://twitter.com/SpacePi_Com',
+	footer_telegram_url: 'https://t.me/SpacePi_com',
+	footer_discord_url: 'https://t.me/SpacePi_com',
+	footer_reddit_url: 'https://t.me/SpacePi_com',
+	footer_github_url: 'https://github.com/SpacePiCom',
+	footer_medium_url: 'https://medium.com/@spacepi',
+	footer_copy_url: 'https://t.me/SpacePi_com',
 
-	copySuccess:"kopya başarı",
+	copySuccess: "kopya başarı",
 
 
 	//友情合作商页面
-	partners_title1:'SPACEPi HER ZAMAN OLACAK',
-	partners_title2:"PI NETWORK'ÜN İNANÇ HAYRANI OLUN!",
-	partners_text:"SpacePi'nin şimdi yaptığı her şey, Pi Hayranlarının ısrarının buna değdiğini kanıtlamak! SpacePi ile işbirliği yapmak için daha fazla platforma ve kuruma hoş geldiniz, resmi iletişim e-postası: pi@space-pi.com",
-	partners_email_title:'RESMİ İLETİŞİM E-POSTA:',
-	partners_email:'pi@space-pi.com',
+	partners_title1: 'SPACEPi HER ZAMAN OLACAK',
+	partners_title2: "PI NETWORK'ÜN İNANÇ HAYRANI OLUN!",
+	partners_text: "SpacePi'nin şimdi yaptığı her şey, Pi Hayranlarının ısrarının buna değdiğini kanıtlamak! SpacePi ile işbirliği yapmak için daha fazla platforma ve kuruma hoş geldiniz, resmi iletişim e-postası: pi@space-pi.com",
+	partners_email_title: 'RESMİ İLETİŞİM E-POSTA:',
+	partners_email: 'pi@space-pi.com',
 
 };
 

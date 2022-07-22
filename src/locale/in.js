@@ -1,59 +1,59 @@
 const locale = {
 	// 导航栏
 	home: "Rumah",
-	url_buy_twitter:'Twitter',
-	url_buy_telegram:'Telegram',
-	index_SpacePi_Bscscan_t:'SpacePi Bscscan',
-	index_SpacePi_Bscscan:'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	url_buy_twitter: 'Twitter',
+	url_buy_telegram: 'Telegram',
+	index_SpacePi_Bscscan_t: 'SpacePi Bscscan',
+	index_SpacePi_Bscscan: 'https://bscscan.com/token/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
 
 	// 电报
-	telegraph:"TELEGRAM",// 电报标题
-	telegraph_more:"Lebih banyak Telegram",
+	telegraph: "TELEGRAM",// 电报标题
+	telegraph_more: "Lebih banyak Telegram",
 
 	// spacepiwep
-	spacepiwep:{
-		title:"SPISWAP",
-		o:"Di atas kapal",
-		bnt:"LAPORAN AUDIT",
-		text:"Berdasarkan sudut pandang ini, SpacePi telah menjadi alat investasi untuk membeli aset atau layanan virtual di ekosistemnya, dan akan meledak dengan vitalitas baru dan nilai yang belum pernah ada sebelumnya dengan penerapan SpacePi. Berikut adalah beberapa poin penting dari ekosistem SpacePi.",
-		trend_bnt_title:"Tren SpacePi",
-		trend_bnt_url:"https://www.baidu.com/?tn=44004473_35_oem_dg",
+	spacepiwep: {
+		title: "SPISWAP",
+		o: "Di atas kapal",
+		bnt: "LAPORAN AUDIT",
+		text: "Berdasarkan sudut pandang ini, SpacePi telah menjadi alat investasi untuk membeli aset atau layanan virtual di ekosistemnya, dan akan meledak dengan vitalitas baru dan nilai yang belum pernah ada sebelumnya dengan penerapan SpacePi. Berikut adalah beberapa poin penting dari ekosistem SpacePi.",
+		trend_bnt_title: "Tren SpacePi",
+		trend_bnt_url: "https://www.baidu.com/?tn=44004473_35_oem_dg",
 	},
 	// partners轮播内容
-	partners_carousel_text:"SPACEPI AKAN SELALU MENJADI PENGGEMAR IMAN JARINGAN PI! SEGALA SESUATU YANG SPACEPI LAKUKAN SEKARANG ADALAH UNTUK MEMBUKTIKAN BAHWA KETEKUNAN PENGGEMAR PI LAYAK!",
+	partners_carousel_text: "SPACEPI AKAN SELALU MENJADI PENGGEMAR IMAN JARINGAN PI! SEGALA SESUATU YANG SPACEPI LAKUKAN SEKARANG ADALAH UNTUK MEMBUKTIKAN BAHWA KETEKUNAN PENGGEMAR PI LAYAK!",
 	// 选择语言
 	selectLang: "Pilih bahasa",
 
 	// 首页
-	happy_gd:'Mitra Lebih Ramah',
-	happy_text:'Untuk membuat SpacePi mencapai inovasi yang lebih besar, kami memutuskan untuk meningkatkan kontrak ke mekanisme yang paling aman, mengadopsi level yang sama dengan Token SHIBA. Kontrak yang ditingkatkan akan melepaskan semua izin dan terkunci. Alamat kontrak:',
-	happy_text1:"SpacePi akan selalu menjadi penggemar setia Pi Network!",
-	happy_text2:"Semua yang SpacePi lakukan sekarang adalah untuk membuktikan bahwa kegigihan Fans Pi itu sepadan!",
+	happy_gd: 'Mitra Lebih Ramah',
+	happy_text: 'Untuk membuat SpacePi mencapai inovasi yang lebih besar, kami memutuskan untuk meningkatkan kontrak ke mekanisme yang paling aman, mengadopsi level yang sama dengan Token SHIBA. Kontrak yang ditingkatkan akan melepaskan semua izin dan terkunci. Alamat kontrak:',
+	happy_text1: "SpacePi akan selalu menjadi penggemar setia Pi Network!",
+	happy_text2: "Semua yang SpacePi lakukan sekarang adalah untuk membuktikan bahwa kegigihan Fans Pi itu sepadan!",
 	doge: "Apa itu SpacePi?",
-	only:"Satu-satunya penyedia layanan yang komprehensif di dunia jenis beberapa token protokol lintas-rantai",
-	introduce:"SpacePi akan menjadi satu-satunya di bidang blockchain yang memecahkan hambatan teknis dan mengintegrasikan beberapa token protokol lintas-rantai dari jenis penyedia layanan terintegrasi. Masa depan adalah milik semua pemain aset digital blockchain. Mari kita bekerja sama untuk menyaksikan momen besar ini!",
+	only: "Satu-satunya penyedia layanan yang komprehensif di dunia jenis beberapa token protokol lintas-rantai",
+	introduce: "SpacePi akan menjadi satu-satunya di bidang blockchain yang memecahkan hambatan teknis dan mengintegrasikan beberapa token protokol lintas-rantai dari jenis penyedia layanan terintegrasi. Masa depan adalah milik semua pemain aset digital blockchain. Mari kita bekerja sama untuk menyaksikan momen besar ini!",
 	text: [
 		"SpacePi akan menciptakan ekosistem digital tingkat atas yang belum pernah ada sebelumnya, memberikan pengalaman perendaman digital metaverse yang sederhana dan efisien sebagai intinya. Memberikan nilai sirkulasi token, memungkinkan lebih banyak orang untuk berpartisipasi dalam konstruksi ekologis SpacePi, menciptakan dunia hiburan tanpa batas, menghubungkan pengguna di setiap sudut dunia, dan membangun ekologi metaverse yang tidak dapat dipercaya dan sangat terdesentralisasi untuk pengguna global.",
 		"SpacePi mencakup dua kategori blockchain utama, NFT dan Metaverse. SpacePi sedang membangun platform game realitas virtual online terdesentralisasi yang mengintegrasikan karakter, alat peraga, dan alur cerita kehidupan ke dalam interaksi sosial virtual. Pemain bisa bermain di dunia maya. untuk membeli senjata, baju besi, alat peraga, dan permata. Berpartisipasi dalam koleksi yang berbeda untuk mengembangkan virtual, kehidupan, aksi dan permainan lainnya.",
 		"Semua manfaat SpacePi akan disajikan dalam bentuk token asli SpacePi. Virtual dan realitas metaverse SpacePi sangat saling berhubungan, dan ekonomi loop tertutup yang melekat pada platform sumber terbuka telah menjadi bentuk akhir dari Internet."
 	],
 	tetxbu: 'Kertas putih',
-	tetxbu_url:'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
+	tetxbu_url: 'https://drive.google.com/file/d/1SM-Cf646IGJ1_NDHJsMHABOi9f12xtvo/view?usp=sharing',
 	contractAddress: "",
 	down: ['Beli SpacePi'],
-	index_Liquidity_title:'Likuiditas Terkunci',
-	index_Liquidity:'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
-	index_Goplus_title:'Audit Goplus',
-	index_Goplus:'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	index_SpacePi_title:'Harga SpacePi',
-	index_SpacePi:[{
-		title:'Tren Dextools',
-	},{
-		title:'Tren Poocoin',
-	},{
-		title:'Tren Avedex',
-	},{
-		title:'Msgsender',
+	index_Liquidity_title: 'Likuiditas Terkunci',
+	index_Liquidity: 'https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC',
+	index_Goplus_title: 'Audit Goplus',
+	index_Goplus: 'https://gopluslabs.io/token-security/56/0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	index_SpacePi_title: 'Harga SpacePi',
+	index_SpacePi: [{
+		title: 'Tren Dextools',
+	}, {
+		title: 'Tren Poocoin',
+	}, {
+		title: 'Tren Avedex',
+	}, {
+		title: 'Msgsender',
 	}],
 	car: [{
 		title: 'Apa itu SpacePi?',
@@ -105,18 +105,18 @@ const locale = {
 		trx: '19 BNB',
 		usd: '7030 USD',
 	}],
-	bsc_token:'0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	hoce_token:'0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
-	tron_token:'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
-	url_array:[{
-		title:'SpacePi (bsc)',
-		url:'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
-	},{
-		title:'SpacePi (heco)',
-		url:'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
-	},{
-		title:'SpacePi (tron)',
-		url:'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
+	bsc_token: '0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	hoce_token: '0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	tron_token: 'TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX',
+	url_array: [{
+		title: 'SpacePi (bsc)',
+		url: 'https://PancakeSwap.finance/swap?inputCurrency=BNB&outputCurrency=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E',
+	}, {
+		title: 'SpacePi (heco)',
+		url: 'https://ht.mdex.co/#/swap?inputCurrency=HT&outputCurrency=0x4bed97ff445c1dfd7b2c60aaede15df0f1c25ed3',
+	}, {
+		title: 'SpacePi (tron)',
+		url: 'https://sunswap.com/#/home?tokenAddress=TBRNdxuRCzoS9rXkHPDmoaVyKBuCwdTAYX&type=swap',
 	}],
 
 	// 路线图
@@ -162,60 +162,60 @@ const locale = {
 			text: 'Pemegang'
 		}]
 	},
-	answers:{
+	answers: {
 		//顶部标题
-		text:'SpacePi adalah satu-satunya penyedia layanan komprehensif jenis beberapa token protokol lintas-rantai di dunia',
+		text: 'SpacePi adalah satu-satunya penyedia layanan komprehensif jenis beberapa token protokol lintas-rantai di dunia',
 		//底部展开展示内容
-		array:[{
-			title:'1.Apa metaverse yang dijelaskan oleh SpacePi?',
-			text:'Game adalah bentuk utama dari metaverse. Dari bentuk produk, game merupakan prototipe dari metaverse. Sebagai dunia virtual yang dibangun oleh orang-orang berdasarkan simulasi, perluasan, dan imajinasi imajinatif realitas, game serupa dalam bentuk produk dengan Metaverse. Jika Anda akrab dengan buku atau film Ready Player One, ini adalah contoh metaverse yang bagus.',
-		},{
-			title:'2.Apakah Metaverse Itu Penting?',
-			text:'Berdasarkan integrasi Web3.0, teknologi Internet holografik, blockchain dan NFT, nilai-nilai yang disajikan oleh konsep Metaverse sejalan dengan nilai-nilai inti Internet. SpacePi percaya bahwa metaverse mungkin merupakan bentuk akhir dari Internet. Oleh karena itu, kami mengambil game sebagai titik awal dan menciptakan SpacePi, game blockchain kehidupan virtual berdasarkan NFT+ metaverse, yang membuat hubungan antara realitas dan virtualitas lebih efisien dan memperkaya sirkulasi nilai. Pentingnya platform digital ini menjadi jelas selama pandemi global baru-baru ini.',
-		},{
-			title:'3. Apa itu Ekosistem SpacePi?',
-			text:'Sebagai game blockchain yang didukung oleh konsep NFT + Metaverse, SpacePi menyertakan beberapa bagian inti dalam hal konstruksi ekologi platform. Sistem permainan NFT Ekologi permainan Metaverse SpacePi Exchange',
-		},{
-			title:'4.Apa yang bisa kita lakukan di metaverse SpacePi?',
-			text:'SpacePi Token, disebut sebagai SpacePi, menggabungkan dua kategori blockchain utama NFT dan Metaverse, yang bertujuan untuk menciptakan platform game realitas virtual online terdesentralisasi yang mengintegrasikan karakter, alat peraga, dan alur cerita kehidupan ke dalam interaksi sosial virtual. Senjata, baju besi, alat peraga, dan permata dapat dibeli di dunia maya. Berpartisipasi dalam koleksi yang berbeda untuk mengembangkan virtual, kehidupan, aksi dan permainan lainnya. Dengan demikian, SpacePi adalah proyek pertama dan satu-satunya di seluruh domain metaverse dan NFT',
-		},{
-			title:'5.Bagaimana cara mendapatkan uang di Metaverse SpacePi?',
-			text:'SpacePi juga dapat mendukung pengembang pihak ketiga untuk memprogram, men-debug, dan merilis aplikasi game terdesentralisasi dan aplikasi game arsitektur hybrid untuk lingkungan blockchain. Pada saat yang sama, SpacePi mengintegrasikan sistem akun pengguna terdistribusi berbasis blockchain, dompet dan sirkulasi aset digital NFT, yang dapat mewujudkan penyimpanan permanen off-chain dan penggunaan lintas-rantai aset game dalam aplikasi NFT.',
-		},{
-			title:'6.Pengembang SpacePi?',
-			text:'SpacePi Metaverse dikembangkan bersama oleh pengembang independen di seluruh dunia, dengan pengalaman dan kemampuan yang hampir tak tertandingi untuk mengarahkan, mengelola, dan meningkatkan proyek terkait kripto. Bersama-sama, mereka membentuk tim yang kuat dengan sekelompok pendukung yang berpikiran sama yang percaya diri dan bersemangat tentang visi metaverse SpacePi, sebuah petualangan baru ke dunia metaverse.',
-		},{
-			title:'7. Bagaimana saya bisa memberikan lebih banyak bantuan?',
-			text:'Karena desentralisasi lengkap, metaverse SpacePi akan membutuhkan komunitas yang jauh lebih besar untuk mencapai tujuan kami, Anda dipersilakan untuk bergabung dengan SpacePi',
+		array: [{
+			title: '1.Apa metaverse yang dijelaskan oleh SpacePi?',
+			text: 'Game adalah bentuk utama dari metaverse. Dari bentuk produk, game merupakan prototipe dari metaverse. Sebagai dunia virtual yang dibangun oleh orang-orang berdasarkan simulasi, perluasan, dan imajinasi imajinatif realitas, game serupa dalam bentuk produk dengan Metaverse. Jika Anda akrab dengan buku atau film Ready Player One, ini adalah contoh metaverse yang bagus.',
+		}, {
+			title: '2.Apakah Metaverse Itu Penting?',
+			text: 'Berdasarkan integrasi Web3.0, teknologi Internet holografik, blockchain dan NFT, nilai-nilai yang disajikan oleh konsep Metaverse sejalan dengan nilai-nilai inti Internet. SpacePi percaya bahwa metaverse mungkin merupakan bentuk akhir dari Internet. Oleh karena itu, kami mengambil game sebagai titik awal dan menciptakan SpacePi, game blockchain kehidupan virtual berdasarkan NFT+ metaverse, yang membuat hubungan antara realitas dan virtualitas lebih efisien dan memperkaya sirkulasi nilai. Pentingnya platform digital ini menjadi jelas selama pandemi global baru-baru ini.',
+		}, {
+			title: '3. Apa itu Ekosistem SpacePi?',
+			text: 'Sebagai game blockchain yang didukung oleh konsep NFT + Metaverse, SpacePi menyertakan beberapa bagian inti dalam hal konstruksi ekologi platform. Sistem permainan NFT Ekologi permainan Metaverse SpacePi Exchange',
+		}, {
+			title: '4.Apa yang bisa kita lakukan di metaverse SpacePi?',
+			text: 'SpacePi Token, disebut sebagai SpacePi, menggabungkan dua kategori blockchain utama NFT dan Metaverse, yang bertujuan untuk menciptakan platform game realitas virtual online terdesentralisasi yang mengintegrasikan karakter, alat peraga, dan alur cerita kehidupan ke dalam interaksi sosial virtual. Senjata, baju besi, alat peraga, dan permata dapat dibeli di dunia maya. Berpartisipasi dalam koleksi yang berbeda untuk mengembangkan virtual, kehidupan, aksi dan permainan lainnya. Dengan demikian, SpacePi adalah proyek pertama dan satu-satunya di seluruh domain metaverse dan NFT',
+		}, {
+			title: '5.Bagaimana cara mendapatkan uang di Metaverse SpacePi?',
+			text: 'SpacePi juga dapat mendukung pengembang pihak ketiga untuk memprogram, men-debug, dan merilis aplikasi game terdesentralisasi dan aplikasi game arsitektur hybrid untuk lingkungan blockchain. Pada saat yang sama, SpacePi mengintegrasikan sistem akun pengguna terdistribusi berbasis blockchain, dompet dan sirkulasi aset digital NFT, yang dapat mewujudkan penyimpanan permanen off-chain dan penggunaan lintas-rantai aset game dalam aplikasi NFT.',
+		}, {
+			title: '6.Pengembang SpacePi?',
+			text: 'SpacePi Metaverse dikembangkan bersama oleh pengembang independen di seluruh dunia, dengan pengalaman dan kemampuan yang hampir tak tertandingi untuk mengarahkan, mengelola, dan meningkatkan proyek terkait kripto. Bersama-sama, mereka membentuk tim yang kuat dengan sekelompok pendukung yang berpikiran sama yang percaya diri dan bersemangat tentang visi metaverse SpacePi, sebuah petualangan baru ke dunia metaverse.',
+		}, {
+			title: '7. Bagaimana saya bisa memberikan lebih banyak bantuan?',
+			text: 'Karena desentralisasi lengkap, metaverse SpacePi akan membutuhkan komunitas yang jauh lebih besar untuk mencapai tujuan kami, Anda dipersilakan untuk bergabung dengan SpacePi',
 		}],
 	},
 	//社区
-	Community:{
-		title:'Bergabunglah dengan komunitas global SpacePi',
-		text:"SpacePi akan menjadi satu-satunya di bidang blockchain yang memecahkan hambatan teknis dan mengintegrasikan beberapa token protokol lintas-rantai dari jenis penyedia layanan terintegrasi. Masa depan adalah milik semua pemain aset digital blockchain. Mari kita bekerja sama untuk menyaksikan momen besar ini!",
-		buttext:'Bergabunglah dengan kami',
-		buttext_url:'https://t.me/SpacePi_com',
+	Community: {
+		title: 'Bergabunglah dengan komunitas global SpacePi',
+		text: "SpacePi akan menjadi satu-satunya di bidang blockchain yang memecahkan hambatan teknis dan mengintegrasikan beberapa token protokol lintas-rantai dari jenis penyedia layanan terintegrasi. Masa depan adalah milik semua pemain aset digital blockchain. Mari kita bekerja sama untuk menyaksikan momen besar ini!",
+		buttext: 'Bergabunglah dengan kami',
+		buttext_url: 'https://t.me/SpacePi_com',
 	},
 
 	// 底部
 	footer1: "If you have any question, please contact us",
 	footer2: "Copyright © 2021-2022 SpacePi. All Rights Reserved",
-	footer_twitter_url:'https://twitter.com/SpacePi_Com',
-	footer_telegram_url:'https://t.me/SpacePi_com',
-	footer_discord_url:'https://t.me/SpacePi_com',
-	footer_reddit_url:'https://t.me/SpacePi_com',
-	footer_github_url:'https://github.com/SpacePiCom',
-	footer_medium_url:'https://medium.com/@spacepi',
-	footer_copy_url:'https://t.me/SpacePi_com',
+	footer_twitter_url: 'https://twitter.com/SpacePi_Com',
+	footer_telegram_url: 'https://t.me/SpacePi_com',
+	footer_discord_url: 'https://t.me/SpacePi_com',
+	footer_reddit_url: 'https://t.me/SpacePi_com',
+	footer_github_url: 'https://github.com/SpacePiCom',
+	footer_medium_url: 'https://medium.com/@spacepi',
+	footer_copy_url: 'https://t.me/SpacePi_com',
 
-	copySuccess:"copySuccess",
+	copySuccess: "copySuccess",
 
 	//友情合作商页面
-	partners_title1:'SPACEPi AKAN SELALU',
-	partners_title2:'JADILAH PENGGEMAR IMAN JARINGAN PI!',
-	partners_text:'Semua yang SpacePi lakukan sekarang adalah untuk membuktikan bahwa kegigihan Fans Pi itu sepadan! Selamat datang lebih banyak platform dan institusi untuk bekerja sama dengan SpacePi, email kontak resmi: pi@space-pi.com',
-	partners_email_title:'EMAIL KONTAK RESMI:',
-	partners_email:'pi@space-pi.com',
+	partners_title1: 'SPACEPi AKAN SELALU',
+	partners_title2: 'JADILAH PENGGEMAR IMAN JARINGAN PI!',
+	partners_text: 'Semua yang SpacePi lakukan sekarang adalah untuk membuktikan bahwa kegigihan Fans Pi itu sepadan! Selamat datang lebih banyak platform dan institusi untuk bekerja sama dengan SpacePi, email kontak resmi: pi@space-pi.com',
+	partners_email_title: 'EMAIL KONTAK RESMI:',
+	partners_email: 'pi@space-pi.com',
 };
 
 export default locale;

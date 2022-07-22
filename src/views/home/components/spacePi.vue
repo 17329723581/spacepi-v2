@@ -5,11 +5,11 @@
         <div class="spacepi-title wow spacepi-animation fade-in-up-animation">SPACE<span>PI</span></div>
         <!-- spacepi副标题 -->
         <span class="spacepi-vice-title fade-in-up-animation">
-            {{$t('only')}}
+            {{ $t('only') }}
         </span>
         <!-- spacepi内容 -->
         <span class="spacepi-content wow spacepi-animation fade-in-up-animation">
-            {{$t('introduce')}}
+            {{ $t('introduce') }}
         </span>
         <!-- spacepi按钮 -->
         <div class="spacepi-button ">
@@ -22,29 +22,31 @@
                         {{ item[locale] }}
                     </v-btn>
                     <v-btn @click="item.staus != 1 ? spacepiTo(item.link) : ''" v-bind="attrs" v-on="on"
-                        v-if="index != spacepiBuntton.length - 1 && index != 0" class="wow spacepi-animation fade-in-up-animation">
+                        v-if="index != spacepiBuntton.length - 1 && index != 0"
+                        class="wow spacepi-animation fade-in-up-animation">
                         {{ item[locale] }}
                     </v-btn>
                     <v-btn @click="item.staus != 1 ? spacepiTo(item.link) : ''" v-bind="attrs" v-on="on"
-                        v-if="index == spacepiBuntton.length - 1" class="right wow spacepi-animation fade-in-up-animation">
+                        v-if="index == spacepiBuntton.length - 1"
+                        class="right wow spacepi-animation fade-in-up-animation">
                         {{ item[locale] }}
                     </v-btn>
                 </template>
                 <v-list v-if="item.staus != 0" class="spacepi-list">
                     <div v-for="(i, SpacepiIndex) in spacepiBunttonList" :key="SpacepiIndex">
                         <v-list-item @click="spacepiTo(i.link)" v-if="i.b_id == item.id && index == 0" class="right">
-                            <v-list-item-title style="text-align: center">{{i[locale]}}</v-list-item-title>
+                            <v-list-item-title style="text-align: center">{{ i[locale] }}</v-list-item-title>
                         </v-list-item>
                         <v-list-item @click="spacepiTo(i.link)" v-if="
                             i.b_id == item.id &&
                             index != 0 &&
                             index != spacepiBuntton.length - 1
                         ">
-                            <v-list-item-title style="text-align: center">{{i[locale]}}</v-list-item-title>
+                            <v-list-item-title style="text-align: center">{{ i[locale] }}</v-list-item-title>
                         </v-list-item>
                         <v-list-item @click="spacepiTo(i.link)"
                             v-if="i.b_id == item.id && index == spacepiBuntton.length - 1" class="left">
-                            <v-list-item-title style="text-align: center">{{i[locale]}}</v-list-item-title>
+                            <v-list-item-title style="text-align: center">{{ i[locale] }}</v-list-item-title>
                         </v-list-item>
                     </div>
                 </v-list>
@@ -52,7 +54,7 @@
         </div>
         <!-- spacepi说明 -->
         <span class="spacepi-illustrate spacepi-animation fade-in-up-animation">
-            {{$t('happy_text')}}
+            {{ $t('happy_text') }}
         </span>
         <!-- spacepi地址 -->
         <div class="spacepi-address spacepi-animation fade-in-up-animation">
@@ -68,7 +70,7 @@
                             stroke="none" fill="#fdd333" />
                     </g>
                 </svg>
-                <span >{{address}}</span>
+                <span>{{ address }}</span>
             </div>
             <!-- 复制 -->
             <div class="copy" v-clipboard:copy="address" v-clipboard:success="onCopy" style="cursor: pointer;">
@@ -76,22 +78,14 @@
                     <path d="M-1678.317,115h-271.2L-1990,32h296.9l14.782,16.417V115h0Z" transform="translate(1990 -32)"
                         fill="#fdd333" />
                 </svg>
-                <div class="copy-img" id="copy-img">
-                    <!-- <v-img class="v-img" src="@/assets/copy.png"></v-img> -->
-                </div>
-
-                <!-- <div class="copy-svg"></div>
-                <div class="copy-img">
-                    <v-img class="v-img x" src="@/assets/copy.png"></v-img>
-                    <v-img class="v-img y" src="@/assets/copy-w.png"></v-img>
-                </div> -->
+                <div class="copy-img" id="copy-img"></div>
             </div>
         </div>
         <!-- spacepi地址移动端 -->
         <div class="spacepi-address-m spacepi-animation fade-in-up-animation">
             <!-- 地址 -->
             <div class="address" style="text-align: center;">
-                {{ address.substr(0,22) }}...{{ address.substr(address.length-5) }}
+                {{ address.substr(0, 22) }}...{{ address.substr(address.length - 5) }}
             </div>
             <!-- 复制 -->
             <div class="copy-img" v-clipboard:copy="address" v-clipboard:success="onCopym">
@@ -109,17 +103,17 @@ import spacepiCopy from '@/assets/animation/spacepi-copy.json';
 export default {
     data() {
         return {
-            address:this.$t("bsc_token"),
+            address: this.$t("bsc_token"),
             // spacepi菜单
-            spacepiBuntton:[],
+            spacepiBuntton: [],
             // spacepi菜单列表
-			spacepiBunttonList:[],
-            copy:"",
+            spacepiBunttonList: [],
+            copy: "",
         }
     },
     computed: {
-		...mapState(["domainUrl","locale","alert"]),
-	},
+        ...mapState(["domainUrl", "locale", "alert"]),
+    },
     components: {},
     mounted() {
         let copyparams = {
@@ -130,13 +124,13 @@ export default {
             animationData: spacepiCopy
         };
         this.copy = lottie.loadAnimation(copyparams);
-        setTimeout(()=>{
+        setTimeout(() => {
             this.location();
-        },1)
+        }, 1)
     },
     methods: {
         ...mapMutations(["setAlert"]),
-        location(){
+        location() {
             this.getspacepiBuntton();
             this.getspacepiBunttonList();
         },
@@ -145,58 +139,52 @@ export default {
             window.open(e)
         },
         //获取TOP按钮
-        getspacepiBuntton()
-        {
+        getspacepiBuntton() {
             var _this = this;
-            axios.post(this.domainUrl+"spacepiBuntton",{}).then(function(response){
+            axios.post(this.domainUrl + "spacepiBuntton", {}).then(function (response) {
                 _this.spacepiBuntton = response.data.data;
-            }).catch(function(error) {
+            }).catch(function (error) {
                 // 请求失败处理
             });
         },
         //获取TOP按钮列表
-        getspacepiBunttonList()
-        {
+        getspacepiBunttonList() {
             var _this = this;
-            axios.post(this.domainUrl+"spacepiBunttonList",{}).then(function(response){
+            axios.post(this.domainUrl + "spacepiBunttonList", {}).then(function (response) {
                 _this.spacepiBunttonList = response.data.data;
-				var array = [];
-				var array1 = [];
-				for (var i =0;i<_this.spacepiBunttonList.length;i++){
-					array[i] = 'width: 100%;height:3.75rem;border-radius: 0.25rem;margin: 0.5rem;background:rgb(253, 211, 51);color:rgb(51, 51, 51);line-height:0;font-size: 1rem;font-family: DIN;font-weight: bold;border: 0;';
-					array1[i] = false;
-				}
-				_this.tabarray = array;
-				_this.array1 = array1;
-            }).catch(function(error) {
+                var array = [];
+                var array1 = [];
+                for (var i = 0; i < _this.spacepiBunttonList.length; i++) {
+                    array[i] = 'width: 100%;height:3.75rem;border-radius: 0.25rem;margin: 0.5rem;background:rgb(253, 211, 51);color:rgb(51, 51, 51);line-height:0;font-size: 1rem;font-family: DIN;font-weight: bold;border: 0;';
+                    array1[i] = false;
+                }
+                _this.tabarray = array;
+                _this.array1 = array1;
+            }).catch(function (error) {
                 // 请求失败处理
             });
         },
         // 复制
-		onCopy(e) {
-			// alert(e.text);
-			//this.$message.success(this.$t("copySuccess"));
-            //this.setAlert('alert',true,this.$t("alerts.copy_success"),"success");
-            //this.$store.commit("setAlert", {status:true,text:this.$t("copySuccess"),type:"success"});
+        onCopy(e) {
             this.copy.play();
-            setTimeout(()=>{
+            setTimeout(() => {
                 this.copy.stop();
-                this.$store.commit("setAlert", {status:false,text:"",type:""});
-            },2000)
-		},
+                this.$store.commit("setAlert", { status: false, text: "", type: "" });
+            }, 2000)
+        },
         onCopym(e) {
-            this.$store.commit("setAlert", {status:true,text:this.$t("copySuccess"),type:"success"});
-            setTimeout(()=>{
-                this.$store.commit("setAlert", {status:false,text:"",type:""});
-            },2000)
-		},
+            this.$store.commit("setAlert", { status: true, text: this.$t("copySuccess"), type: "success" });
+            setTimeout(() => {
+                this.$store.commit("setAlert", { status: false, text: "", type: "" });
+            }, 2000)
+        },
     }
 }
 
 </script>
 <style scoped lang="scss">
 @import "@/scss/adaptation.scss";
-$width:1200;
+$width: 1200;
 
 // spacePi容器
 .spacepi-container {
@@ -214,6 +202,7 @@ $width:1200;
         color: #ffffff;
         font-family: EDIX;
         text-shadow: 1px 1px 1px #000000;
+
         span {
             color: #FDD333;
         }
@@ -335,20 +324,24 @@ $width:1200;
             .copy-img {
                 width: 230px;
             }
-            .x{
+
+            .x {
                 display: block;
             }
-            .y{
+
+            .y {
                 display: none;
             }
         }
-        .copy:hover{
+
+        .copy:hover {
             transition: 0.5s;
             opacity: 0.8;
         }
     }
+
     // spacepi地址移动端
-    .spacepi-address-m{
+    .spacepi-address-m {
         display: none;
     }
 }
@@ -402,12 +395,13 @@ $width:1200;
             }
 
             .right {
-                    clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 75%, 95% 100%, 20% 100%, 0 100%, 0 0);
+                clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 75%, 95% 100%, 20% 100%, 0 100%, 0 0);
             }
 
             .v-btn {
                 width: 100%;
-                height: 48px;;
+                height: 48px;
+                ;
                 font-size: 14px;
                 font-family: Fenton-Regular;
             }
@@ -442,8 +436,9 @@ $width:1200;
                 }
             }
         }
+
         // spacepi地址移动端
-        .spacepi-address-m{
+        .spacepi-address-m {
             display: flex;
             width: 100%;
             height: 56px;
@@ -452,19 +447,24 @@ $width:1200;
             align-items: center;
             justify-content: center;
             grid-gap: 45px;
+
             // 地址
-            .address{
+            .address {
                 width: 220px;
                 font-size: 12px;
                 font-family: Fenton-Regular, Fenton;
                 font-weight: 400;
                 color: #FFFFFF;
-                white-space: nowrap;  /*内容超宽后禁止换行显示*/
-                overflow: hidden;     /*超出部分隐藏*/
-                text-overflow: ellipsis; /* 单行，多行文本溢出显示 . . . */
+                white-space: nowrap;
+                /*内容超宽后禁止换行显示*/
+                overflow: hidden;
+                /*超出部分隐藏*/
+                text-overflow: ellipsis;
+                /* 单行，多行文本溢出显示 . . . */
             }
+
             // 复制
-            .copy-img{
+            .copy-img {
                 width: 30px;
             }
         }
@@ -499,7 +499,7 @@ $width:1200;
         // spacepi按钮
         .spacepi-button {
             width: 100%;
-            grid-template-columns:1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: vw(15, $width);
 
             .left {

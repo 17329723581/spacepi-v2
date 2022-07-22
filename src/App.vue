@@ -9,24 +9,10 @@
     <!-- 用户交互音乐播放弹框 -->
     <v-dialog v-model="musicDialog" max-width="290">
       <v-card>
-        <v-card-title class="text-h5">
-          warning
-        </v-card-title>
-
-        <v-card-text>
-          The browser does not support music playback. Click to play
-        </v-card-text>
-
         <v-card-actions>
           <v-spacer></v-spacer>
-
-          <v-btn color="darken-1" text @click="play">
-            play
-          </v-btn>
-
-          <v-btn color="darken-1" text @click="musicDialog = false">
-            close
-          </v-btn>
+          <v-btn text @click="play"></v-btn>
+          <v-btn text @click="musicDialog = false"></v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -58,7 +44,7 @@
               <span>
                 {{ item[locale] }}
               </span>
-              <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status==1"></v-img>
+              <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status == 1"></v-img>
             </div>
           </a>
         </div>
@@ -90,7 +76,6 @@
       <!-- tabs图标 -->
       <div class="tabs-icon" @click="tabsStatus = true">
         <v-img class="logo-img" src="@/assets/menu-open.png"></v-img>
-        <!-- <v-icon color="#FDD333" >mdi-menu</v-icon> -->
       </div>
     </v-app-bar>
     <v-main style="z-index:1;">
@@ -130,7 +115,7 @@
                 <span>
                   {{ item[locale] }}
                 </span>
-                <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status==1"></v-img>
+                <v-img class="tabs-img" :src="item.picture" @click="returnTop" v-if="item.picture_status == 1"></v-img>
               </div>
             </a>
           </div>
@@ -228,22 +213,11 @@ export default {
     mp3: bgmp3,
     musicDialog: false,
   }),
-  watch:{
-    tabsStatus(e){
-      if(e==true){
-        
-      }
-    }
-  },
   computed: {
     ...mapState(["locale", "domainUrl", 'alert']),
   },
   components: {
     alert,
-  },
-  created() {
-    //this.$vuetify.theme.dark = true;
-
   },
   mounted() {
     let params = {
@@ -254,7 +228,6 @@ export default {
       animationData: spacepiMusic
     };
     this.spacepiMusic = lottie.loadAnimation(params);
-
 
     var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
     if (isChrome) {
@@ -346,17 +319,15 @@ export default {
       }
     },
     // 返回顶部事件
-    returnTop(){
+    returnTop() {
       document.getElementById('app').scrollIntoView();
     }
   }
 }
 </script>
 <style scoped lang="scss">
-@import "@/scss/adaptation.scss";
-$width:1200;
 // 返回顶部
-.returnTop{
+.returnTop {
   position: fixed;
   z-index: 9;
   bottom: 50px;
@@ -365,6 +336,7 @@ $width:1200;
   height: 47px;
   cursor: pointer;
 }
+
 // spacepi音乐
 .spacepiMusic {
   position: fixed;
@@ -432,15 +404,18 @@ $width:1200;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       -o-transition: 0.3s;
-      .tabs-s{
+
+      .tabs-s {
         display: flex;
         gap: 10px;
         align-items: center;
-        .tabs-img{
+
+        .tabs-img {
           width: 15px;
           height: 15px;
         }
       }
+
       .tabs-line {}
     }
 
@@ -522,7 +497,6 @@ $width:1200;
   display: grid;
   justify-items: center;
 
-  //position: relative;
   // 导航
   .navigation {
     display: flex;
@@ -591,38 +565,39 @@ $width:1200;
       overflow-y: scroll;
       height: 350px;
       z-index: 999;
+
       a {
         color: rgba(253, 211, 51, 1);
-        .tabs-s{
+
+        .tabs-s {
           display: inline-flex;
           gap: 10px;
           align-items: center;
-          .tabs-img{
+
+          .tabs-img {
             width: 10px;
             height: 10px;
           }
         }
-        
       }
 
       //Firefox
       scrollbar-width:5px;
-      // scrollbar-color: auto; /* 使用浏览器默认的滚动条样式 */
-      // scrollbar-color: dark; /* 使用浏览器默认的深色或者黑色滚动效果 */
-      // scrollbar-color: light; /* 使用浏览器默认的浅色滚动效果  */
-      scrollbar-color: #FDD333 rgba(197, 90, 246, 0.44); /* 第一个颜色为滚动条的颜色， 第二个颜色为滚动条轨道的颜色  */
+      scrollbar-color: #FDD333 rgba(197, 90, 246, 0.44);
+      /* 第一个颜色为滚动条的颜色， 第二个颜色为滚动条轨道的颜色  */
     }
-    // .tabs::-webkit-scrollbar{
-    // }
+
     //自动移滚动条样式
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
       width: 5px;
     }
-    ::-webkit-scrollbar-thumb{
+
+    ::-webkit-scrollbar-thumb {
       border-radius: 1em;
       background-color: #FDD333;
     }
-    ::-webkit-scrollbar-track{
+
+    ::-webkit-scrollbar-track {
       border-radius: 1em;
       background-color: rgba(197, 90, 246, 0.44);
     }
@@ -630,6 +605,7 @@ $width:1200;
     ::-webkit-scrollbar:vertical {
       width: 5px;
     }
+
     .locale {
       position: absolute;
       bottom: 50px;
@@ -676,8 +652,7 @@ $width:1200;
 
 // 小型号到大型号的手机
 @media screen and (max-width:600px) {
-  $width: 600;
-  .returnTop{
+  .returnTop {
     bottom: 16px;
     right: 16px;
     width: 30px;
@@ -705,7 +680,7 @@ $width:1200;
     // LOGO
     .logo {
       padding-right: 0px;
-      grid-gap: vw(20, $width);
+      grid-gap: 10px;
 
       .logo-img {
         width: 35px;
@@ -731,7 +706,7 @@ $width:1200;
       }
 
       .locale-btn {
-        font-size: vw(20, $width);
+        font-size: 10px;
       }
     }
 
@@ -746,14 +721,16 @@ $width:1200;
 
 // 小型号到中型号的平板
 @media screen and (min-width:600px) and (max-width:960px) {
-  .returnTop{
+  .returnTop {
     bottom: 16px;
     right: 16px;
   }
+
   // spacepi音乐
   .spacepiMusic {
     right: 16px;
   }
+
   // 顶部导航
   .top-navigation {
     height: 80px;

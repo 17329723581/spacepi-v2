@@ -56,7 +56,8 @@
             </v-container>
             <!-- spacepi-按钮容器 -->
             <v-container class="spacepi-bnt-container bnt-animation wow spacepi-animation fade-in-up-animation">
-                <div class="button_base b05_3d_roll" @click="spacepiTo('https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC')">
+                <div class="button_base b05_3d_roll"
+                    @click="spacepiTo('https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x7f1b11a798273dA438b4b132dF1383d8387e73b4&type=lplock&chain=BSC')">
                     <div>
                         →
                     </div>
@@ -80,7 +81,8 @@
                 <!-- info-contract主体 -->
                 <div class="info-contract-subject">
                     <!-- contract-car -->
-                    <div class="contract-car wow spacepi-animation fade-in-up-animation" v-for="(item, index) in info" :key="index">
+                    <div class="contract-car wow spacepi-animation fade-in-up-animation" v-for="(item, index) in info"
+                        :key="index">
                         <!-- contract头部 -->
                         <div class="contract-head">
                             <div class="contract-head-l">
@@ -138,35 +140,35 @@ export default {
                 startTime: "2022-03-18 06:49:22",
                 endTime: "2023-06-27 03:14:00",
                 percentage: "7.50%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=0&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             }, {
                 address: "0x43...36df",
                 spacePi: "150000000000000.00",
                 startTime: "2022-03-18 06:53:49",
                 endTime: "2023-06-27 03:14:00",
                 percentage: "7.50%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=1&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=1&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             }, {
                 address: "0xcd...b30d",
                 spacePi: "20000000000000.00",
                 startTime: "2022-04-07 05:40:09",
                 endTime: "2023-01-08 03:14:00",
                 percentage: "1%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=4&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=4&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             }, {
                 address: "0x33...7c5b",
                 spacePi: "20000000000000.00",
                 startTime: "2022-04-07 05:45:30",
                 endTime: "2023-04-08 03:14:00",
                 percentage: "1%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=5&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=5&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             }, {
                 address: "0x2d...540f",
                 spacePi: "20000000000000.00",
                 startTime: "2022-04-07 05:34:21",
                 endTime: "2022-10-08 03:14:00",
                 percentage: "1%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=3&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=3&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             },
             {
                 address: "0x7c...a9b5",
@@ -174,7 +176,7 @@ export default {
                 startTime: "2022-04-07 05:28:57",
                 endTime: "2022-07-08 03:14:00",
                 percentage: "1%",
-                url:"https://dxsale.app/app/v3_3/dxlockview?id=2&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
+                url: "https://dxsale.app/app/v3_3/dxlockview?id=2&add=0x69b14e8D3CEBfDD8196Bfe530954A0C226E5008E&type=tokenlock&chain=BSC"
             }]
         };
     },
@@ -213,12 +215,15 @@ export default {
 </script>
 <style scoped lang="scss">
 @import "@/scss/adaptation.scss";
-.pc{
+
+.pc {
     display: block;
 }
-.mo{
+
+.mo {
     display: none;
 }
+
 // lock-warehouses主体
 .lock-warehouse-subject {
     background: url("../../assets/spacepi-lock/bg.png") no-repeat;
@@ -684,17 +689,21 @@ export default {
 
 // 小型号到大型号的手机
 @media screen and (max-width:600px) {
+
     // lock-warehouses主体
     .lock-warehouse-subject {
         background: url("../../assets/spacepi-lock/bg.png") no-repeat;
         background-size: contain;
     }
-    .pc{
+
+    .pc {
         display: none;
     }
-    .mo{
+
+    .mo {
         display: block;
     }
+
     // spacepi/wbnb容器
     .wbnb-container {
         padding-top: 125px;
@@ -881,17 +890,21 @@ export default {
 
 // 小型号到中型号的平板
 @media screen and (min-width:600px) and (max-width:960px) {
+
     // lock-warehouses主体
     .lock-warehouse-subject {
         background: url("../../assets/spacepi-lock/bg.png") no-repeat;
         background-size: contain;
     }
-    .pc{
+
+    .pc {
         display: none;
     }
-    .mo{
+
+    .mo {
         display: block;
     }
+
     // info容器
     .info-container {
 

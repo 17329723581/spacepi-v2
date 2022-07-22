@@ -1,13 +1,14 @@
 <template>
   <div>
     <!-- 动画电脑端 -->
-    <div class="pc" >
+    <div class="pc">
       <animation class="animation"></animation>
     </div>
     <!-- 动画移动端 -->
     <div class="mo">
-      <animationm class="animation" ></animationm>
+      <animationm class="animation"></animationm>
     </div>
+
     <!-- spacePi容器 -->
     <spacePi></spacePi>
     <!-- spacePi图片主体 -->
@@ -20,24 +21,26 @@
       </div>
     </div>
 
-
     <!--  partners容器  -->
     <div class="spacepi_bg">
       <v-container class="partners-container">
         <!-- partners内容 -->
         <div class="partners-content wow spacepi-animation fade-out-min-in-max-animation">
-          {{$t('partners_carousel_text')}}
+          {{ $t('partners_carousel_text') }}
         </div>
         <!-- partners轮播 -->
         <div class="partners-carousel">
-          <v-carousel  show-arrows-on-hover hide-delimiters v-model="carouselChartIndex"  class="partners-height" height="auto">
+          <v-carousel show-arrows-on-hover hide-delimiters v-model="carouselChartIndex" class="partners-height"
+            height="auto">
             <!-- 轮播图 -->
-            <v-carousel-item active-class="partners-active-class" v-for="(item, index) in responsecArray" :key="index" class="partners-height" v-if="index<5">
-              <div class="carousel-chart" @mouseover="carouselStartStatus(true)" @mouseleave="carouselStartStatus(false)">
-                <div  class="carousel-car"
-                  v-show="index == carouselChartIndex">
+            <v-carousel-item active-class="partners-active-class" v-for="(item, index) in responsecArray" :key="index"
+              class="partners-height" v-if="index < 5">
+              <div class="carousel-chart" @mouseover="carouselStartStatus(true)"
+                @mouseleave="carouselStartStatus(false)">
+                <div class="carousel-car" v-show="index == carouselChartIndex">
                   <template v-for="(it, ind) in carouseChartArrar">
-                      <v-img v-if="item.id == it.p_id" :key="ind" :src="it.picture"  @click="spacepiTo(it.link)" style="cursor: pointer;" class="v-img"></v-img>
+                    <v-img v-if="item.id == it.p_id" :key="ind" :src="it.picture" @click="spacepiTo(it.link)"
+                      style="cursor: pointer;" class="v-img"></v-img>
                   </template>
                 </div>
               </div>
@@ -54,14 +57,14 @@
             <template v-slot:next="{ on, attrs }">
               <div class="carousel-right" v-bind="attrs" v-on="on" @click="carousel('down')">
                 <a>
-                  <v-img style="width: 100%;height: 100%;" src="@/assets/carousel-right.png"></v-img>
+                  <v-img style="width: 100%;height: 100%;-moz-transform:rotate(-180deg);-webkit-transform:rotate(-180deg);" src="@/assets/carousel-left.png"></v-img>
                 </a>
               </div>
             </template>
           </v-carousel>
           <!-- 轮播进度条 -->
           <div class="carousel-progress">
-            <a v-for="(item, index) in progressArray" :key="index" v-if="index<5">
+            <a v-for="(item, index) in progressArray" :key="index" v-if="index < 5">
               <v-progress-linear background-color="rgba(253, 211, 51, 0.6)" color="#FDD333" :value="item"
                 @click="carouselProgressClick(index)"></v-progress-linear>
             </a>
@@ -69,7 +72,7 @@
         </div>
         <!-- partners更多按钮 -->
         <a>
-          <div class="partners-bnt " @click="$router.push('/partners')">{{$t('happy_gd')}} </div>
+          <div class="partners-bnt " @click="$router.push('/partners')">{{ $t('happy_gd') }} </div>
         </a>
       </v-container>
     </div>
@@ -104,7 +107,7 @@
                   </div>
                 </div>
                 <div class="character-img">
-                  <v-img  src="@/assets/character.png"></v-img>
+                  <v-img src="@/assets/character.png"></v-img>
                 </div>
               </div>
               <div class="what-right wow spacepi-animation fade-right-in-left-animation">
@@ -143,11 +146,11 @@
               <div class="what-right">
                 <div class="v-img-s">
                   <div class="v-img">
-                    <v-img src="@/assets/what/what2.png" ></v-img>
+                    <v-img src="@/assets/what/what2.png"></v-img>
                   </div>
                 </div>
                 <div class="aircraft-img">
-                  <v-img  src="@/assets/aircraft.png"></v-img>
+                  <v-img src="@/assets/aircraft.png"></v-img>
                 </div>
               </div>
             </div>
@@ -155,6 +158,7 @@
         </div>
       </div>
     </div>
+
     <!-- concept容器 -->
     <div class="spacepi_bg">
       <v-container class="concept-container">
@@ -228,12 +232,14 @@
         </div>
       </v-container>
     </div>
+
     <!-- nftCarousel外部容器 -->
     <div class="spacepi_bg">
       <v-container class="nftCarousel_container">
         <nftCarousel></nftCarousel>
       </v-container>
     </div>
+
     <!-- telegraph主体 -->
     <div class="spacepi_bg">
       <div class="telegraph-subject">
@@ -241,6 +247,7 @@
         <telegraph></telegraph>
       </div>
     </div>
+
     <!-- spacepiwep外部容器 -->
     <div class="spacepi_bg">
       <v-container class="spacepiwep-external-container">
@@ -257,9 +264,9 @@
               </div> -->
 
             </div>
-            
-            
-            
+
+
+
           </div>
 
           <div class="spacepiwep-right">
@@ -305,14 +312,21 @@
               </div>
             </div>
             <!-- spacepiwep按钮 -->
-            <a class="cta spacepiwep-bnt wow spacepi-animation fade-in-up-animation" :href="$t('spacepiwep').trend_bnt_url" target="_blank">
+            <a class="cta spacepiwep-bnt wow spacepi-animation fade-in-up-animation"
+              :href="$t('spacepiwep').trend_bnt_url" target="_blank">
               <span>{{ $t("spacepiwep.trend_bnt_title") }}</span>
               <span>
                 <svg width="25px" height="43px" viewBox="0 0 66 43" version="1.1">
                   <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                    <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                    <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="one"
+                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="two"
+                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path class="three"
+                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                      fill="#FFFFFF"></path>
                   </g>
                 </svg>
               </span>
@@ -365,7 +379,6 @@
       </v-container>
     </div>
 
-
     <!-- roadmap容器 -->
     <div class="roadmap_bg">
       <v-container class="roadmap-container">
@@ -374,11 +387,11 @@
           <!-- roadmap标题主体 -->
           <div class="roadmap-title-subject">
             <div class="line"></div>
-            <span class="roadmap-title">-{{$t('ROADMAP')}}</span>
+            <span class="roadmap-title">-{{ $t('ROADMAP') }}</span>
           </div>
           <!-- roadmap内容 -->
           <div class="roadmap-content">
-            {{$t('ROADMAPtext')}}
+            {{ $t('ROADMAPtext') }}
           </div>
         </div>
         <!-- one主体 -->
@@ -388,63 +401,63 @@
           </div>
           <!-- one内容 -->
           <div class="one-content wow spacepi-animation fade-right-in-left-animation">
-            <div class="one-title">{{$t('Phase1')}}</div>
+            <div class="one-title">{{ $t('Phase1') }}</div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text1')}}</span>
+              <span>{{ $t('rt1_text1') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text2')}}</span>
+              <span>{{ $t('rt1_text2') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text3')}}</span>
+              <span>{{ $t('rt1_text3') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text4')}}</span>
+              <span>{{ $t('rt1_text4') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text5')}}</span>
+              <span>{{ $t('rt1_text5') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text6')}}</span>
+              <span>{{ $t('rt1_text6') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text7')}}</span>
+              <span>{{ $t('rt1_text7') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text8')}}</span>
+              <span>{{ $t('rt1_text8') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text9')}}</span>
+              <span>{{ $t('rt1_text9') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt1_text10')}}</span>
+              <span>{{ $t('rt1_text10') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
@@ -455,44 +468,45 @@
         <div class="two-subject" style="z-index: 1;">
           <!-- one内容 -->
           <div class="one-content wow spacepi-animation fade-left-in-right-animation">
-            <div class="one-title">{{$t('Phase2')}}</div>
-            <div class="one-text one-white">{{$t('rt2_text1')}}</div>
+            <div class="one-title">{{ $t('Phase2') }}</div>
+            <div class="one-text one-white">{{ $t('rt2_text1') }}</div>
             <div class="one-text one-white">
-              <span>{{$t('rt2_text2')}}</span>
+              <span>{{ $t('rt2_text2') }}</span>
             </div>
             <div class="one-text one-white">
-              <span>{{$t('rt2_text3')}}</span>
+              <span>{{ $t('rt2_text3') }}</span>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt2_text4')}}</span>
+              <span>{{ $t('rt2_text4') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt2_text5')}}</span>
+              <span>{{ $t('rt2_text5') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-yellow">
-              <span>{{$t('rt2_text6')}}</span>
+              <span>{{ $t('rt2_text6') }}</span>
               <div class="one-yes">
                 <v-img src="@/assets/roadmap-yes.png"></v-img>
               </div>
             </div>
             <div class="one-text one-white">
-              <span>{{$t('rt2_text7')}}</span>
+              <span>{{ $t('rt2_text7') }}</span>
             </div>
-            <div class="one-text one-white">{{$t('rt2_text8')}}</div>
-            <div class="one-text one-white">{{$t('rt2_text9')}}</div>
+            <div class="one-text one-white">{{ $t('rt2_text8') }}</div>
+            <div class="one-text one-white">{{ $t('rt2_text9') }}</div>
           </div>
           <div class="one-img">
-            <v-img  src="@/assets/one-img1.png"></v-img>
+            <v-img src="@/assets/one-img1.png"></v-img>
           </div>
         </div>
       </v-container>
     </div>
+
     <!-- tokenomics容器 -->
     <div class="spacepi_bg">
       <v-container class="tokenomics-container">
@@ -505,29 +519,29 @@
               <div class="tokenomics-left-title-subject">
                 <div class="line"></div>
                 <!-- tokenomics左标题 -->
-                <span class="tokenomics-left-title">{{$t('Tokenomics').title}}</span>
+                <span class="tokenomics-left-title">{{ $t('Tokenomics').title }}</span>
               </div>
               <!-- tokenomics左副标题 -->
-              <div class="tokenomics-left-Vice-title">{{$t('Tokenomics').text}}</div>
+              <div class="tokenomics-left-Vice-title">{{ $t('Tokenomics').text }}</div>
               <!-- tokenomics左内容 -->
               <div class="tokenomics-left-content">
-                {{$t('Tokenomics').content}}
+                {{ $t('Tokenomics').content }}
               </div>
             </div>
           </div>
           <!-- tokenomics内容 -->
           <div class="tokenomics-content wow spacepi-animation fade-in-up-animation">
             <div class="tokenomics-grid">
-              <span class="tokenomics-grid-title"> {{$t('Tokenomics').array[0].title}}</span>
-              <span class="tokenomics-grid-content">{{$t('Tokenomics').array[0].text}}</span>
+              <span class="tokenomics-grid-title"> {{ $t('Tokenomics').array[0].title }}</span>
+              <span class="tokenomics-grid-content">{{ $t('Tokenomics').array[0].text }}</span>
             </div>
             <div class="tokenomics-grid">
-              <span class="tokenomics-grid-title">{{$t('Tokenomics').array[1].title}}</span>
-              <span class="tokenomics-grid-content">{{$t('Tokenomics').array[1].text}}</span>
+              <span class="tokenomics-grid-title">{{ $t('Tokenomics').array[1].title }}</span>
+              <span class="tokenomics-grid-content">{{ $t('Tokenomics').array[1].text }}</span>
             </div>
             <div class="tokenomics-grid">
-              <span class="tokenomics-grid-title">{{$t('Tokenomics').array[2].title}}</span>
-              <span class="tokenomics-grid-content">{{$t('Tokenomics').array[2].text}}</span>
+              <span class="tokenomics-grid-title">{{ $t('Tokenomics').array[2].title }}</span>
+              <span class="tokenomics-grid-content">{{ $t('Tokenomics').array[2].text }}</span>
             </div>
           </div>
         </div>
@@ -538,31 +552,33 @@
         <div class="tokenomics-title-subject wow spacepi-animation fade-right-in-left-animation">
           <div class="line"></div>
           <!-- tokenomics标题 -->
-          <span class="tokenomics-title">{{$t("Tokenomics").title}}</span>
+          <span class="tokenomics-title">{{ $t("Tokenomics").title }}</span>
         </div>
         <!-- tokenomics副标题 -->
-        <div class="tokenomics--Vice-title wow spacepi-animation fade-right-in-left-animation">{{$t("Tokenomics").text}}</div>
+        <div class="tokenomics--Vice-title wow spacepi-animation fade-right-in-left-animation">{{ $t("Tokenomics").text }}
+        </div>
         <!-- tokenomics内容 -->
         <div class="tokenomics-left-content wow spacepi-animation fade-out-min-in-max-animation">
-          {{$t("Tokenomics").content}}
+          {{ $t("Tokenomics").content }}
         </div>
         <!-- tokenomics内容 -->
         <div class="tokenomics-content wow spacepi-animation fade-in-up-animation">
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[0].title}}</span>
-            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[0].text}}</span>
+            <span class="tokenomics-grid-title">{{ $t("Tokenomics").array[0].title }}</span>
+            <span class="tokenomics-grid-content">{{ $t("Tokenomics").array[0].text }}</span>
           </div>
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[1].title}}</span>
-            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[1].text}}</span>
+            <span class="tokenomics-grid-title">{{ $t("Tokenomics").array[1].title }}</span>
+            <span class="tokenomics-grid-content">{{ $t("Tokenomics").array[1].text }}</span>
           </div>
           <div class="tokenomics-grid">
-            <span class="tokenomics-grid-title">{{$t("Tokenomics").array[2].title}}</span>
-            <span class="tokenomics-grid-content">{{$t("Tokenomics").array[2].text}}</span>
+            <span class="tokenomics-grid-title">{{ $t("Tokenomics").array[2].title }}</span>
+            <span class="tokenomics-grid-content">{{ $t("Tokenomics").array[2].text }}</span>
           </div>
         </div>
       </v-container>
     </div>
+
     <!-- choice容器主体 -->
     <div class="spacepi_bg">
       <div class="choice-container-subject">
@@ -572,7 +588,7 @@
           <div class="choice-explain">
             <!-- choice说明内容 -->
             <span class="choice-explain-content wow spacepi-animation fade-out-min-in-max-animation">
-              {{$t('answers').text}}
+              {{ $t('answers').text }}
             </span>
           </div>
           <!-- choice区域 -->
@@ -585,14 +601,14 @@
                 <div class="choice-subject" :style="choice[0] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[0].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[0].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[0] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[0] == 1">
-                    {{$t('answers').array[0].text}}
+                    {{ $t('answers').array[0].text }}
                   </span>
                 </div>
               </a>
@@ -602,14 +618,14 @@
                 <div class="choice-subject" :style="choice[1] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[1].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[1].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[1] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[1] == 1">
-                    {{$t('answers').array[1].text}}
+                    {{ $t('answers').array[1].text }}
                   </span>
                 </div>
               </a>
@@ -619,14 +635,14 @@
                 <div class="choice-subject" :style="choice[2] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[2].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[2].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[2] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[2] == 1">
-                    {{$t('answers').array[2].text}}
+                    {{ $t('answers').array[2].text }}
                   </span>
                 </div>
               </a>
@@ -636,14 +652,14 @@
                 <div class="choice-subject" :style="choice[3] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[3].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[3].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[3] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[3] == 1">
-                    {{$t('answers').array[3].text}}
+                    {{ $t('answers').array[3].text }}
                   </span>
                 </div>
               </a>
@@ -656,14 +672,14 @@
                 <div class="choice-subject" :style="choice[4] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[4].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[4].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[4] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[4] == 1">
-                    {{$t('answers').array[4].text}}
+                    {{ $t('answers').array[4].text }}
                   </span>
                 </div>
               </a>
@@ -673,14 +689,14 @@
                 <div class="choice-subject" :style="choice[5] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[5].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[5].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[5] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[5] == 1">
-                    {{$t('answers').array[5].text}}
+                    {{ $t('answers').array[5].text }}
                   </span>
                 </div>
               </a>
@@ -690,14 +706,14 @@
                 <div class="choice-subject" :style="choice[6] == 0 ? '' : 'background: rgba(22, 15, 38, 0.4)'">
                   <!-- choice标题主体 -->
                   <div class="choice-title-subject">
-                    <span class="choice-title">{{$t('answers').array[6].title}}</span>
+                    <span class="choice-title">{{ $t('answers').array[6].title }}</span>
                     <div class="choice-img">
                       <v-img src="@/assets/choice-down.png" v-if="choice[6] == 0"></v-img>
                       <v-img src="@/assets/choice-up.png" v-else></v-img>
                     </div>
                   </div>
                   <span class="choice-content" v-if="choice[6] == 1">
-                    {{$t('answers').array[6].text}}
+                    {{ $t('answers').array[6].text }}
                   </span>
                 </div>
               </a>
@@ -713,7 +729,7 @@
 </template>
 <script>
 import axios from "axios";
-import { mapState, mapMutations } from "vuex";
+import { mapState } from "vuex";
 import spacePi from "@/views/home/components/spacePi.vue";
 // 引入动画电脑端组件
 import animation from "@/components/animation.vue";
@@ -737,7 +753,7 @@ export default {
       // 轮播图
       carouseChartArrar: [],
       // 友情合作商分类数据
-      responsecArray:[],
+      responsecArray: [],
       progresstime: null,
       // 进度
       progress: 0,
@@ -763,7 +779,7 @@ export default {
     setTimeout(() => {
       this.partnersC();
       this.partners();
-    },1)
+    }, 1)
     setTimeout(() => {
       //this.carouselStartInterval();
     }, 1000)
@@ -772,22 +788,22 @@ export default {
 
 
     let spotparams = {
-    container: document.getElementById("spot"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: spot
+      container: document.getElementById("spot"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: spot
     };
     let anim;
     anim = lottie.loadAnimation(spotparams);
 
 
     let spotparams_m = {
-    container: document.getElementById("spot-m"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: spot
+      container: document.getElementById("spot-m"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: spot
     };
     let anim_m;
     anim_m = lottie.loadAnimation(spotparams_m);
@@ -879,11 +895,13 @@ export default {
 </script>
 <style scoped lang="scss">
 @import "@/scss/adaptation.scss";
-$width:1200;
-.pc{
+$width: 1200;
+
+.pc {
   display: block;
 }
-.mo{
+
+.mo {
   display: none;
 }
 
@@ -915,42 +933,6 @@ $width:1200;
       -webkit-transform: translate(50px, 0);
     }
 
-    10% {
-      -webkit-transform: translate(45px, 0);
-    }
-
-    20% {
-      -webkit-transform: translate(40px, 0);
-    }
-
-    30% {
-      -webkit-transform: translate(35px, 0);
-    }
-
-    40% {
-      -webkit-transform: translate(30px, 0);
-    }
-
-    50% {
-      -webkit-transform: translate(25px, 0);
-    }
-
-    60% {
-      -webkit-transform: translate(20px, 0);
-    }
-
-    70% {
-      -webkit-transform: translate(15px, 0);
-    }
-
-    80% {
-      -webkit-transform: translate(10px, 0);
-    }
-
-    90% {
-      -webkit-transform: translate(5px, 0);
-    }
-
     100% {
       -webkit-transform: translate(0, 0);
     }
@@ -975,46 +957,11 @@ $width:1200;
       -webkit-transform: translate(0, 0);
     }
 
-    10% {
-      -webkit-transform: translate(5px, 0);
-    }
-
-    20% {
-      -webkit-transform: translate(10px, 0);
-    }
-
-    30% {
-      -webkit-transform: translate(15px, 0);
-    }
-
-    40% {
-      -webkit-transform: translate(20px, 0);
-    }
-
-    50% {
-      -webkit-transform: translate(25px, 0);
-    }
-
-    60% {
-      -webkit-transform: translate(30px, 0);
-    }
-
-    70% {
-      -webkit-transform: translate(35px, 0);
-    }
-
-    80% {
-      -webkit-transform: translate(40px, 0);
-    }
-
-    90% {
-      -webkit-transform: translate(45px, 0);
-    }
-
     100% {
       -webkit-transform: translate(50px, 0);
     }
   }
+
   -webkit-transform: translate(50px, 0px);
   -webkit-animation-name: spacepi-img-subject;
   -webkit-animation-duration:0.5s;
@@ -1036,7 +983,6 @@ $width:1200;
     color: #FDD333;
     max-width: 1200px;
     z-index: 1;
-    
 
     // what标题
     .what-title {
@@ -1099,42 +1045,6 @@ $width:1200;
           @-webkit-keyframes fadeOut {
             0% {
               -webkit-transform: translate(10px, -10px);
-            }
-
-            10% {
-              -webkit-transform: translate(9px, -9px);
-            }
-
-            20% {
-              -webkit-transform: translate(8px, -8px);
-            }
-
-            30% {
-              -webkit-transform: translate(7px, -7px);
-            }
-
-            40% {
-              -webkit-transform: translate(6px, -6px);
-            }
-
-            50% {
-              -webkit-transform: translate(5px, -5px);
-            }
-
-            60% {
-              -webkit-transform: translate(4px, -4px);
-            }
-
-            70% {
-              -webkit-transform: translate(3px, -3px);
-            }
-
-            80% {
-              -webkit-transform: translate(2px, -2px);
-            }
-
-            90% {
-              -webkit-transform: translate(1px, -1px);
             }
 
             100% {
@@ -1241,42 +1151,6 @@ $width:1200;
           @-webkit-keyframes aircraftOut {
             0% {
               -webkit-transform: translate(-20px, -20px);
-            }
-
-            10% {
-              -webkit-transform: translate(-18px, -18px);
-            }
-
-            20% {
-              -webkit-transform: translate(-16px, -16px);
-            }
-
-            30% {
-              -webkit-transform: translate(-14px, -14px);
-            }
-
-            40% {
-              -webkit-transform: translate(-12px, -12px);
-            }
-
-            50% {
-              -webkit-transform: translate(-10px, -10px);
-            }
-
-            60% {
-              -webkit-transform: translate(-8px, -8px);
-            }
-
-            70% {
-              -webkit-transform: translate(-6px, -6px);
-            }
-
-            80% {
-              -webkit-transform: translate(-4px, -4px);
-            }
-
-            90% {
-              -webkit-transform: translate(-2px, -2px);
             }
 
             100% {
@@ -1514,6 +1388,7 @@ $width:1200;
         font-weight: 400;
       }
     }
+
     .car-s {
       height: fit-content;
       background-repeat: no-repeat;
@@ -1570,40 +1445,29 @@ $width:1200;
       // spacepiwep图片
       .spacepiwep-img {
         filter: drop-shadow(10px 10px 30px rgba(64, 0, 255, 0.314));
-        // width: 25vw;
         position: relative;
         z-index: 1;
 
         .spacepiwep-img-subject {
           z-index: 1;
-          width:600px;
-          @media screen and (max-width:1400px){
-            width:500px;
-          }
-          @media screen and (max-width:1200px){
-            width:480px;
-          }
-          @media screen and (max-width:1000px){
-            width:400px;
-          }
-        }
+          width: 600px;
 
-        .spacepiwep-img-s {
-          // position: absolute;
-          // top: 5px;
-          // left: -7.5px;
-          // z-index: -1;
-          // width: 500px;
-          // height: 200px;
+          @media screen and (max-width:1400px) {
+            width: 500px;
+          }
+
+          @media screen and (max-width:1200px) {
+            width: 480px;
+          }
+
+          @media screen and (max-width:1000px) {
+            width: 400px;
+          }
         }
       }
     }
+
     .spacepiwep-right {
-      // height: -webkit-fill-available;
-      // height: auto;
-      // position: absolute;
-      // bottom: 100px;
-      // right: 100px;
 
       // spacepiwep容器主体
       .spacepiwep-container-subject {
@@ -1684,17 +1548,20 @@ $width:1200;
             font-weight: bold;
             color: #FFFFFF;
             height: 52px;
+
             // audit-report标题
             .audit-report-title {
               margin-left: 10px;
             }
-            .audit-report-view{
+
+            .audit-report-view {
               width: 29px;
               height: 21px;
             }
           }
-          .audit-report-bnt:hover{
-            opacity:0.9;
+
+          .audit-report-bnt:hover {
+            opacity: 0.9;
           }
         }
 
@@ -1706,6 +1573,7 @@ $width:1200;
           color: rgba(255, 255, 255, 0.8);
         }
       }
+
       // spacepiwep按钮
       .spacepiwep-bnt {
         margin-top: 40px;
@@ -1721,12 +1589,7 @@ $width:1200;
         color: #FFFFFF;
       }
     }
-
-
   }
-
-
-
 }
 
 // spacepiwep-external-container移动端
@@ -1734,15 +1597,14 @@ $width:1200;
   display: none;
 }
 
-
 //nftCarousel外部容器
-.nftCarousel_container{
-    padding: 250px 0;
-    max-width: 1500px;
-    display: grid;
-    justify-items: center;
-    grid-gap: 84px;
-    width: -webkit-fill-available;
+.nftCarousel_container {
+  padding: 250px 0;
+  max-width: 1500px;
+  display: grid;
+  justify-items: center;
+  grid-gap: 84px;
+  width: -webkit-fill-available;
 }
 
 // partners容器
@@ -1752,11 +1614,13 @@ $width:1200;
   grid-gap: 50px;
   justify-items: center;
   position: relative;
+
   // 默认高度
-  .partners-height{
+  .partners-height {
     min-height: 210px;
     max-height: 210px;
   }
+
   // partners内容
   .partners-content {
     width: 1024px;
@@ -1766,19 +1630,23 @@ $width:1200;
     color: #FDD333;
     line-height: initial;
   }
+
   // partners轮播
   .partners-carousel {
     display: grid;
     position: relative;
     width: 1500px;
-    @media screen and (max-width:1500px){
+
+    @media screen and (max-width:1500px) {
       width: auto;
     }
+
     justify-items: center;
     align-items: center;
     color: #FDD333;
     grid-gap: 50px;
-    .partners-active-class{
+
+    .partners-active-class {
       display: flex;
       justify-content: center;
     }
@@ -1788,13 +1656,15 @@ $width:1200;
       height: auto;
       display: flex;
       justify-content: center;
+
       .carousel-car {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         max-width: 1200px;
-        .v-img:hover{
-          opacity:0.9;
+
+        .v-img:hover {
+          opacity: 0.9;
         }
       }
     }
@@ -1837,23 +1707,25 @@ $width:1200;
     font-family: Fenton-Regular, Fenton;
     font-weight: 400;
     color: #FFFFFF;
-    background:url("../../assets/Join-bnt.png") no-repeat;
+    background: url("../../assets/Join-bnt.png") no-repeat;
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .partners-bnt:hover {
-    opacity:0.6;
+    opacity: 0.6;
   }
 
 }
 
 // roadmap_bg
-.roadmap_bg{
+.roadmap_bg {
   background-image: url("../../assets/roadmap_bg.png");
   background-size: 100%;
 }
+
 // roadmap容器
 .roadmap-container {
   z-index: 1;
@@ -1904,6 +1776,7 @@ $width:1200;
     display: grid;
     position: relative;
     justify-items: flex-start;
+
     .one-img {
       width: 700px;
       height: 331px;
@@ -1952,9 +1825,11 @@ $width:1200;
     display: grid;
     position: relative;
     justify-items: flex-end;
+
     .one-img {
       width: 700px;
-      height: 331px;;
+      height: 331px;
+      ;
       margin-top: -200px;
       z-index: -1;
     }
@@ -2002,7 +1877,7 @@ $width:1200;
 
   // tokenomics主体
   .tokenomics-subject {
-    background:url("../../assets/tokenomics-bg.png") no-repeat;
+    background: url("../../assets/tokenomics-bg.png") no-repeat;
     background-size: cover;
     margin-top: 150px;
     width: 1500px;
@@ -2013,8 +1888,9 @@ $width:1200;
     .tokenomics-left {
       width: 800px;
       height: 768px;
-      background:url("../../assets/tokenomics-left.png") no-repeat;
+      background: url("../../assets/tokenomics-left.png") no-repeat;
       background-size: cover;
+
       .tokenomics-left-subject {
         width: 600px;
         float: right;
@@ -2039,7 +1915,6 @@ $width:1200;
             font-weight: 900;
             color: #FFFFFF;
           }
-
         }
 
         // tokenomics左副标题
@@ -2169,7 +2044,6 @@ $width:1200;
         .choice-title-subject {
           display: flex;
           align-items: center;
-
           grid-gap: 20px;
           width: 100%;
           position: relative;
@@ -2201,8 +2075,6 @@ $width:1200;
   }
 }
 
-
-
 // 框架ui区域
 .v-menu__content {
   border-radius: 0px;
@@ -2215,16 +2087,18 @@ $width:1200;
   }
 }
 
-
 // 小型号到大型号的手机
 @media screen and (max-width:600px) {
   $width: 600;
-  .pc{
+
+  .pc {
     display: none;
   }
-  .mo{
+
+  .mo {
     display: block;
   }
+
   // 动画
   .animation {
     width: 100%;
@@ -2240,6 +2114,7 @@ $width:1200;
     .what-container {
       padding-left: 32px;
       padding-right: 32px;
+
       // what标题
       .what-title {
         font-size: 20px;
@@ -2433,8 +2308,9 @@ $width:1200;
           font-size: vw(17, $width);
         }
       }
+
       // car-s
-      .car-s{
+      .car-s {
         background: none;
         border: 1px solid rgba(253, 211, 51, 0.2);
       }
@@ -2653,7 +2529,8 @@ $width:1200;
         font-family: Fenton-Bold;
         font-weight: bold;
         color: #FFFFFF;
-        .audit-report-title{
+
+        .audit-report-title {
           margin-left: 5px;
         }
       }
@@ -2677,7 +2554,7 @@ $width:1200;
       align-items: center;
 
       .spacepiwep-img-subject {
-        width: vw(500,600);
+        width: vw(500, 600);
         z-index: 1;
       }
 
@@ -2709,39 +2586,48 @@ $width:1200;
   .partners-container {
     margin-top: 50px;
     grid-gap: 20px;
+
     // 默认高度
-    .partners-height{
+    .partners-height {
       min-height: 585px;
       max-height: 585px;
-      @media screen and (min-width:280px){
+
+      @media screen and (min-width:280px) {
         min-height: 440px;
         max-height: 440px;
       }
-      @media screen and (min-width:360px){
+
+      @media screen and (min-width:360px) {
         min-height: 555px;
         max-height: 555px;
       }
-      @media screen and (min-width:375px){
+
+      @media screen and (min-width:375px) {
         min-height: 585px;
         max-height: 585px;
       }
-      @media screen and (min-width:390px){
+
+      @media screen and (min-width:390px) {
         min-height: 600px;
         max-height: 600px;
       }
-      @media screen and (min-width:393px){
+
+      @media screen and (min-width:393px) {
         min-height: 610px;
         max-height: 610px;
       }
-      @media screen and (min-width:412px){
+
+      @media screen and (min-width:412px) {
         min-height: 635px;
         max-height: 635px;
       }
-      @media screen and (min-width:414px){
+
+      @media screen and (min-width:414px) {
         min-height: 640px;
         max-height: 640px;
       }
-      @media screen and (min-width:540px){
+
+      @media screen and (min-width:540px) {
         min-height: 825px;
         max-height: 825px;
       }
@@ -2762,6 +2648,7 @@ $width:1200;
       // 轮播图
       .carousel-chart {
         width: fit-content;
+
         .carousel-car {
           width: fit-content;
           width: 100%;
@@ -2835,12 +2722,13 @@ $width:1200;
     // one主体
     .one-subject {
       height: 525px;
+
       .one-img {
-        width: vw(560,600);
+        width: vw(560, 600);
       }
 
       .one-content {
-        margin-top: vw(-450,600);
+        margin-top: vw(-450, 600);
         margin-left: 10px;
 
         .one-title {
@@ -2852,7 +2740,8 @@ $width:1200;
           font-size: 14px;
           grid-gap: 10px;
         }
-        .one-white{
+
+        .one-white {
           width: 281px;
         }
       }
@@ -2863,13 +2752,14 @@ $width:1200;
       height: 600px;
       margin-top: 0;
       justify-items: left;
+
       .one-img {
-        width: vw(560,600);
+        width: vw(560, 600);
         margin-top: -500px;
       }
 
       .one-content {
-        margin-top: vw(200,600);
+        margin-top: vw(200, 600);
         margin-left: 10px;
 
         .one-title {
@@ -2881,7 +2771,8 @@ $width:1200;
           font-size: 14px;
           grid-gap: 10px;
         }
-        .one-white{
+
+        .one-white {
           width: 281px;
         }
       }
@@ -2941,7 +2832,7 @@ $width:1200;
     .tokenomics-content {
       margin-top: 20px;
       width: 100%;
-      height: vw(300,600);
+      height: vw(300, 600);
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       justify-items: center;
@@ -2952,7 +2843,6 @@ $width:1200;
       background-size: cover;
 
       .tokenomics-grid {
-        
         display: grid;
         height: fit-content;
         text-align: center;
@@ -3046,22 +2936,23 @@ $width:1200;
   }
 
   //nftCarousel外部容器
-  .nftCarousel_container{
+  .nftCarousel_container {
     padding: 50px 0;
   }
-
-
 }
 
 // 小型号到中型号的平板
 @media screen and (min-width:600px) and (max-width:960px) {
   $width: 960;
-  .pc{
+
+  .pc {
     display: none;
   }
-  .mo{
+
+  .mo {
     display: block;
   }
+
   // spacePi图片主体
   .spacepi-img-subject {
     height: vw(500, $width);
@@ -3189,7 +3080,6 @@ $width:1200;
       .concept-content {
         grid-gap: vw(50, $width);
         font-size: vw(20, $width);
-
       }
     }
 
@@ -3213,7 +3103,8 @@ $width:1200;
           font-size: vw(17, $width);
         }
       }
-      .car-s{
+
+      .car-s {
         background: none;
         border: 1px solid rgba(253, 211, 51, 0.2);
       }
@@ -3426,7 +3317,8 @@ $width:1200;
         font-family: Fenton-Bold;
         font-weight: bold;
         color: #FFFFFF;
-        .audit-report-title{
+
+        .audit-report-title {
           margin-left: 10px;
         }
       }
@@ -3482,8 +3374,9 @@ $width:1200;
 
   // partners容器
   .partners-container {
+
     // 默认高度
-    .partners-height{
+    .partners-height {
       min-height: 960px;
       max-height: 960px;
     }
@@ -3496,22 +3389,25 @@ $width:1200;
     // partners轮播
     .partners-carousel {
       width: -webkit-fill-available;
+
       // 轮播图
       .carousel-chart {
         width: inherit;
+
         .carousel-car {
           grid-template-columns: 1fr 1fr;
         }
       }
 
-    // 轮播左按钮
-    .carousel-left {
-      display: none;
-    }
-    // 轮播右按钮
-    .carousel-right {
-      display: none;
-    }
+      // 轮播左按钮
+      .carousel-left {
+        display: none;
+      }
+
+      // 轮播右按钮
+      .carousel-right {
+        display: none;
+      }
 
       // 轮播进度条
       .carousel-progress {
@@ -3603,6 +3499,7 @@ $width:1200;
     .two-subject {
       z-index: 1;
       height: auto;
+
       .one-img {
         width: 600px;
         margin-top: -150px;
@@ -3611,9 +3508,6 @@ $width:1200;
       //
       .one-content {
         margin-top: 100px;
-        .one-title {
-          
-        }
       }
     }
 
@@ -3621,10 +3515,12 @@ $width:1200;
     .one-subject {
       z-index: 1;
       height: auto;
+
       .one-img {
         width: 600px;
       }
-      .one-content{
+
+      .one-content {
         margin-top: -200px;
       }
     }
@@ -3699,8 +3595,8 @@ $width:1200;
     }
   }
 
-    //nftCarousel外部容器
-  .nftCarousel_container{
+  //nftCarousel外部容器
+  .nftCarousel_container {
     padding: 150px 0;
   }
 
@@ -3858,27 +3754,32 @@ $width:1200;
 
   // partners容器
   .partners-container {
+
     // 默认高度
-    .partners-height{
+    .partners-height {
       min-height: 642px;
       max-height: 642px;
     }
+
     // partners轮播
     .partners-carousel {
       width: auto;
-      .carousel-chart{
-        .carousel-car{
+
+      .carousel-chart {
+        .carousel-car {
           grid-template-columns: 1fr 1fr 1fr;
         }
       }
-          // 轮播左按钮
-    .carousel-left {
-      display: none;
-    }
-    // 轮播右按钮
-    .carousel-right {
-      display: none;
-    }
+
+      // 轮播左按钮
+      .carousel-left {
+        display: none;
+      }
+
+      // 轮播右按钮
+      .carousel-right {
+        display: none;
+      }
     }
 
   }
@@ -4039,16 +3940,19 @@ $width:1200;
 
     // partners轮播
     .partners-carousel {
+
       //width: vw(1800, $width);
-      @media screen and (max-width:1500px){
-          // 轮播左按钮
-          .carousel-left {
-            display: none;
-          }
-          // 轮播右按钮
-          .carousel-right {
-            display: none;
-          }
+      @media screen and (max-width:1500px) {
+
+        // 轮播左按钮
+        .carousel-left {
+          display: none;
+        }
+
+        // 轮播右按钮
+        .carousel-right {
+          display: none;
+        }
       }
     }
   }
@@ -4127,6 +4031,7 @@ $width:1200;
   .what-subject {
     background-size: cover;
   }
+
   // telegraph主体
   .telegraph-subject {
     background-size: 100%;

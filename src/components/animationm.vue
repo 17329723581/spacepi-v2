@@ -17,11 +17,11 @@ export default {
             anim: {}
         }
     },
-    mounted(){
-            this.svgFun();
+    mounted() {
+        this.svgFun();
     },
     methods: {
-        svgFun(){
+        svgFun() {
             let params = {
                 container: document.getElementById("animationm"),
                 renderer: "svg",
